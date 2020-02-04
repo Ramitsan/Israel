@@ -118,8 +118,9 @@
         <p class="want-to-go__info">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
         <form action="https://echo.htmlacademy.ru" method="POST" class="want-to-go__form">
           <p class="want-to-go__form-container">
-            <input type="tel" class="want-to-go__form-input" name="phone" placeholder="телефон">
-            <button class="btn btn--yellow btn--want-to-go-form" type="submit">Перезвоните мне</button>
+            <label class="visually-hidden" for="user-phone">Телефон</label>
+            <input type="tel" id="user-phone" name="phone" placeholder="телефон">
+            <button class="btn btn--yellow" type="submit">Перезвоните мне</button>
           </p>
         </form>
       </div>
@@ -288,9 +289,11 @@
           </div>
           <form action="https://echo.htmlacademy.ru" method="POST" class="contacts-form">
             <p class="contacts-form__container" "="">
-              <input type="text" class="contacts-form__input contacts-form__input--name" name="name" placeholder="имя">
-              <input type="tel" class="contacts-form__input contacts-form__input--phone" name="phone" placeholder="+7 (923) 41">
-              <button class="btn btn--yellow btn--contacts-form" type="submit">Перезвоните мне</button>
+              <label class="visually-hidden" for="user-name">Имя</label>
+              <input type="text" id="user-name" name="name" placeholder="имя">
+              <label class="visually-hidden" for="user-tel">Телефон</label>
+              <input type="tel" id="user-tel" name="phone" placeholder="+7 (923) 41">
+              <button class="btn btn--yellow" type="submit">Перезвоните мне</button>
             </p>
           </form>
         </div>
