@@ -45,7 +45,6 @@
         <p class="about-program__text">
           «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.
         </p>
-        <video controls preload="metadata" width="870" height="460"></video>
         <img src="img/video-preload.jpg" width="870" height="460" alt="Видео превью">
       </div>
     </section>
@@ -118,8 +117,9 @@
         <p class="want-to-go__info">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
         <form action="https://echo.htmlacademy.ru" method="POST" class="want-to-go__form">
           <p class="want-to-go__form-container">
-            <input type="tel" class="want-to-go__form-input" name="phone" placeholder="телефон">
-            <button class="btn btn--yellow btn--want-to-go-form" type="submit">Перезвоните мне</button>
+            <label class="visually-hidden" for="user-phone">Телефон</label>
+            <input type="tel" id="user-phone" name="phone" placeholder="телефон">
+            <button class="btn btn--yellow" type="submit">Перезвоните мне</button>
           </p>
         </form>
       </div>
@@ -288,9 +288,11 @@
           </div>
           <form action="https://echo.htmlacademy.ru" method="POST" class="contacts-form">
             <p class=contacts-form__container ">
-              <input type="text" class="contacts-form__input contacts-form__input--name" name="name" placeholder="имя">
-              <input type="tel" class="contacts-form__input contacts-form__input--phone" name="phone" placeholder="+7 (923) 41">
-              <button class="btn btn--yellow btn--contacts-form" type="submit">Перезвоните мне</button>
+              <label class="visually-hidden" for="user-name">Имя</label>
+              <input type="text" id="user-name" name="name" placeholder="имя">
+              <label class="visually-hidden" for="user-tel">Телефон</label>
+              <input type="tel" id="user-tel" name="phone" placeholder="+7 (923) 41">
+              <button class="btn btn--yellow" type="submit">Перезвоните мне</button>
             </p>
           </form>
         </div>
@@ -315,6 +317,36 @@
     </div>
   </footer>
   <!-- Footer [END] -->
+  <!-- Request-call -->
+  <section class="modal request-call">
+    <div class="modal-container modal-container--request-call">
+      <h3>Заказать звонок</h3>
+      <p>Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос! </p>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="request-call__form">
+        <p class="request-call__form-container">
+          <label class="visually-hidden" for="modal-user-name">Имя</label>
+          <input type="text" id="modal-user-name" name="name" placeholder="имя">
+          <label class="visually-hidden" for="modal-user-tel">Телефон</label>
+          <input type="tel" id="modal-user-tel" name="phone" placeholder="телефон">
+          <button class="btn btn--yellow" type="submit">Перезвоните мне</button>
+          <input type="checkbox" id="agreement" name="agreement">
+          <label for="agreement">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
+    </div>
+  </section>
+  <!-- Request-call [END] -->
+  <!-- Accepted popup -->
+  <section class="modal accepted">
+    <div class="modal-container modal-container--accepted">
+      <h3>Заявка принята</h3>
+      <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+      <button class="btn btn--yellow" type="submit">Понятно</button>
+    </div>
+  </section>
+  <button class="modal-close" type="button">Закрыть</button>
+  <!-- Accepted popup [END] -->
 </body>
 
 </html>
