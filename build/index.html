@@ -19,7 +19,7 @@
             <a href="tel:+9722–621–6581">+ (972) 2 – 621 – 6581</a>
           </div>
           <div class="page-header__logo logo">
-            <a class="logo-link" href="#">
+            <a class="logo-link">
               <img class="logo-image" src="img/logo.png" width="137" height="48" alt="Логотип компании">
             </a>
           </div>
@@ -46,22 +46,33 @@
           «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.
         </p>
         <img src="img/video-preload.jpg" width="870" height="460" alt="Видео превью">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle opacity="0.32" cx="48" cy="48" r="48" fill="white"></circle>
+          <circle cx="48" cy="48" r="32" fill="white"></circle>
+          <path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"></path>
+        </svg>
       </div>
     </section>
     <section class="programs">
       <div class="page-main__wrapper">
         <h2 class="section-title section-title--programs">Программы</h2>
-        <ul class="programs-list">
-          <li class="programs-item programs-item__general"><span class="programs-title">Общие</span></li>
-          <li class="programs-item programs-item__academic"><span class="programs-title">Академические</span>
+        <ul class="programs__list">
+          <li class="programs__item programs__item--general">
+            <span class="programs__title">Общие</span>
           </li>
-          <li class="programs-item programs-item__internships"><span class="programs-title">Стажировки</span>
+          <li class="programs__item programs__item--academic">
+            <span class="programs__title">Академические</span>
           </li>
-          <li class="programs-item programs-item__volunteering"><span class="programs-title">Волонтёрство</span></li>
-          <li class="programs-item programs-item__religion"><span class="programs-title">Религиозные</span>
+          <li class="programs__item programs__item--internships">
+            <span class="programs__title">Стажировки</span>
+          </li>
+          <li class="programs__item programs__item--volunteering">
+            <span class="programs__title">Волонтёрство</span></li>
+          <li class="programs__item programs__item--religion">
+            <span class="programs__title">Религиозные</span>
           </li>
         </ul>
-        <div class="programs-block programs-block__general">
+        <div class="programs-block programs-block--general">
           <h3 class="programs-block__title programs-block__title--general">Общие</h3>
           <p class="programs-block__info programs-block__info--one">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
@@ -71,7 +82,7 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
           </p>
         </div>
-        <div class="programs-block programs-block__academic">
+        <div class="programs-block programs-block--academic">
           <h3 class="programs-block__title programs-block__title--academic">Академические</h3>
           <p class="programs-block__info programs-block__info--one">
             Провести семестр или год за рубежом, знакомясь с различными культурамии идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого
@@ -80,7 +91,7 @@
             Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.
           </p>
         </div>
-        <div class="programs-block programs-block__internships">
+        <div class="programs-block programs-block--internships">
           <h3 class="programs-block__title programs-block__title--internships">Стажировки</h3>
           <p class="programs-block__info programs-block__info--one">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
@@ -90,7 +101,7 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
           </p>
         </div>
-        <div class="programs-block programs-block__volunteering">
+        <div class="programs-block programs-block--volunteering">
           <h3 class="programs-block__title programs-block__title--volunteering">Волонтёрство</h3>
           <p class="programs-block__info programs-block__info--one">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
@@ -100,7 +111,7 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
           </p>
         </div>
-        <div class="programs-block programs-block__religion">
+        <div class="programs-block programs-block--religion">
           <h3 class="programs-block__title programs-block__title--religion">Религиозные</h3>
           <p class="programs-block__info programs-block__info--one">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
@@ -249,9 +260,9 @@
                 </div>
               </div>
               <div class="reviews__social">
-                <a class="reviews__social-link reviews__social-link--facebook" href="#"></a>
-                <a class="reviews__social-link reviews__social-link--twitter" href="#"></a>
-                <a class="reviews__social-link reviews__social-link--instagram" href="#"></a>
+                <a class="reviews__social-link reviews__social-link--facebook" href="#" aria-label="Читать отзывы на Фейсбуке"></a>
+                <a class="reviews__social-link reviews__social-link--twitter" href="#" aria-label="Читать отзывы в Твиттере"></a>
+                <a class="reviews__social-link reviews__social-link--instagram" href="#" aria-label="Читать отзывы в Инстаграме"></a>
               </div>
             </div>
           </div>
@@ -277,9 +288,9 @@
                 Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
               </p>
               <div class="curator__social">
-                <a class="curator__social-link curator__social-link--facebook" href="#"></a>
-                <a class="curator__social-link curator__social-link--whatsapp" href="#"></a>
-                <a class="curator__social-link curator__social-link--telegram" href="#"></a>
+                <a class="curator__social-link curator__social-link--facebook" href="#" aria-label="Написать куратору на Фейсбуке"></a>
+                <a class="curator__social-link curator__social-link--whatsapp" href="#" aria-label="Написать куратору в Вотсапе"></a>
+                <a class="curator__social-link curator__social-link--telegram" href="#" aria-label="Написать куратору в Телеграме"></a>
               </div>
             </div>
           </div>
@@ -317,9 +328,9 @@
         </div>
         <p class="page-footer__copyright ">Copyright someDesignCompany ©2019</p>
         <div class="page-footer__social ">
-          <a class="page-footer__social-link page-footer__social-link--facebook" href="#"></a>
-          <a class="page-footer__social-link page-footer__social-link--twitter" href="#"></a>
-          <a class="page-footer__social-link page-footer__social-link--instagram" href="#"></a>
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="#" aria-label="Мы на Фейсбуке"></a>
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="#" aria-label="Мы в Твиттере"></a>
+          <a class="page-footer__social-link page-footer__social-link--instagram" href="#" aria-label="Мы в Инстаграме"></a>
         </div>
       </div>
     </div>
