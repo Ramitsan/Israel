@@ -343,13 +343,21 @@
       <p>Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос! </p>
       <form action="https://echo.htmlacademy.ru" method="POST" class="request-call__form">
         <p class="request-call__form-container">
-          <label class="visually-hidden" for="modal-user-name">Имя</label>
-          <input type="text" id="modal-user-name" name="name" placeholder="имя">
-          <label class="visually-hidden" for="modal-user-tel">Телефон</label>
-          <input type="tel" id="modal-user-tel" name="phone" placeholder="телефон">
-          <button class="btn btn--yellow" type="submit">Перезвоните мне</button>
-          <input type="checkbox" id="agreement" name="agreement">
-          <label for="agreement">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+          <div class="request-call__item-wrapper">
+            <label class="visually-hidden" for="modal-user-name">Имя</label>
+            <input type="text" id="modal-user-name" name="name" placeholder="имя">
+          </div>
+          <div class="request-call__item-wrapper">
+            <label class="visually-hidden" for="modal-user-tel">Телефон</label>
+            <input type="tel" id="modal-user-tel" name="phone" placeholder="телефон">
+          </div>
+          <div class="request-call__item-wrapper">
+            <button class="btn btn--yellow" type="submit">Перезвоните мне</button>
+          </div>
+          <div class="request-call__item-wrapper">
+            <input type="checkbox" id="agreement" name="agreement">
+            <label for="agreement">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+          </div>
         </p>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
