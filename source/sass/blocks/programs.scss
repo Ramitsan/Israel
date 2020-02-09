@@ -1,0 +1,50 @@
+.programs__list {
+  list-style: none;
+  position: relative;
+  width: 228px;
+  padding: 0;
+  background-color: #fff;
+}
+
+.programs__item {
+  width: 195 px;
+  margin: 0;
+}
+
+.programs__item span {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.87;
+  text-align: left;
+  padding: 28px 40px 24px 70px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.programs__item--active {
+  background-image: $yellow-gradient;
+  color: #fff;
+}
+
+.programs__item--active::after {
+  content: "";
+  position: absolute;
+  top: 69px;
+  right: -44px;
+  width: 0;
+  height: 0;
+  border: 36px solid #fff;
+  border-left-color: #FFD701;
+}
+
+.programs__item--active span {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
