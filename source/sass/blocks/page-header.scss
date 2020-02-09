@@ -28,21 +28,42 @@
   justify-content: space-between;
 }
 
+.page-header__phone a,
+.page-header__call a {
+  font-family: Fira Sans;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-style: normal;
+  color: $main-text-font;
+}
+
+.page-header__call a {
+  font-variant: small-caps;
+  border-bottom: 1px dashed $main-text-font;
+}
+
 .page-header__middle {
+  border: 1px solid red;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("../img/israel-desktop@1x.png");
+
+  background-image: url("../img/girl-desktop@1x.png"), url("../img/israel-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: center, top;
+  background-size: 1366px 906px, 1018px 340px;
+
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/israel-desktop@2x.png");
+    background-image: url("../img/girl-desktop@2x.png"), url("../img/israel-desktop@2x.png");
   }
 }
 
 .page-header__title {
+  width: 343px;
+  margin: 0 auto;
   margin-top: 500px;
 
   font-family: Fira Sans;
