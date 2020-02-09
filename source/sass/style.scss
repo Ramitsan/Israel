@@ -1,6 +1,6 @@
-@import "abstract/variables.scss";
-@import "base/base.scss";
 @import "base/fonts.scss";
-@import "base/normalize.scss";
+@import "abstract/variables.scss";
+@import "node_modules/normalize.css/normalize";
+@import "base/base.scss";
 @import "blocks/page-header.scss";
 
