@@ -1,0 +1,57 @@
+.page-header {
+  width: 100%;
+  background-color: #fff;
+  background-image: url("../img/header-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header-bg-desktop@2x.png");
+  }
+}
+
+.page-header__top {
+  padding-top: 32px;
+}
+
+.page-header__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 17px;
+}
+
+.page-header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__middle {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/israel-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/israel-desktop@2x.png");
+  }
+}
+
+.page-header__title {
+  margin-top: 500px;
+
+  font-family: Fira Sans;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: bold;
+
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  color: #FFFFFF;
+}
