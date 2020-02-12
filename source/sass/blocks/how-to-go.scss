@@ -22,21 +22,20 @@
   text-align: left;
 }
 
-.how-to-go__block {
-  width: 100%;
-  margin: 0;
-}
-
 .how-to-go__block::before {
-  content: url("../img/how-to-go-img-desktop@1x.png");
+  content: "";
+  background-image: url("../img/how-to-go-img-desktop@1x.png");
+  background-size: 581px 707px;
   position: absolute;
-  left: -645px;
+  left: -110%;
   top: -53px;
   width: 581px;
   height: 707px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    content: url("../img/how-to-go-img-desktop@2x.png");
+      content: "";
+      background-image: url("../img/how-to-go-img-desktop@2x.png");
+      background-size: 581px 707px;
   }
 }
 
