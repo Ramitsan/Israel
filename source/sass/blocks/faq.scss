@@ -1,0 +1,78 @@
+.faq {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  // position: relative;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-image: url("../img/faq-bg-desktop@1x.png"),
+                    url("../img/faq-img-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1366px 1119px, 645px 803px;
+  background-position: center, 51vw center;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/faq-bg-desktop@2x.png"),
+                        url("../img/faq-img-desktop@2x.png");;
+  }
+}
+
+.faq__list {
+  width: 573px;
+  list-style: none;
+  counter-reset: number;
+  position: relative;
+  text-align: left;
+  padding-left: 0;
+
+  &::after {
+    content: "";
+    background-image: url("../img/faq-bag-desktop@1x.png");
+    background-size: 153px 177px;
+    position: absolute;
+    left: -107px;
+    bottom: -130px;
+    width: 153px;
+    height: 177px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/faq-bag-desktop@2x.png");
+      background-size: 153px 177px;
+    }
+  }
+}
+
+
+
+.faq__item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid transparentize($main-text-font, .8);
+}
+
+.faq__question::before {
+  counter-increment: number;
+  content: counter(number)" ";
+  position: absolute;
+  left: 0px;
+  font-weight: bold;
+  font-size: 28px;
+  color: $yellow;
+}
+
+.faq__question {
+  width: 400px;
+  line-height: 150%;
+  margin-left: 30px;
+}
+
+
+.faq__answer {
+  width: 480px;
+  font-size: 15px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  opacity: 0.74;
+}
