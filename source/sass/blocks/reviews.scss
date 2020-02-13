@@ -1,0 +1,64 @@
+.reviews {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-image: url("../img/reviews-watercolor-bg-desktop@1x.png"),
+                    url("../img/reviews-sketch-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1259px 527px, 523px 318px;
+  background-position: center, 55vw top;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/reviews-watercolor-bg-desktop@2x.png"),
+                        url("../img/reviews-sketch-bg-desktop@2x.png");
+  }
+}
+
+.reviews__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.reviews__list {
+  width: 751px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: transparentize($main-text-font, .26);
+}
+
+.reviews__program {
+  width: 84px;
+  font-size: 15px;
+  line-height: 140%;
+  color: $heading-color;
+}
+
+.reviews__author-program {
+  font-size: 15px;
+  line-height: 140%;
+  color: transparentize($main-text-font, .26);
+}
+
+.reviews__text {
+  width: 667px;
+  color: transparentize($main-text-font, .26);
+}
+
+.reviews__link {
+  text-decoration: underline;
+  line-height: 150%;
+  color: $heading-color;
+}
