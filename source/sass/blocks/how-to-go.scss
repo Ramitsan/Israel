@@ -6,7 +6,7 @@
   padding-bottom: 160px;
   background-image: url("../img/how-to-go-watercolor-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 1366px 1208px;
+  background-size: 1366px auto;
   background-position: center;
 
 
@@ -25,7 +25,7 @@
 .how-to-go__block::before {
   content: "";
   background-image: url("../img/how-to-go-img-desktop@1x.png");
-  background-size: 581px 707px;
+  background-size: 581px auto;
   position: absolute;
   left: -110%;
   top: -53px;
@@ -35,7 +35,7 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       content: "";
       background-image: url("../img/how-to-go-img-desktop@2x.png");
-      background-size: 581px 707px;
+      background-size: 581px auto;
   }
 }
 

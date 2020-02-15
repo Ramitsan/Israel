@@ -6,7 +6,7 @@
   padding-bottom: 30px;
   background-image: url("../img/masaisrael-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 1361px 583px;
+  background-size: 1361px auto;
   background-position: center;
 
 
@@ -34,7 +34,7 @@
   font-weight: 500;
   line-height: 20px;
   font-variant: small-caps;
-  color: #FFFFFF;
+  color: $white;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
 }
 
@@ -58,7 +58,7 @@
   width: 380px;
   margin-bottom: 53px;
   text-align: left;
-  color: #fff;
+  color: $white;
   opacity: 0.87;
  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
 }
