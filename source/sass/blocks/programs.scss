@@ -145,6 +145,10 @@
   position: relative;
 }
 
+.programs-block--hidden {
+  display: none;
+}
+
 .programs-block div {
   position: absolute;
   bottom: 0px;

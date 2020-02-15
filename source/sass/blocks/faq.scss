@@ -48,7 +48,7 @@
   position: relative;
   margin-bottom: 40px;
   padding-bottom: 30px;
-  border-bottom: 1px solid transparentize($main-text-font, .8);
+  border-bottom: 1px solid rgba($main-text-font, .2);
 }
 
 .faq__question::before {
@@ -75,4 +75,8 @@
   display: flex;
   align-items: center;
   opacity: 0.74;
+}
+
+.faq__answer--hidden {
+  display: none;
 }

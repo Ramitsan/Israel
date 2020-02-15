@@ -53,7 +53,7 @@
 .how-to-go__pay {
   font-size: 15px;
   line-height: 140%;
-  color: transparentize($main-text-font, 0.5);
+  color: rgba($main-text-font, .5);
 }
 
 .how-to-go__pay::before {
