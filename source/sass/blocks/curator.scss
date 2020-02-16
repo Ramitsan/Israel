@@ -1,0 +1,77 @@
+.curator {
+  width: 484px;
+  margin-top: 55px;;
+}
+
+.curator__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.curator__photo {
+  margin-right: 23px;
+}
+
+.curator__info {
+  text-align: left;
+}
+
+.curator__name {
+  display: flex;
+  flex-direction: row;
+}
+
+.curator__your-curator {
+  font-size: 15px;
+  line-height: 150%;
+  color: $heading-color;
+}
+
+.curator__your-curator-name {
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 150%;
+  color: rgba($main-text-font, .74);
+}
+
+.curator__address {
+  font-size: 13px;
+  line-height: 150%;
+  color: rgba($main-text-font, .74);
+}
+
+.curator__social {
+  width: 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.curator__social-link {
+  width: 32px;
+  height: 26px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .16;
+}
+
+.curator__social-link--facebook {
+  background-image: url("../img/soc-facebook.svg");
+}
+
+.curator__social-link--whatsapp {
+  background-image: url("../img/soc-whatsapp.svg");
+}
+
+.curator__social-link--telegram {
+  background-image: url("../img/soc-telegram.svg");
+}
+
+.curator__text {
+  width: 478px;
+  margin-top: 30px;
+  margin-bottom: 120px;;
+  text-align: left;
+}
