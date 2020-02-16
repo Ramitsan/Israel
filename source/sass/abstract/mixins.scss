@@ -1,5 +1,5 @@
 @mixin second-level-headings () {
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: $font-montserrat;
   font-size: 40px;
   line-height: 49px;
   font-weight: bold;
@@ -10,7 +10,7 @@
 }
 
 @mixin third-level-headings () {
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: $font-montserrat;
   font-size: 28px;
   line-height: 34px;
   font-weight: bold;
