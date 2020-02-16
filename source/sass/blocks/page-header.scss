@@ -1,0 +1,79 @@
+.page-header {
+  width: 100%;
+  background-image: url("../img/header-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1366px auto;
+  background-position: center;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header-bg-desktop@2x.png");
+  }
+}
+
+.page-header__top {
+  padding-top: 32px;
+}
+
+.page-header__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 17px;
+}
+
+.page-header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__phone a,
+.page-header__call a {
+  font-family: Fira Sans;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  font-style: normal;
+  color: $main-text-font;
+}
+
+.page-header__call a {
+  font-variant: small-caps;
+  border-bottom: 1px dashed $main-text-font;
+}
+
+.page-header__middle {
+  border: 1px solid transparent;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+
+  background-image: url("../img/girl-desktop@1x.png"), url("../img/israel-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center, top;
+  background-size: 1366px auto, 1018px auto;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/girl-desktop@2x.png"), url("../img/israel-desktop@2x.png");
+  }
+}
+
+.page-header__title {
+  width: 343px;
+  margin: 0 auto;
+  margin-top: 500px;
+
+  font-family: $font-fira;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  font-weight: 500;
+
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  color: $white;
+}

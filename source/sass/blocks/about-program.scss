@@ -1,0 +1,31 @@
+.about-program {
+  width: 100%;
+  padding-bottom: 96px;
+  background-image: url("../img/about-program-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1366px auto;
+  background-position: center bottom;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-program-bg-desktop@2x.png");
+  }
+}
+
+.about-program__text {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.about-program__video-preview {
+  position: relative;
+}
+
+.about-program__button {
+  background-color: transparent;
+  position: absolute;
+  top: 155px;
+  left: 505px;
+}
+

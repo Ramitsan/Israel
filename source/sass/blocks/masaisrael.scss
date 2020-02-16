@@ -1,0 +1,64 @@
+.masaisrael {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-image: url("../img/masaisrael-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1361px auto;
+  background-position: center;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/masaisrael-bg-desktop@1x.png");
+  }
+}
+
+.masaisrael__wrapper {
+  margin-left: 686px;
+  padding-bottom: 194px;
+  text-align: left;
+}
+
+.masaisrael__link {
+  position: relative;
+}
+
+.masaisrael__link a {
+  width: 230px;
+  display: inline-block;
+  padding: 19px 36px 20px;
+  padding-left: 72px;
+  border-radius: 80px;
+  font-weight: 500;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: $white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.masaisrael__link a::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/instagram@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 24px;
+  height: 24px;
+  left: 40px;
+  top: 18px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/instagram@2x.png");
+  }
+}
+
+.masaisrael__info {
+  width: 380px;
+  margin-bottom: 53px;
+  text-align: left;
+  color: $white;
+  opacity: 0.87;
+ text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}

@@ -1,0 +1,101 @@
+.how-to-go {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 130px;
+  padding-bottom: 160px;
+  background-image: url("../img/how-to-go-watercolor-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1366px auto;
+  background-position: center;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/how-to-go-watercolor-bg-desktop@2x.png");
+  }
+}
+
+.how-to-go__wrapper {
+  position: relative;
+  width: 596px;
+  margin-left: 550px;
+  text-align: left;
+}
+
+.how-to-go__block::before {
+  content: "";
+  background-image: url("../img/how-to-go-img-desktop@1x.png");
+  background-size: 581px auto;
+  position: absolute;
+  left: -110%;
+  top: -53px;
+  width: 581px;
+  height: 707px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/how-to-go-img-desktop@2x.png");
+      background-size: 581px auto;
+  }
+}
+
+.how-to-go__info {
+  font-size: 15px;
+  opacity: 0.87;
+  margin-bottom: 32px;
+}
+
+.how-to-go__text {
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.how-to-go__pay {
+  font-size: 15px;
+  line-height: 140%;
+  color: rgba($main-text-font, .5);
+}
+
+.how-to-go__pay::before {
+  content: "";
+  position: absolute;
+  height: 42px;
+  width: 0px;
+  left: -16px;
+  border: 2px solid $yellow;
+}
+
+.how-to-go__list {
+  position: relative;
+  list-style: none;
+  counter-reset: number;
+}
+
+.how-to-go__item {
+  margin-bottom: 40px;
+  margin-left: 24px;
+}
+
+.how-to-go__item::before {
+  counter-increment: number;
+  content: counter(number)" ";
+  position: absolute;
+  right: 567px;
+
+  width: 36px;
+  height: 36px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+  vertical-align: middle;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 170%;
+  color: $yellow;
+}

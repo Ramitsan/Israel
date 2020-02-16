@@ -1,0 +1,42 @@
+.section-title {
+  @include second-level-headings();
+  margin: 0;
+}
+
+.section-title--about-program {
+  margin-bottom: 24px;
+}
+
+.section-title--programs {
+  text-align: left;
+}
+
+.section-title--want-to-go {
+  text-align: left;
+  margin-top: 115px;
+}
+
+.section-title--how-to-go {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.section-title--life-in-israel {
+  margin-bottom: 30px;;
+}
+
+.section-title--masaisrael {
+  margin-top: 115px;
+  margin-bottom: 10px;
+  text-align: left;;
+}
+
+.section-title--faq {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.section-title--reviews {
+  margin-bottom: 53px;
+}
+

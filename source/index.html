@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Israel</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             </a>
           </div>
           <div class="page-header__call">
-            <a href="#">Заказать звонок</a>
+            <a href="#">заказать звонок</a>
           </div>
         </div>
       </div>
@@ -43,16 +43,19 @@
       <div class="page-main__wrapper">
         <h2 class="section-title section-title--about-program">О программе</h2>
         <p class="about-program__text">
-          «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.
+          «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на
+          русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.
         </p>
-        <img src="img/video-preload.jpg" width="870" height="460" alt="Видео превью">
-        <button class="btn about-program__button" type="button">
-          <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.32" cx="48" cy="48" r="48" fill="white" />
-            <circle cx="48" cy="48" r="32" fill="white" />
-            <path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC" />
-          </svg>
-        </button>
+        <div class="about-program__video-preview">
+          <img src="img/video-preload-desktop@1x.png" width="870" height="460" alt="Видео превью">
+          <button class="btn about-program__button" type="button" aria-label="Смотреть видео">
+            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.32" cx="48" cy="48" r="48" fill="white" />
+              <circle cx="48" cy="48" r="32" fill="white" />
+              <path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     <section class="programs">
@@ -60,68 +63,98 @@
         <h2 class="section-title section-title--programs">Программы</h2>
         <ul class="programs__list">
           <li class="programs__item programs__item--general">
-            <span class="programs__title">Общие</span>
+            <span class="programs__title" tabindex="0">Общие</span>
           </li>
-          <li class="programs__item programs__item--academic">
-            <span class="programs__title">Академические</span>
+          <li class="programs__item programs__item--academic programs__item--active">
+            <span class="programs__title" tabindex="0">Академические</span>
           </li>
           <li class="programs__item programs__item--internships">
-            <span class="programs__title">Стажировки</span>
+            <span class="programs__title" tabindex="0">Стажировки</span>
           </li>
           <li class="programs__item programs__item--volunteering">
-            <span class="programs__title">Волонтёрство</span></li>
+            <span class="programs__title" tabindex="0">Волонтёрство</span></li>
           <li class="programs__item programs__item--religion">
-            <span class="programs__title">Религиозные</span>
+            <span class="programs__title" tabindex="0">Религиозные</span>
           </li>
         </ul>
-        <div class="programs-block programs-block--general">
-          <h3 class="programs-block__title programs-block__title--general">Общие</h3>
-          <p class="programs-block__info programs-block__info--one">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
-            quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
-          </p>
-          <p class="programs-block__info programs-block__info--two">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
-          </p>
+        <div class="programs-block programs-block--general programs-block--hidden">
+          <div>
+            <h3 class="programs-block__title programs-block__title--general">Общие</h3>
+            <p class="programs-block__info programs-block__info--one">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt,
+              aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim
+              exercitationem ad officia sit
+              quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
+            </p>
+            <p class="programs-block__info programs-block__info--two">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam
+              perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et
+              aspernatur cum?
+            </p>
+          </div>
         </div>
         <div class="programs-block programs-block--academic">
-          <h3 class="programs-block__title programs-block__title--academic">Академические</h3>
-          <p class="programs-block__info programs-block__info--one">
-            Провести семестр или год за рубежом, знакомясь с различными культурамии идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого
-            исследования. </p>
-          <p class="programs-block__info programs-block__info--two">
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.
-          </p>
+          <div>
+            <h3 class="programs-block__title programs-block__title--academic">Академические</h3>
+            <p class="programs-block__info programs-block__info--one">
+              Провести семестр или год за рубежом, знакомясь с различными культурамии идеями, традициями и стилем жизни — вот
+              что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая
+              лаборатория идей и творческого
+              исследования. </p>
+            <p class="programs-block__info programs-block__info--two">
+              Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в
+              удивительной университетской среде.
+            </p>
+          </div>
         </div>
-        <div class="programs-block programs-block--internships">
-          <h3 class="programs-block__title programs-block__title--internships">Стажировки</h3>
-          <p class="programs-block__info programs-block__info--one">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
-            quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
-          </p>
-          <p class="programs-block__info programs-block__info--two">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
-          </p>
+        <div class="programs-block programs-block--internships programs-block--hidden">
+          <div>
+            <h3 class="programs-block__title programs-block__title--internships">Стажировки</h3>
+            <p class="programs-block__info programs-block__info--one">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt,
+              aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim
+              exercitationem ad officia sit
+              quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
+            </p>
+            <p class="programs-block__info programs-block__info--two">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam
+              perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et
+              aspernatur cum?
+            </p>
+          </div>
         </div>
-        <div class="programs-block programs-block--volunteering">
-          <h3 class="programs-block__title programs-block__title--volunteering">Волонтёрство</h3>
-          <p class="programs-block__info programs-block__info--one">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
-            quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
-          </p>
-          <p class="programs-block__info programs-block__info--two">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
-          </p>
+        <div class="programs-block programs-block--volunteering programs-block--hidden">
+          <div>
+            <h3 class="programs-block__title programs-block__title--volunteering">Волонтёрство</h3>
+            <p class="programs-block__info programs-block__info--one">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt,
+              aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim
+              exercitationem ad officia sit
+              quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
+            </p>
+            <p class="programs-block__info programs-block__info--two">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam
+              perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et
+              aspernatur cum?
+            </p>
+          </div>
         </div>
-        <div class="programs-block programs-block--religion">
-          <h3 class="programs-block__title programs-block__title--religion">Религиозные</h3>
-          <p class="programs-block__info programs-block__info--one">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
-            quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
-          </p>
-          <p class="programs-block__info programs-block__info--two">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
-          </p>
+        <div class="programs-block programs-block--religion programs-block--hidden">
+          <div>
+            <h3 class="programs-block__title programs-block__title--religion">Религиозные</h3>
+            <p class="programs-block__info programs-block__info--one">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt,
+              aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim
+              exercitationem ad officia sit
+              quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
+            </p>
+            <p class="programs-block__info programs-block__info--two">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam
+              perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et
+              aspernatur cum?
+            </p>
+          </div>
         </div>
     </section>
     <section class="want-to-go">
@@ -140,22 +173,28 @@
     <section class="how-to-go">
       <div class="page-main__wrapper">
         <div class="how-to-go__wrapper">
-          <h2 class="section-title section-title--how-to-go">Как поехать</h2>
-          <p class="how-to-go__info">
-            Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.
-          </p>
-          <p class="how-to-go__text">
-            Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:
-          </p>
-          <ol class="how-to-go__list">
-            <li class="how-to-go__item how-to-go__item--one">Быть в возрасте от 16 до 30 лет</li>
-            <li class="how-to-go__item how-to-go__item--two">Иметь оконченное среднее образование</li>
-            <li class="how-to-go__item how-to-go__item--three">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку</li>
-            <li class="how-to-go__item how-to-go__item--four">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</li>
-          </ol>
-          <p class="how-to-go__pay">
-            Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную стоимость.
-          </p>
+          <div class="how-to-go__block">
+            <h2 class="section-title section-title--how-to-go">Как поехать</h2>
+            <p class="how-to-go__info">
+              Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о
+              доступных программах и городах, в которых можете пройти программу.
+            </p>
+            <p class="how-to-go__text">
+              Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:
+            </p>
+            <ol class="how-to-go__list">
+              <li class="how-to-go__item how-to-go__item--one">Быть в возрасте от 16 до 30 лет</li>
+              <li class="how-to-go__item how-to-go__item--two">Иметь оконченное среднее образование</li>
+              <li class="how-to-go__item how-to-go__item--three">Иметь документально подтверждённые еврейские корни и пройти
+                консульскую проверку</li>
+              <li class="how-to-go__item how-to-go__item--four">За последние 2 года быть не больше 3х месяцев подряд непрерывно
+                в Израиле.</li>
+            </ol>
+            <p class="how-to-go__pay">
+              Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную
+              стоимость.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -167,24 +206,24 @@
         </p>
         <div class="slider">
           <div class="slider__big-image slider__item slider__item--one">
-            <img src="img/desktop-life-1.jpg" width="482" height="732" alt="">
+            <img src="img/life-in-israel-big-photo-desktop@1x.png" width="482" height="732" alt="">
             <span class="slider__text slider__text--one">Экскурсии по Израилю и знакомство с его историей</span>
           </div>
           <div class="slider__items">
             <div class="slider__item slider__item--two">
-              <img src="img/desktop-life-2.jpg" width="211" height="318" alt="">
+              <img src="img/life-in-israel-2-desktop@1x.png" width="211" height="318" alt="">
               <span class="slider__text slider__text--two">Изучение иврита</span>
             </div>
             <div class="slider__item slider__item--three">
-              <img src="img/desktop-life-3.jpg" width="411" height="318" alt="">
+              <img src="img/life-in-israel-3-desktop@1x.png" width="411" height="318" alt="">
               <span class="slider__text slider__text--three">Обучение современным навыкам и профессиям</span>
             </div>
             <div class="slider__item slider__item--four">
-              <img src="img/desktop-life-4.jpg" width="411" height="318" alt="">
+              <img src="img/life-in-israel-4-desktop@1x.png.png" width="411" height="318" alt="">
               <span class="slider__text slider__text--four">Совместные творческие проекты с израильской молодёжью</span>
             </div>
             <div class="slider__item slider__item--five">
-              <img src="img/desktop-life-5.jpg" width="214" height="318" alt="">
+              <img src="img/life-in-israel-5-desktop@1x.png.png" width="214" height="318" alt="">
               <span class="slider__text slider__text--five">Развитие лидерства</span>
             </div>
           </div>
@@ -198,7 +237,9 @@
           <p class="masaisrael__info">
             Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.
           </p>
-          <a href="#" class="btn btn--yellow">Смотреть фото</a>
+          <div class="masaisrael__link">
+            <a href="#" class="btn btn--yellow">Смотреть фото</a>
+          </div>
         </div>
       </div>
     </section>
@@ -208,14 +249,14 @@
         <ol class="faq__list">
           <li class="faq__item faq__item--one">
             <h4 class="faq__question faq__question--one">Кто организатор? Какие сроки у программы?</h4>
-            <p class="faq__answer faq__answer--one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo facilis, eveniet ipsum iure omnis quae nostrum reiciendis. Sint, exercitationem.
+            <p class="faq__answer faq__answer--one faq__answer--hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo facilis, eveniet ipsum iure omnis quae nostrum reiciendis. Sint, exercitationem.
             </p>
           </li>
           <li class="faq__item faq__item--two">
             <h4 class="faq__question faq__question--two">Что такое грант на обучение?</h4>
-            <p class="faq__answer faq__answer--two">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis expedita unde placeat voluptatibus rem architecto et atque maxime possimus, nostrum asperiores neque magni eaque enim.</p>
+            <p class="faq__answer faq__answer--two faq__answer--hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis expedita unde placeat voluptatibus rem architecto et atque maxime possimus, nostrum asperiores neque magni eaque enim.</p>
           </li>
-          <li class="faq__item faq__item--three">
+          <li class="faq__item faq__item--three faq__item--active">
             <h4 class="faq__question faq__question--three">Как определяется стоимость программы?</h4>
             <p class="faq__answer faq__answer--three">
               Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.
@@ -223,15 +264,15 @@
           </li>
           <li class="faq__item faq__item--four">
             <h4 class="faq__question faq__question--four">Что такое грант на обучение?</h4>
-            <p class="faq__answer faq__answer--four">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic amet fugiat tempora sequi. Unde ex modi doloremque magnam quidem temporibus esse, hic officia quia! Sunt illo quasi nobis laudantium.</p>
+            <p class="faq__answer faq__answer--four faq__answer--hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic amet fugiat tempora sequi. Unde ex modi doloremque magnam quidem temporibus esse, hic officia quia! Sunt illo quasi nobis laudantium.</p>
           </li>
           <li class="faq__item faq__item--five">
             <h4 class="faq__question faq__question--five">Признаётся ли учеба в рамках проекта для дальнейшего обучения?</h4>
-            <p class="faq__answer faq__answer--five">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis eum rerum odit praesentium aspernatur accusamus impedit itaque? Aut, in.</p>
+            <p class="faq__answer faq__answer--five faq__answer--hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis eum rerum odit praesentium aspernatur accusamus impedit itaque? Aut, in.</p>
           </li>
           <li class="faq__item faq__item--six">
             <h4 class="faq__question faq__question--six">Как выглдядит полный процесс регистрации на программу «Маса»?</h4>
-            <p class="faq__answer faq__answer--six">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae provident dignissimos quaerat? Modi, aut excepturi.</p>
+            <p class="faq__answer faq__answer--six faq__answer--hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae provident dignissimos quaerat? Modi, aut excepturi.</p>
           </li>
         </ol>
       </div>
@@ -262,7 +303,7 @@
                 </div>
               </div>
               <div class="reviews__social">
-                <a class="reviews__social-link reviews__social-link--facebook" href="#"><span class="visually-hidden">Читать отзывы на Фейсбуке</span>></a>
+                <a class="reviews__social-link reviews__social-link--facebook" href="#"><span class="visually-hidden">Читать отзывы на Фейсбуке</span></a>
                 <a class="reviews__social-link reviews__social-link--twitter" href="#"><span class="visually-hidden">Читать отзывы в Твиттере</span></a>
                 <a class="reviews__social-link reviews__social-link--instagram" href="#"><span class="visually-hidden">Читать отзывы в Инстаграме</span></a>
               </div>
@@ -290,14 +331,14 @@
                 Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
               </p>
               <div class="curator__social">
-                <a class="curator__social-link curator__social-link--facebook" href="#" aria-label="Написать куратору на Фейсбуке"></a>
-                <a class="curator__social-link curator__social-link--whatsapp" href="#" aria-label="Написать куратору в Вотсапе"></a>
-                <a class="curator__social-link curator__social-link--telegram" href="#" aria-label="Написать куратору в Телеграме"></a>
+                <a class="curator__social-link curator__social-link--facebook" href="#"><span class="visually-hidden">Написать куратору на Фейсбуке</span></a>
+                <a class="curator__social-link curator__social-link--whatsapp" href="#"><span class="visually-hidden">Написать куратору в Вотсапе</span></a>
+                <a class="curator__social-link curator__social-link--telegram" href="#"><span class="visually-hidden">Написать куратору в Телеграме</span></a>
               </div>
             </div>
           </div>
           <p class="curator__text">
-            Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о программах и выберите свою !
+            Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о программах и выберите свою!
           </p>
         </div>
         <div class="contacts">
@@ -330,9 +371,9 @@
         </div>
         <p class="page-footer__copyright ">Copyright someDesignCompany ©2019</p>
         <div class="page-footer__social ">
-          <a class="page-footer__social-link page-footer__social-link--facebook" href="#" aria-label="Мы на Фейсбуке"></a>
-          <a class="page-footer__social-link page-footer__social-link--twitter" href="#" aria-label="Мы в Твиттере"></a>
-          <a class="page-footer__social-link page-footer__social-link--instagram" href="#" aria-label="Мы в Инстаграме"></a>
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="#"><span class="visually-hidden">Мы на Фейсбуке</span></a>
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+          <a class="page-footer__social-link page-footer__social-link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
         </div>
       </div>
     </div>

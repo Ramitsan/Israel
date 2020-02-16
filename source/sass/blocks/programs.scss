@@ -1,0 +1,166 @@
+.programs {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-image: url("../img/programs-sketch-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 680px auto;
+  background-position: 49vw top;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/programs-sketch-bg-desktop@2x.png");
+  }
+}
+
+.programs__list {
+  list-style: none;
+  position: relative;
+  width: 228px;
+  padding: 0;
+  background-color: $white;
+}
+
+.programs__item {
+  width: 195 px;
+  margin: 0;
+
+
+  &:hover,
+  &:focus {
+  color: $yellow;
+  // background: $yellow-gradient;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+}
+}
+
+.programs__item--general::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/programs-culture.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.programs__item--general:hover::before,
+.programs__item--general:focus::before {
+  background-image: url(../img/programs-culture-hover.svg);
+}
+
+.programs__item--internships::before {
+  content: "";
+  position: absolute;
+  top: 160px;
+  left: 18px;
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/programs-business.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.programs__item--internships:hover::before,
+.programs__item--internships:focus::before {
+  background-image: url(../img/programs-business-hover.svg);
+}
+
+.programs__item--volunteering::before {
+  content: "";
+  position: absolute;
+  top: 223px;
+  left: 18px;
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/programs-volonteur.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.programs__item--volunteering:hover::before,
+.programs__item--volunteering:focus::before {
+  background-image: url(../img/programs-volonteur-hover.svg);
+}
+
+.programs__item--religion::before {
+  content: "";
+  position: absolute;
+  top: 300px;
+  left: 18px;
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/programs-religion.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.programs__item--religion:hover::before,
+.programs__item--religion:focus::before {
+  background-image: url(../img/programs-religion-hover.svg);
+}
+
+.programs__item span {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.87;
+  text-align: left;
+  padding: 28px 40px 24px 70px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.programs__item--active {
+  background-image: $yellow-gradient;
+  color: $white;
+}
+
+.programs__item--active::after {
+  content: "";
+  position: absolute;
+  top: 69px;
+  right: -44px;
+  width: 0;
+  height: 0;
+  border: 36px solid $white;
+  border-left-color: #FFD701;
+}
+
+.programs__item--active span {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  font-variant: small-caps;
+  color: $white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+.programs-block {
+  position: relative;
+}
+
+.programs-block--hidden {
+  display: none;
+}
+
+.programs-block div {
+  position: absolute;
+  bottom: 0px;
+  left: 367px;
+}
+
+.programs-block__title {
+  @include third-level-headings();
+  text-align: left;
+}
+
+.programs-block__info {
+  width: 560px;
+  text-align: left;
+}

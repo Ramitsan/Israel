@@ -1,3 +1,18 @@
-h1 {
-  color: red;
-}
+@import "node_modules/normalize.css/normalize";
+@import "base/fonts.scss";
+@import "abstract/variables.scss";
+@import "abstract/mixins.scss";
+@import "base/base.scss";
+@import "blocks/about-program.scss";
+@import "blocks/btn.scss";
+@import "blocks/faq.scss";
+@import "blocks/how-to-go.scss";
+@import "blocks/life-in-israel.scss";
+@import "blocks/masaisrael.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/programs.scss";
+@import "blocks/reviews.scss";
+@import "blocks/section-title.scss";
+@import "blocks/slider.scss";
+@import "blocks/want-to-go.scss";

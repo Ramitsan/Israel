@@ -1,0 +1,21 @@
+.life-in-israel {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+  background-image: url("../img/life-in-israel-watercolor-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1366px auto;
+  background-position: center bottom;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/life-in-israel-watercolor-bg-desktop@2x.png");
+  }
+}
+
+.life-in-israel__info {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
