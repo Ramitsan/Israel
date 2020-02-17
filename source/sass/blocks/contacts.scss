@@ -1,0 +1,70 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.contacts__info {
+  width: 335px;
+  text-align: left;
+}
+
+.contacts__title {
+  font-weight: 500;
+  line-height: 150%;
+  color: rgba($main-text-font, .87);
+}
+
+.contacts__text {
+  font-size: 13px;
+  line-height: 150%;
+  color:rgba($main-text-font, .5);
+}
+
+.contacts-form__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.contacts-form__container input {
+  width: 250px;
+  border: 2px solid #E3E3E3;
+  border-radius: 80px;
+  margin-right: 24px;
+}
+
+.contacts-form__container input[type="text"] {
+  padding: 19px 40px 20px;
+}
+
+.contacts-form__container input[type="text"]::placeholder {
+  font-weight: 500;
+  line-height: 20px;
+  font-variant: small-caps;
+  color:rgba($main-text-font, .5);
+}
+
+.contacts-form__container input[type="tel"] {
+  padding: 20px 40px 19px;
+}
+
+.contacts-form__container input[type="tel"]::placeholder {
+  font-weight: 500;
+  line-height: 20px;
+  font-variant: small-caps;
+  color:rgba($main-text-font, .87);
+}
+
+.contacts-form__container button[type="submit"] {
+  width: 233px;  //ВМЕСТО 216, Т.К. НЕ РАБОТАЕТ font-variant: small-caps;
+  padding: 19px 40px 20px;
+  border-radius: 80px;
+  font-weight: 500;
+  line-height: 20px;
+  // font-variant: small-caps; НЕ РАБОТАЕТ!
+  text-transform: uppercase;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
