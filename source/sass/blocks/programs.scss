@@ -44,14 +44,14 @@
   left: 18px;
   width: 36px;
   height: 36px;
-  background-image: url(../img/programs-culture.svg);
+  background-image: url("../img/programs-culture.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .programs__item--general:hover::before,
 .programs__item--general:focus::before {
-  background-image: url(../img/programs-culture-hover.svg);
+  background-image: url("../img/programs-culture-hover.svg");
 }
 
 .programs__item--internships::before {
