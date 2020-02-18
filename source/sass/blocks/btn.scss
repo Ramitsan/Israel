@@ -1,4 +1,14 @@
 .btn--yellow {
   background-image: $yellow-gradient;
   color: $white;
+  &:hover,
+  &:focus {
+      background-image: $yellow-gradient-hover;
+      cursor: pointer;
+  }
+  &:active {
+    outline: none;
+      background: $shadow-btn-click;
+  }
 }
+
