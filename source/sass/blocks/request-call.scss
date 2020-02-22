@@ -1,0 +1,80 @@
+.request-call {
+  // display: none;
+  width: 480px;
+  border-radius: 8px;
+  border: 1px solid red;
+  position: relative;
+  // box-shadow: rgba($main-text-font, .87);
+}
+
+.request-call__form-container {
+  margin: 0;
+}
+
+.request-call__item-wrapper input[type="text"],
+.request-call__item-wrapper input[type="tel"] {
+  width: 360px;
+  border: 2px solid #E3E3E3;
+  border-radius: 80px;
+}
+
+.request-call__item-wrapper input[type="text"] {
+  padding: 19px 40px 20px;
+  margin-bottom: 8px;
+}
+
+.request-call__item-wrapper input[type="tel"] {
+  padding: 20px 40px 19px;
+  margin-bottom: 24px;
+}
+
+.request-call__item-wrapper input[type="text"]::placeholder,
+.request-call__item-wrapper input[type="tel"]::placeholder{
+  font-weight: 500;
+  line-height: 20px;
+  font-variant: small-caps;
+  color:rgba($main-text-font, .5);
+}
+
+.request-call__item-wrapper button[type="submit"] {
+  width: 264px;
+  padding: 19px 40px 20px;
+  text-align: center;
+  border-radius: 80px;
+  font-weight: 500;
+  line-height: 20px;
+  // font-variant: small-caps; НЕ РАБОТАЕТ!
+  text-transform: uppercase;
+  text-shadow: $shadow-text;
+  margin-bottom: 16px;
+}
+
+.request-call__item-wrapper--checkbox {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.request-call__item-wrapper--checkbox label{
+  display: block;
+  width: 260px;
+  font-size: 13px;
+  line-height: 150%;
+  color: rgba($main-text-font, .74);
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+
+.request-call__item-wrapper--checkbox input + label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $yellow;
+  border-radius: 2px;
+
+  left: 70px;
+  top: 0;
+}

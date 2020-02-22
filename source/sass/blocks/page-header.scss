@@ -29,7 +29,7 @@
 }
 
 .page-header__phone a,
-.page-header__call a {
+.page-header__link {
   font-family: Fira Sans;
   font-weight: 500;
   font-size: 15px;
@@ -38,7 +38,7 @@
   color: $main-text-font;
 }
 
-.page-header__call a {
+.page-header__link {
   font-variant: small-caps;
   border-bottom: 1px dashed $main-text-font;
 }
@@ -74,6 +74,6 @@
   text-align: center;
   font-weight: 500;
 
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-shadow: $shadow-text;
   color: $white;
 }

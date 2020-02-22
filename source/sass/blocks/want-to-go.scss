@@ -6,7 +6,7 @@
   padding-bottom: 260px;
   background-image: url("../img/girl-flag-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 818px 594px;
+  background-size: 818px auto;
   background-position: 40vw top;
 
 
@@ -48,7 +48,7 @@
 }
 
 .want-to-go__form-container button[type="submit"] {
-  width: 216px;
+  width: 219px;
   padding: 19px 40px 20px;
   position: absolute;
   border-radius: 80px;
@@ -57,5 +57,5 @@
   font-weight: 500;
   line-height: 20px;
   font-variant: small-caps;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-shadow: $shadow-text;
 }
