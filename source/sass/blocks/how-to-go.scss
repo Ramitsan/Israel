@@ -53,15 +53,8 @@
   font-size: 15px;
   line-height: 140%;
   color: rgba($main-text-font, .5);
-}
-
-.how-to-go__pay::before {
-  content: "";
-  position: absolute;
-  height: 42px;
-  width: 0px;
-  left: -16px;
-  border: 2px solid $yellow;
+  padding-left: 10px;
+  border-left:  4px solid $yellow;;
 }
 
 .how-to-go__list {
@@ -73,30 +66,41 @@
 .how-to-go__item {
   margin-bottom: 40px;
   margin-left: 24px;
-}
 
-.how-to-go__item::before {
-  counter-increment: number;
-  content: counter(number)" ";
-  position: absolute;
-  right: 567px;
+  &::before {
+    counter-increment: number;
+    content: counter(number)" ";
+    position: absolute;
+    right: 567px;
+    z-index: 3;
 
-  width: 36px;
-  height: 36px;
+    width: 36px;
+    height: 36px;
 
-  border: 2px solid #e5e5e5;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: $shadow-babl;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: $shadow-babl;
 
-  text-align: center;
-  vertical-align: middle;
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 170%;
-  color: $yellow;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 170%;
+    color: $yellow;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    width: 1px;
+    height: 80%;
+    background-image: repeating-linear-gradient(to bottom, $white, $white 5px, $main-text-font 5px, $main-text-font 10px);
+    opacity: 0.1;
+  }
 }
 
 @media (max-width: $mobile-width) {
