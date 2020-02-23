@@ -76,3 +76,21 @@
   margin-bottom: 120px;;
   text-align: left;
 }
+
+@media (max-width: $mobile-width) {
+  .curator {
+    width: 100%;
+  }
+  .curator__block {
+    flex-direction: column;
+    align-items: flex-start ;
+  }
+
+  .curator__address {
+    width: 100%;
+  }
+
+  .curator__text {
+    width: 100%;
+  }
+}

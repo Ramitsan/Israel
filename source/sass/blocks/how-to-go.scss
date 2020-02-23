@@ -105,6 +105,8 @@
 
 @media (max-width: $mobile-width) {
   .how-to-go {
+    width: 100vw;
+    border: 1px solid red;
    background-image: none;
   }
 
@@ -116,5 +118,10 @@
 
   .how-to-go__block::before {
     display: none;
+  }
+
+  .how-to-go__info {
+    font-size: 14px;
+    line-height: 160%;
   }
 }

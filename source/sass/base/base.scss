@@ -5,7 +5,7 @@
 }
 
 body {
-  min-width: 320px;
+  // min-width: 320px;
   min-width: 1170px;
   margin: 0;
   padding: 0;
@@ -44,4 +44,10 @@ img {
 .btn {
   border: 1px solid transparent;
   vertical-align: middle;
+}
+
+@media (max-width: $mobile-width) {
+  body {
+     min-width: 320px;
+  }
 }

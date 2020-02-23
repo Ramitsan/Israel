@@ -64,3 +64,11 @@
   top: 5px;
   right: 33px;
 }
+
+@media (max-width: $mobile-width) {
+  .details {
+    width: 100vw;
+    border: 1px solid red;
+    background-image: none;
+  }
+}

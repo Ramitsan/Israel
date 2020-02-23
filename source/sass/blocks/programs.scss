@@ -178,6 +178,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .programs {
+    width: 100vw;
+    border: 1px solid red;
+  }
   .programs__block-container {
     display: flex;
     flex-direction: column;
@@ -203,7 +207,8 @@
     @include third-level-headings-mobile();
   }
 
-
-
+  .programs-block__info {
+    width: 100%;
+  }
 }
 

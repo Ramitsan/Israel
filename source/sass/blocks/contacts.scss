@@ -68,3 +68,17 @@
   text-shadow: $shadow-text;
 }
 
+@media (max-width: $mobile-width) {
+  .contacts {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contacts__info {
+    width: 100%;
+  }
+
+  .contacts-form__container {
+    flex-direction: column;
+  }
+}

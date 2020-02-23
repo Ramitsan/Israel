@@ -63,7 +63,7 @@
 }
 
 .reviews__bottom {
-  width: 697px;;
+  width: 697px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -148,6 +148,8 @@
 
 @media (max-width: $mobile-width) {
   .reviews {
+    width: 100vw;
+    border: 1px solid red;
     background-image: url("../img/reviews-sketch-bg-mobile@1x.png");
     background-size: 288px auto;
     background-position: 55vw top;
@@ -155,10 +157,25 @@
         background-image: url("../img/reviews-sketch-bg-mobile@2x.png");
     }
   }
-  
+
   .reviews__container {
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  .reviews__text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .reviews__bottom {
+    width: 100%;
+  }
+
+  .reviews__list {
+    width: 100%;
+    margin-left: 0;
   }
 }
 

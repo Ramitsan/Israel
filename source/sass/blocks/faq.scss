@@ -116,6 +116,8 @@
 
 @media (max-width: $mobile-width) {
   .faq {
+    width: 100vw;
+    border: 1px solid red;
     background-image: none;
   }
 
@@ -138,5 +140,17 @@
         background-size: 153px auto;
       }
     }
+  }
+  .faq__question {
+    width: 100%;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .faq__answer {
+    width: 100%;
+    font-size: 14px;
+    line-height: 160%;
   }
 }

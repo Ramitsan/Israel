@@ -31,6 +31,8 @@
 
 @media (max-width: $mobile-width) {
   .about-program {
+    width: 100vw;
+    border: 1px solid red;
     background-image: url("../img/about-program-bg-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -38,11 +40,16 @@
     }
   }
 
-.about-program__video-preview img {
-  width: 100%;
-  // width: 320px;
-  // height: 224px;
-}
+  .about-program__text {
+    width: 100%;
+  }
 
+  .about-program__video-preview img {
+    width: 100%;
+  }
+
+  .about-program__button {
+    left: 50%;
+  }
 }
 
