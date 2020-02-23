@@ -77,3 +77,31 @@
 .faq__answer--hidden {
   display: none;
 }
+
+
+@media (max-width: $mobile-width) {
+  .faq {
+    background-image: none;
+  }
+
+  .faq__list {
+    width: 100%;
+
+    &::after {
+      content: "";
+      background-image: url("../img/faq-bag-mobile@1x.png");
+      background-size: 146px auto;
+      position: absolute;
+      left: -37px;
+      bottom: 104px;
+      width: 146px;
+      height: 177px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        content: "";
+        background-image: url("../img/faq-bag-mobile@2x.png");
+        background-size: 153px auto;
+      }
+    }
+  }
+}

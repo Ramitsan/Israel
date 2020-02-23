@@ -146,4 +146,20 @@
   text-align: center;
 }
 
+@media (max-width: $mobile-width) {
+  .reviews {
+    background-image: url("../img/reviews-sketch-bg-mobile@1x.png");
+    background-size: 288px auto;
+    background-position: 55vw top;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/reviews-sketch-bg-mobile@2x.png");
+    }
+  }
+
+
+  .reviews__container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 

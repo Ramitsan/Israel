@@ -57,7 +57,25 @@
   width: 380px;
   margin-bottom: 53px;
   text-align: left;
-  color: $white;
-  opacity: 0.87;
+  color: rgba($white, .87);
   text-shadow: $shadow-text;
+}
+
+@media (max-width: $mobile-width) {
+  .masaisrael {
+    background-image: url("../img/masaisrael-bg-mobile@1x.png");
+    background-size: 320px auto;
+    background-position: center;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/masaisrael-bg-mobile@2x.png");
+    }
+  }
+
+  .masaisrael__info {
+    width: 272px;
+    font-size: 16px;
+    line-height: 160%;
+  }
 }
