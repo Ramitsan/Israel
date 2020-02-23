@@ -22,13 +22,13 @@
 }
 
 .section-title--life-in-israel {
-  margin-bottom: 30px;;
+  margin-bottom: 30px;
 }
 
 .section-title--masaisrael {
   margin-top: 115px;
   margin-bottom: 10px;
-  text-align: left;;
+  text-align: left;
 }
 
 .section-title--faq {
@@ -43,5 +43,16 @@
 .section-title--details {
   text-align: left;
   margin-bottom: 53px;
+}
+
+@media (max-width: $mobile-width) {
+  .section-title {
+    @include second-level-headings-mobile();
+    margin: 0;
+  }
+
+  .section-title--about-program {
+    margin-bottom: 65px;
+  }
 }
 

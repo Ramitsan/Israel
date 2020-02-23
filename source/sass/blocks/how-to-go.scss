@@ -98,3 +98,19 @@
   line-height: 170%;
   color: $yellow;
 }
+
+@media (max-width: $mobile-width) {
+  .how-to-go {
+   background-image: none;
+  }
+
+  .how-to-go__wrapper {
+    width: 100%;
+    margin-left: 0px;
+    text-align: left;
+  }
+
+  .how-to-go__block::before {
+    display: none;
+  }
+}

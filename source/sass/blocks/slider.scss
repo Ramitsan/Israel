@@ -59,3 +59,33 @@
 .slider__text--five {
   width: 120px;
 }
+
+.slider__toggles {
+  display: none;
+}
+
+@media (max-width: $mobile-width)  {
+  .slider__items {
+    display: none;
+  }
+  .slider__toggles {
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+  }
+
+  .slider__toggle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: rgba($main-text-font, .2);
+  }
+
+  .slider__toggle:not(:last-child){
+    margin-right: 8px;
+  }
+
+  .slider__toggle--active {
+    background-image: $yellow-gradient;
+  }
+}

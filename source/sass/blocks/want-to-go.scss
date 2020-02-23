@@ -59,3 +59,37 @@
   font-variant: small-caps;
   text-shadow: $shadow-text;
 }
+
+@media (max-width: $mobile-width) {
+.want-to-go {
+  background-image: url("../img/girl-flag-bg-mobile@1x.png");
+  background-size: 320px auto;
+  background-position: center 350px;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/girl-flag-bg-mobile@2x.png");
+  }
+}
+
+.want-to-go__form-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.want-to-go__form-container input[type="tel"] {
+  position: relative;
+  width: 287px;
+  margin-bottom: 8px;
+ }
+
+ .want-to-go__form-container button[type="submit"] {
+   width: 264px;
+   position: relative;
+   left: 0;
+ }
+}

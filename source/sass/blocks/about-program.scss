@@ -29,3 +29,20 @@
   left: 505px;
 }
 
+@media (max-width: $mobile-width) {
+  .about-program {
+    background-image: url("../img/about-program-bg-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-program-bg-mobile@2x.png");
+    }
+  }
+
+.about-program__video-preview img {
+  width: 100%;
+  // width: 320px;
+  // height: 224px;
+}
+
+}
+
