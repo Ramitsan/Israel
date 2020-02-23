@@ -1,9 +1,10 @@
 .page-header {
   width: 100%;
+  // padding-bottom: 10px;
   background-image: url("../img/header-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 1366px auto;
-  background-position: center;
+  background-size: 100vw auto;
+  background-position: center top;
 
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -28,8 +29,9 @@
   justify-content: space-between;
 }
 
-.page-header__phone a,
-.page-header__link {
+.page-header__phone,
+.page-header__call {
+  align-self: flex-start;
   font-family: Fira Sans;
   font-weight: 500;
   font-size: 15px;
@@ -38,8 +40,10 @@
   color: $main-text-font;
 }
 
-.page-header__link {
-  font-variant: small-caps;
+.page-header__call {
+  background-color: transparent;
+  text-transform: uppercase;
+  // font-variant: small-caps;
   border-bottom: 1px dashed $main-text-font;
 }
 
@@ -49,23 +53,12 @@
   margin: 0;
   padding: 0;
   padding-bottom: 100px;
-
-  background-image: url("../img/girl-desktop@1x.png"), url("../img/israel-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center, top;
-  background-size: 1366px auto, 1018px auto;
-
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/girl-desktop@2x.png"), url("../img/israel-desktop@2x.png");
-  }
 }
 
 .page-header__title {
   width: 343px;
   margin: 0 auto;
-  margin-top: 500px;
+  margin-top: 450px;
 
   font-family: $font-fira;
   font-style: normal;
@@ -81,14 +74,12 @@
 @media (max-width: $mobile-width) {
   .page-header {
     background-image: url("../img/header-bg-mobile@1x.png");
-    background-size: 100% 578px;
-    background-position: center;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-mobile@2x.png");
     }
   }
-
 
 .page-header__top {
   padding-top: 20px;
@@ -111,19 +102,6 @@
 .page-header__logo {
   order: -1;
 }
-
-  .page-header__middle {
-    background-image: url("../img/girl-mobile@1x.png"), url("../img/israel-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center, center 130px;
-    background-size: 320px auto, 320px auto;
-
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/girl-mobile@2x.png"), url("../img/israel-mobile@2x.png");
-    }
-  }
 
   .page-header__title {
     width: 288px;
