@@ -53,16 +53,16 @@
 
 .want-to-go__form-container button[type="submit"] {
   width: 219px;
-  padding: 19px 40px 20px;
+  padding: 20px 40px 21px;
   position: absolute;
   border-radius: 80px;
   left: 261px;
-  top: 1px;
   z-index: 1;
   font-weight: 500;
   line-height: 20px;
   font-variant: small-caps;
   text-shadow: $shadow-text;
+  outline: none;
 }
 
 @media (max-width: $mobile-width) {

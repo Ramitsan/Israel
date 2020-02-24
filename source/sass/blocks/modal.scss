@@ -50,7 +50,6 @@
   background-image: url("../img/ok-checkmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   top: 157px;
   left: 205px;
 }
@@ -63,7 +62,7 @@
   margin-bottom: 32px;
 }
 
-.modal-container--accepted button[type="submit"] {
+.modal-container--accepted button[type="button"] {
   width: 264px;
   padding: 19px 40px 20px;
   text-align: center;
@@ -75,33 +74,32 @@
   text-shadow: $shadow-text;
 }
 
+
 /* кнопка закрытия модальных окон */
+
 .modal-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-
+  top: 31px;
+  right: 38px;
   width: 22px;
   height: 22px;
-
   font-size: 0;
   border: 0;
   cursor: pointer;
   background-color: transparent;
 }
 
+
 /* "крестик" на кнопке закрытия */
+
 .modal-close::before,
 .modal-close::after {
   content: "";
-
   position: absolute;
-  top: 27px;
-  left: -15px;
-
+  top: 9px;
+  left: -3px;
   width: 27px;
   height: 2px;
-
   background: $yellow-gradient;
 }
 
@@ -119,13 +117,11 @@
 }
 
 @keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -134,7 +130,6 @@
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,

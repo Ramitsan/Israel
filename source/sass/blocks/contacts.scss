@@ -74,6 +74,7 @@
   // font-variant: small-caps; НЕ РАБОТАЕТ!
   text-transform: uppercase;
   text-shadow: $shadow-text;
+  outline: none;
 }
 
 @media (max-width: $mobile-width) {
