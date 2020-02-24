@@ -1,10 +1,9 @@
 .request-call {
-  display: none;
+  top: 120px;
+  left: 50%;
+  margin-left: -240px;
   width: 480px;
   border-radius: 8px;
-  border: 1px solid red;
-  position: relative;
-  // box-shadow: rgba($main-text-font, .87);
 }
 
 .request-call__form-container {
