@@ -1,6 +1,7 @@
 .curator {
   width: 484px;
-  margin-top: 55px;;
+  margin-top: 55px;
+  ;
 }
 
 .curator__block {
@@ -56,6 +57,10 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: .16;
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
 }
 
 .curator__social-link--facebook {
@@ -73,7 +78,8 @@
 .curator__text {
   width: 478px;
   margin-top: 30px;
-  margin-bottom: 120px;;
+  margin-bottom: 120px;
+  ;
   text-align: left;
 }
 
@@ -83,13 +89,11 @@
   }
   .curator__block {
     flex-direction: column;
-    align-items: flex-start ;
+    align-items: flex-start;
   }
-
   .curator__address {
     width: 100%;
   }
-
   .curator__text {
     width: 100%;
   }

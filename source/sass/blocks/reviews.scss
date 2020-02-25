@@ -3,14 +3,12 @@
   margin: 0;
   padding: 0;
   padding-bottom: 130px;
-  background-image: url("../img/reviews-watercolor-bg-desktop@1x.png"),
-                    url("../img/reviews-sketch-bg-desktop@1x.png");
+  background-image: url("../img/reviews-watercolor-bg-desktop@1x.png"), url("../img/reviews-sketch-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 1259px auto, 523px auto;
   background-position: center, 55vw top;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/reviews-watercolor-bg-desktop@2x.png"),
-                        url("../img/reviews-sketch-bg-desktop@2x.png");
+    background-image: url("../img/reviews-watercolor-bg-desktop@2x.png"), url("../img/reviews-sketch-bg-desktop@2x.png");
   }
 }
 
@@ -144,6 +142,10 @@
   margin: 0;
   opacity: 0.16;
   text-align: center;
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -154,28 +156,23 @@
     background-size: 288px auto;
     background-position: 55vw top;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/reviews-sketch-bg-mobile@2x.png");
+      background-image: url("../img/reviews-sketch-bg-mobile@2x.png");
     }
   }
-
   .reviews__container {
     flex-direction: column;
     justify-content: flex-start;
   }
-
   .reviews__text {
     width: 100%;
     font-size: 16px;
     line-height: 160%;
   }
-
   .reviews__bottom {
     width: 100%;
   }
-
   .reviews__list {
     width: 100%;
     margin-left: 0;
   }
 }
-

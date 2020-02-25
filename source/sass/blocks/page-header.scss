@@ -5,8 +5,6 @@
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: center top;
-
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-bg-desktop@2x.png");
   }
@@ -42,8 +40,8 @@
 
 .page-header__call {
   background-color: transparent;
+  // font-variant: small-caps;    не работает!
   text-transform: uppercase;
-  // font-variant: small-caps;
   border-bottom: 1px dashed $main-text-font;
 }
 
@@ -59,14 +57,12 @@
   width: 343px;
   margin: 0 auto;
   margin-top: 450px;
-
   font-family: $font-fira;
   font-style: normal;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   font-weight: 500;
-
   text-shadow: $shadow-text;
   color: $white;
 }
@@ -78,23 +74,18 @@
     background-image: url("../img/header-bg-mobile@1x.png");
     background-size: 100vw auto;
     background-position: center top;
-
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header-bg-mobile@2x.png");
     }
   }
-
   .page-header__top {
     padding-top: 20px;
   }
-
   .page-header__wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 0px 16px;
   }
-
   .page-header__nav {
     width: 100%;
     display: flex;
@@ -102,22 +93,18 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
   .page-header__logo {
     order: -1;
   }
-
   .page-header__title {
     width: 288px;
     margin-top: 300px;
-
     font-family: $font-fira;
     font-style: normal;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     font-weight: bold;
-
     text-shadow: $shadow-text;
     color: $white;
   }
