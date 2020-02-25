@@ -4,14 +4,13 @@
   padding: 0;
   padding-top: 100px;
   padding-bottom: 130px;
-  background-image: url("../img/faq-bg-desktop@1x.png"),
-                    url("../img/faq-img-desktop@1x.png");
+  background-image: url("../img/faq-bg-desktop@1x.png"), url("../img/faq-img-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 1366px auto, 645px auto;
   background-position: center, 51vw center;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/faq-bg-desktop@2x.png"),
-                        url("../img/faq-img-desktop@2x.png");;
+    background-image: url("../img/faq-bg-desktop@2x.png"), url("../img/faq-img-desktop@2x.png");
+    ;
   }
 }
 
@@ -22,7 +21,6 @@
   position: relative;
   text-align: left;
   padding-left: 0;
-
   &::after {
     content: "";
     background-image: url("../img/faq-bag-desktop@1x.png");
@@ -32,7 +30,6 @@
     bottom: -130px;
     width: 153px;
     height: 177px;
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       content: "";
       background-image: url("../img/faq-bag-desktop@2x.png");
@@ -52,7 +49,7 @@
   width: 400px;
   line-height: 150%;
   margin-left: 30px;
-
+  cursor: pointer;
   &::before {
     counter-increment: number;
     content: counter(number)" ";
@@ -62,7 +59,6 @@
     font-size: 28px;
     color: $yellow;
   }
-
   &::after {
     content: "";
     background-image: url("../img/faq-down-desktop@1x.png");
@@ -72,7 +68,6 @@
     top: 10px;
     width: 17px;
     height: 11px;
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       content: "";
       background-image: url("../img/faq-down-desktop@2x.png");
@@ -103,8 +98,6 @@
     top: 10px;
     width: 17px;
     height: 11px;
-
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       content: "";
       background-image: url("../img/faq-up-desktop@2x.png");
@@ -113,17 +106,14 @@
   }
 }
 
-
 @media (max-width: $mobile-width) {
   .faq {
     width: 100vw;
     border: 1px solid red;
     background-image: none;
   }
-
   .faq__list {
     width: 100%;
-
     &::after {
       content: "";
       background-image: url("../img/faq-bag-mobile@1x.png");
@@ -133,7 +123,6 @@
       bottom: 104px;
       width: 146px;
       height: 177px;
-
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         content: "";
         background-image: url("../img/faq-bag-mobile@2x.png");
@@ -147,7 +136,6 @@
     font-size: 16px;
     line-height: 160%;
   }
-
   .faq__answer {
     width: 100%;
     font-size: 14px;

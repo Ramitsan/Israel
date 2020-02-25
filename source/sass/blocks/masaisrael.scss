@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
   background-size: 1361px auto;
   background-position: center;
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/masaisrael-bg-desktop@1x.png");
   }
@@ -40,14 +39,13 @@
 .masaisrael__link a::before {
   content: "";
   position: absolute;
-  background-image: url("../img/instagram@1x.png");
+  background-image: url("../img/soc-insta-white.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 24px;
   height: 24px;
   left: 40px;
   top: 18px;
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/instagram@2x.png");
   }
@@ -68,19 +66,15 @@
     background-image: url("../img/masaisrael-bg-mobile@1x.png");
     background-size: 100vw auto;
     background-position: center;
-
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/masaisrael-bg-mobile@2x.png");
     }
   }
-
   .masaisrael__info {
     width: 100%;
     font-size: 16px;
     line-height: 160%;
   }
-
   .masaisrael__wrapper {
     margin-left: 5px;
   }

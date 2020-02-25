@@ -37,7 +37,7 @@ var validateForm = function(elem1, elem2) {
 
   if (elem1.value !== '' && elem2.value !== '') {
     modalAccepted.classList.add('modal--show');
-    modalRequestCall.classList.remove('modal--show');
+    modalRequestCall.classList.remove('modal--show'); //???
   }
 }
 
@@ -66,7 +66,6 @@ modalCloseRequestCall.addEventListener('click', function(evt) {
 
 modalRequestCallForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
-
   validateForm(usernameInput, usertelInput);
 
   if (!usernameInput.value || !usertelInput.value) {
@@ -132,3 +131,30 @@ contactsForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
   validateForm(contactsUserNameInput, contactsUserTelInput);
 })
+
+//Показ и скрытие ответов на вопросы в блоке FAQ
+var faqItems = document.querySelectorAll('.faq__item');
+var faqQuestions = document.querySelectorAll('.faq__question');
+var faqAnswers = document.querySelectorAll('.faq__answer');
+
+
+// var classToggleHandler = function(array) {
+//   for (var j = 0; j < array.length; j++) {
+//     array[j].classList.toggle('faq__item--active');
+//     console.log('c');
+//   }
+//   return array[j];
+// }
+
+
+var clickHandler = function(arr, array) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i].addEventListener('click', function(evt) {
+      for (var j = 0; j < array.length; j++) {
+        array[j].classList.toggle('faq__item--active');
+      }
+    });
+  }
+}
+
+clickHandler(faqQuestions, faqItems);
