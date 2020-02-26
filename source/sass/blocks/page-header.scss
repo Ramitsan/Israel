@@ -3,7 +3,7 @@
   // padding-bottom: 10px;
   background-image: url("../img/header-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 100vw auto;
+  background-size: contain;
   background-position: center top;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-bg-desktop@2x.png");
@@ -11,6 +11,7 @@
 }
 
 .page-header__top {
+  width: 100%;
   padding-top: 32px;
 }
 
@@ -30,6 +31,10 @@
 .page-header__phone,
 .page-header__call {
   align-self: flex-start;
+}
+
+.page-header__phone,
+.page-header__call span {
   font-family: Fira Sans;
   font-weight: 500;
   font-size: 15px;
@@ -38,15 +43,16 @@
   color: $main-text-font;
 }
 
+.page-header__call span {
+  font-variant: small-caps;
+}
+
 .page-header__call {
   background-color: transparent;
-  // font-variant: small-caps;    не работает!
-  text-transform: uppercase;
   border-bottom: 1px dashed $main-text-font;
 }
 
 .page-header__middle {
-  border: 1px solid transparent;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -89,12 +95,26 @@
   .page-header__nav {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   .page-header__logo {
-    order: -1;
+    margin-top: -10px;
+    align-self: flex-start;
+  }
+  .page-header__phone,
+  .page-header__call {
+    align-self: flex-end;
+  }
+  .page-header__call {
+    // margin-left: auto;
+    margin-top: -25px;
+  }
+  .page-header__phone,
+  .page-header__call span {
+    font-size: 14px;
+    line-height: 17px;
   }
   .page-header__title {
     width: 288px;

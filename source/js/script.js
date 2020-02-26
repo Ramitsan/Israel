@@ -71,7 +71,7 @@ modalRequestCallForm.addEventListener('submit', function(evt) {
   if (!usernameInput.value || !usertelInput.value) {
     evt.preventDefault();
     modalRequestCall.classList.remove('modal--error');
-    modalRequestCall.offsetWidth = modalRequestCall.offsetWidth;
+    // modalRequestCall.offsetWidth = modalRequestCall.offsetWidth;
     modalRequestCall.classList.add('modal--error');
   } else {
     if (isStorageSupport) {
