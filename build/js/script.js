@@ -138,23 +138,12 @@ var faqQuestions = document.querySelectorAll('.faq__question');
 var faqAnswers = document.querySelectorAll('.faq__answer');
 
 
-// var classToggleHandler = function(array) {
-//   for (var j = 0; j < array.length; j++) {
-//     array[j].classList.toggle('faq__item--active');
-//     console.log('c');
-//   }
-//   return array[j];
-// }
-
-
-var clickHandler = function(arr, array) {
+var clickHandler = function(arr) {
   for (var i = 0; i < arr.length; i++) {
-    arr[i].addEventListener('click', function(evt) {
-      for (var j = 0; j < array.length; j++) {
-        array[j].classList.toggle('faq__item--active');
-      }
+    arr[i].addEventListener('click', function() {
+      this.classList.toggle('faq__item--active');
     });
   }
 }
 
-clickHandler(faqQuestions, faqItems);
+clickHandler(faqItems);
