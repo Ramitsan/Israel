@@ -57,7 +57,6 @@ pageHeaderCallLink.addEventListener('click', function(evt) {
   }
 });
 
-
 modalCloseRequestCall.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalRequestCall.classList.remove('modal--show');

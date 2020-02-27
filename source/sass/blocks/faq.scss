@@ -61,18 +61,13 @@
   }
   &::after {
     content: "";
-    background-image: url("../img/faq-down-desktop@1x.png");
+    background-image: url("../img/faq-down.svg");
     background-size: 17px auto;
     position: absolute;
     right: 50px;
     top: 10px;
     width: 17px;
     height: 11px;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      content: "";
-      background-image: url("../img/faq-down-desktop@2x.png");
-      background-size: 17px auto;
-    }
   }
 }
 
@@ -91,18 +86,13 @@
 .faq__item--active .faq__question {
   &::after {
     content: "";
-    background-image: url("../img/faq-up-desktop@1x.png");
+    background-image: url("../img/faq-up.svg");
     background-size: 17px auto;
     position: absolute;
     right: 50px;
     top: 10px;
     width: 17px;
     height: 11px;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      content: "";
-      background-image: url("../img/faq-up-desktop@2x.png");
-      background-size: 17px auto;
-    }
   }
 }
 
@@ -130,11 +120,23 @@
       }
     }
   }
+  .faq__item {
+    padding-right: 37px;
+  }
   .faq__question {
     width: 100%;
     margin-left: 20px;
+    padding-right: 55px;
     font-size: 16px;
     line-height: 160%;
+    &::after {
+      right: 16px;
+    }
+  }
+  .faq__item--active .faq__question {
+    &::after {
+      right: 16px;
+    }
   }
   .faq__answer {
     width: 100%;
