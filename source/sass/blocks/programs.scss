@@ -27,8 +27,10 @@
 }
 
 .programs__item {
-  width: 195 px;
+  border: 1px solid red;
+  width: 195px;
   margin: 0;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -44,7 +46,7 @@
 .programs__item--general::before {
   content: "";
   position: absolute;
-  top: 18px;
+  top: 17px;
   left: 18px;
   width: 36px;
   height: 36px;
@@ -58,10 +60,27 @@
   background-image: url("../img/programs-culture-hover.svg");
 }
 
+.programs__item--academic::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/programs-academic.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.programs__item--academic:hover::before,
+.programs__item--academic:focus::before {
+  background-image: url("../img/programs-academic-hover.svg");
+}
+
 .programs__item--internships::before {
   content: "";
   position: absolute;
-  top: 160px;
+  top: 17px;
   left: 18px;
   width: 36px;
   height: 36px;
@@ -78,7 +97,7 @@
 .programs__item--volunteering::before {
   content: "";
   position: absolute;
-  top: 223px;
+  top: 17px;
   left: 18px;
   width: 36px;
   height: 36px;
@@ -95,7 +114,7 @@
 .programs__item--religion::before {
   content: "";
   position: absolute;
-  top: 300px;
+  top: 17px;
   left: 18px;
   width: 36px;
   height: 36px;
@@ -109,7 +128,9 @@
   background-image: url(../img/programs-religion-hover.svg);
 }
 
-.programs__item span {
+//span
+.programs__item label {
+  width: 100%;
   font-size: 15px;
   line-height: 18px;
   opacity: 0.87;
@@ -119,29 +140,24 @@
   cursor: pointer;
 }
 
-.programs__item--active {
+.programs__item input[type="radio"]:checked+label {
   background-image: $yellow-gradient;
   color: $white;
-}
-
-.programs__item--active::after {
-  content: "";
-  position: absolute;
-  top: 69px;
-  right: -44px;
-  width: 0;
-  height: 0;
-  border: 36px solid $white;
-  border-left-color: #FFD701;
-}
-
-.programs__item--active span {
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;
   font-variant: small-caps;
-  color: $white;
   text-shadow: $shadow-text;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -72px;
+    width: 0;
+    height: 0;
+    border: 36px solid $white;
+    border-left-color: #FFD701;
+  }
 }
 
 .programs__icon {
@@ -153,8 +169,12 @@
   position: relative;
 }
 
-.programs-block--hidden {
+.programs-block {
   display: none;
+}
+
+.programs__item--general input[type="radio"]:checked~.programs__description .programs-block--general {
+  display: block;
 }
 
 // .programs-block div {

@@ -111,43 +111,56 @@
         <h2 class="section-title section-title--programs">Программы</h2>
         <div class="programs__block-container">
           <ul class="programs__list">
-            <li class="programs__item programs__item--general">
+            <li class="programs__item programs__item--general" tabindex="0">
+              <input class="visually-hidden" type="radio" name="programs" id="programs-general">
+              <label for="programs-general">Общие</label>
+
               <!-- <svg class="programs__icon" width="36" height="36">
                 <use xlink:href="#programs-culture"></use>
               </svg> -->
-              <span class="programs__title" tabindex="0">Общие</span>
+              <!-- <span class="programs__title" tabindex="0">Общие</span> -->
             </li>
 
-            <li class="programs__item programs__item--academic programs__item--active">
+            <li class="programs__item programs__item--academic" tabindex="0">
+              <input class="visually-hidden" type="radio" name="programs" id="programs-academic">
+              <label for="programs-academic">Академические</label>
+
               <!-- <svg class="programs__icon" width="36" height="36">
                 <use xlink:href="#programs-study"></use>
               </svg> -->
-              <span class="programs__title" tabindex="0">Академические</span>
+              <!-- <span class="programs__title" tabindex="0">Академические</span> -->
             </li>
 
-            <li class="programs__item programs__item--internships">
+            <li class="programs__item programs__item--internships" tabindex="0">
+              <input class="visually-hidden" type="radio" name="programs" id="programs-internships">
+              <label for="programs-internships">Стажировки</label>
+
               <!-- <svg class="programs__icon" width="36" height="36">
                 <use xlink:href="#programs-business"></use>
               </svg> -->
-              <span class="programs__title" tabindex="0">Стажировки</span>
+              <!-- <span class="programs__title" tabindex="0">Стажировки</span> -->
             </li>
 
-            <li class="programs__item programs__item--volunteering">
+            <li class="programs__item programs__item--volunteering" tabindex="0">
+              <input class="visually-hidden" type="radio" name="programs" id="programs-volunteering">
+              <label for="programs-volunteering">Волонтёрство</label>
               <!-- <svg class="programs__icon" width="36" height="36">
                 <use xlink:href="#programs-volonteur"></use>
               </svg> -->
-              <span class="programs__title" tabindex="0">Волонтёрство</span>
+              <!-- <span class="programs__title" tabindex="0">Волонтёрство</span> -->
             </li>
 
-            <li class="programs__item programs__item--religion">
+            <li class="programs__item programs__item--religion" tabindex="0">
+              <input class="visually-hidden" type="radio" name="programs" id="programs-religion">
+              <label for="programs-religion">Религиозные</label>
               <!-- <svg class="programs__icon" width="36" height="36">
                 <use xlink:href="#programs-religion"></use>
               </svg> -->
-              <span class="programs__title" tabindex="0">Религиозные</span>
+              <!-- <span class="programs__title" tabindex="0">Религиозные</span> -->
             </li>
           </ul>
           <div class="programs__description">
-            <div class="programs-block programs-block--general programs-block--hidden">
+            <div class="programs-block programs-block--general">
               <div>
                 <h3 class="programs-block__title programs-block__title--general">Общие</h3>
                 <p class="programs-block__info programs-block__info--one">
@@ -170,7 +183,7 @@
                 </p>
               </div>
             </div>
-            <div class="programs-block programs-block--internships programs-block--hidden">
+            <div class="programs-block programs-block--internships">
               <div>
                 <h3 class="programs-block__title programs-block__title--internships">Стажировки</h3>
                 <p class="programs-block__info programs-block__info--one">
