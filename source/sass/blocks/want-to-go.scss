@@ -2,12 +2,12 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 173px;
   padding-bottom: 260px;
   background-image: url("../img/girl-flag-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 818px auto;
-  background-position: 40vw top;
+  background-position: right bottom 67px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/girl-flag-bg-desktop@2x.png");
   }
@@ -17,14 +17,18 @@
   width: 375px;
   text-align: left;
   opacity: 0.87;
+  margin-top: 25px;
+  margin-left: 100px;
 }
 
 .want-to-go__form {
   text-align: left;
+  margin-left: 100px;
 }
 
 .want-to-go__form-container {
   position: relative;
+  margin-top: 62px;
 }
 
 .want-to-go__form-container input[type="tel"] {

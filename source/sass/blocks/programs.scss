@@ -2,12 +2,12 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 30px;
   background-image: url("../img/programs-sketch-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 680px auto;
-  background-position: 49vw top;
+  background-position: right bottom 145px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url(../img/programs-sketch-bg-desktop@2x.png);
   }
@@ -18,6 +18,8 @@
   // position: relative;
   width: 228px;
   padding: 0;
+  margin-top: 63px;
+  margin-left: 100px;
   background-color: $white;
 }
 
@@ -33,8 +35,8 @@
 .programs__item--general input[type="radio"]+label::before {
   content: "";
   position: absolute;
-  top: 17px;
-  left: 18px;
+  top: 21px;
+  left: 19px;
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-culture.svg);
@@ -55,7 +57,7 @@
   content: "";
   position: absolute;
   top: 17px;
-  left: 18px;
+  left: 16px;
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-academic.svg);
@@ -75,8 +77,8 @@
 .programs__item--internships input[type="radio"]+label::before {
   content: "";
   position: absolute;
-  top: 17px;
-  left: 18px;
+  top: 18px;
+  left: 19px;
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-business.svg);
@@ -117,8 +119,8 @@
 .programs__item--religion input[type="radio"]+label::before {
   content: "";
   position: absolute;
-  top: 17px;
-  left: 18px;
+  top: 16px;
+  left: 20px;
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-religion.svg);
@@ -142,7 +144,7 @@
   line-height: 18px;
   opacity: 0.87;
   text-align: left;
-  padding: 28px 40px 24px 65px;
+  padding: 28px 40px 27px 70px;
   margin: 0;
   cursor: pointer;
   &:hover,
@@ -190,7 +192,7 @@
 .programs-block {
   display: none;
   position: relative;
-  left: 150px;
+  left: 98px;
 }
 
 .programs-block div {
@@ -216,11 +218,19 @@
 .programs-block__title {
   @include third-level-headings();
   text-align: left;
+  margin-top: 18px;
+  margin-bottom: 24px;
 }
 
 .programs-block__info {
   width: 560px;
   text-align: left;
+  font-size: 15px;
+  color: rgba($main-text-font, .87);
+}
+
+.programs-block__info--one {
+  margin-top: 8px;
 }
 
 @media (max-width: $mobile-width) {

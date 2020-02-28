@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 33px;
   padding-bottom: 50px;
   background-image: url("../img/life-in-israel-watercolor-bg-desktop@1x.png");
   background-repeat: no-repeat;
@@ -15,7 +16,6 @@
 .life-in-israel__info {
   width: 720px;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 
 @media (max-width: $mobile-width) {

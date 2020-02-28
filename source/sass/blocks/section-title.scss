@@ -9,11 +9,12 @@
 
 .section-title--programs {
   text-align: left;
+  margin-left: 100px;
 }
 
 .section-title--want-to-go {
   text-align: left;
-  margin-top: 115px;
+  margin-left: 100px;
 }
 
 .section-title--how-to-go {
@@ -22,7 +23,7 @@
 }
 
 .section-title--life-in-israel {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .section-title--masaisrael {
@@ -50,9 +51,7 @@
     @include second-level-headings-mobile();
     margin: 0;
   }
-
   .section-title--about-program {
     margin-bottom: 65px;
   }
 }
-

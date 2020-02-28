@@ -2,13 +2,12 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 130px;
+  padding-top: 124px;
   padding-bottom: 160px;
   background-image: url("../img/how-to-go-watercolor-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 1366px auto;
+  background-size: 100vw auto;
   background-position: center;
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/how-to-go-watercolor-bg-desktop@2x.png");
   }
@@ -17,7 +16,7 @@
 .how-to-go__wrapper {
   position: relative;
   width: 596px;
-  margin-left: 550px;
+  margin-left: 590px;
   text-align: left;
 }
 
@@ -26,25 +25,26 @@
   background-image: url("../img/how-to-go-img-desktop@1x.png");
   background-size: 581px auto;
   position: absolute;
-  left: -110%;
-  top: -53px;
+  left: -116%;
+  top: -32px;
   width: 581px;
   height: 707px;
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      content: "";
-      background-image: url("../img/how-to-go-img-desktop@2x.png");
-      background-size: 581px auto;
+    content: "";
+    background-image: url("../img/how-to-go-img-desktop@2x.png");
+    background-size: 581px auto;
   }
 }
 
 .how-to-go__info {
+  width: 480px;
   font-size: 15px;
   opacity: 0.87;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 
 .how-to-go__text {
+  width: 463px;
   font-weight: 500;
   margin-bottom: 24px;
 }
@@ -54,33 +54,36 @@
   line-height: 140%;
   color: rgba($main-text-font, .5);
   padding-left: 10px;
-  border-left:  4px solid $yellow;;
+  border-left: 4px solid $yellow;
+  ;
 }
 
 .how-to-go__list {
+  margin-top: 32px;
   position: relative;
   list-style: none;
   counter-reset: number;
 }
 
 .how-to-go__item {
-  margin-bottom: 40px;
-  margin-left: 24px;
-
+  width: 418px;
+  // margin-top: 28px;
+  margin-bottom: 47px;
+  margin-left: 2px;
+  font-size: 15px;
+  line-height: 140%;
+  color: rgba($main-text-font, .87);
   &::before {
     counter-increment: number;
     content: counter(number)" ";
     position: absolute;
-    right: 567px;
+    right: 576px;
     z-index: 3;
-
     width: 36px;
     height: 36px;
-
     border-radius: 50%;
     background-color: $white;
     box-shadow: $shadow-babl;
-
     text-align: center;
     vertical-align: middle;
     font-family: Fira Sans;
@@ -90,12 +93,11 @@
     line-height: 170%;
     color: $yellow;
   }
-
   &::after {
     content: "";
     position: absolute;
     top: 10px;
-    left: 9px;
+    left: 0px;
     width: 1px;
     height: 80%;
     background-image: repeating-linear-gradient(to bottom, $white, $white 5px, $main-text-font 5px, $main-text-font 10px);
@@ -107,19 +109,16 @@
   .how-to-go {
     width: 100vw;
     border: 1px solid red;
-   background-image: none;
+    background-image: none;
   }
-
   .how-to-go__wrapper {
     width: 100%;
     margin-left: 0px;
     text-align: left;
   }
-
   .how-to-go__block::before {
     display: none;
   }
-
   .how-to-go__info {
     font-size: 14px;
     line-height: 160%;
