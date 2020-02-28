@@ -9,75 +9,70 @@
   background-size: 680px auto;
   background-position: 49vw top;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/programs-sketch-bg-desktop@2x.png");
+    background-image: url(../img/programs-sketch-bg-desktop@2x.png);
   }
-}
-
-.programs__block-container {
-  display: flex;
-  flex-direction: row;
 }
 
 .programs__list {
   list-style: none;
-  position: relative;
+  // position: relative;
   width: 228px;
   padding: 0;
   background-color: $white;
 }
 
 .programs__item {
-  border: 1px solid red;
   width: 195px;
   margin: 0;
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  &:hover,
-  &:focus {
-    color: $yellow;
-    // background: $yellow-gradient;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-  }
+  justify-content: space-between;
 }
 
-.programs__item--general::before {
+.programs__item--general input[type="radio"]+label::before {
   content: "";
   position: absolute;
   top: 17px;
   left: 18px;
   width: 36px;
   height: 36px;
-  background-image: url("../img/programs-culture.svg");
+  background-image: url(../img/programs-culture.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.programs__item--general:hover::before,
-.programs__item--general:focus::before {
-  background-image: url("../img/programs-culture-hover.svg");
+.programs__item--general input[type="radio"]+label:hover::before,
+.programs__item--general input[type="radio"]+label:focus::before {
+  background-image: url(../img/programs-culture-hover.svg);
 }
 
-.programs__item--academic::before {
+.programs__item--general input[type="radio"]:checked+label::before {
+  background-image: url(../img/programs-culture-active.svg);
+}
+
+.programs__item--academic input[type="radio"]+label::before {
   content: "";
   position: absolute;
   top: 17px;
   left: 18px;
   width: 36px;
   height: 36px;
-  background-image: url("../img/programs-academic.svg");
+  background-image: url(../img/programs-academic.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.programs__item--academic:hover::before,
-.programs__item--academic:focus::before {
-  background-image: url("../img/programs-academic-hover.svg");
+.programs__item--academic input[type="radio"]+label:hover::before,
+.programs__item--academic input[type="radio"]+label:focus::before {
+  background-image: url(../img/programs-academic-hover.svg);
 }
 
-.programs__item--internships::before {
+.programs__item--academic input[type="radio"]:checked+label::before {
+  background-image: url(../img/programs-academic-active.svg);
+}
+
+.programs__item--internships input[type="radio"]+label::before {
   content: "";
   position: absolute;
   top: 17px;
@@ -89,12 +84,16 @@
   background-position: 0 0;
 }
 
-.programs__item--internships:hover::before,
-.programs__item--internships:focus::before {
+.programs__item--internships input[type="radio"]+label:hover::before,
+.programs__item--internships input[type="radio"]+label:focus::before {
   background-image: url(../img/programs-business-hover.svg);
 }
 
-.programs__item--volunteering::before {
+.programs__item--internships input[type="radio"]:checked+label::before {
+  background-image: url(../img/programs-business-active.svg);
+}
+
+.programs__item--volunteering input[type="radio"]+label::before {
   content: "";
   position: absolute;
   top: 17px;
@@ -106,12 +105,16 @@
   background-position: 0 0;
 }
 
-.programs__item--volunteering:hover::before,
-.programs__item--volunteering:focus::before {
+.programs__item--volunteering input[type="radio"]+label:hover::before,
+.programs__item--volunteering input[type="radio"]+label:focus::before {
   background-image: url(../img/programs-volonteur-hover.svg);
 }
 
-.programs__item--religion::before {
+.programs__item--volunteering input[type="radio"]:checked+label::before {
+  background-image: url(../img/programs-volonteur-active.svg);
+}
+
+.programs__item--religion input[type="radio"]+label::before {
   content: "";
   position: absolute;
   top: 17px;
@@ -123,9 +126,13 @@
   background-position: 0 0;
 }
 
-.programs__item--religion:hover::before,
-.programs__item--religion:focus::before {
+.programs__item--religion input[type="radio"]+label:hover::before,
+.programs__item--religion input[type="radio"]+label:focus::before {
   background-image: url(../img/programs-religion-hover.svg);
+}
+
+.programs__item--religion input[type="radio"]:checked+label::before {
+  background-image: url(../img/programs-religion-active.svg);
 }
 
 //span
@@ -138,6 +145,13 @@
   padding: 28px 40px 24px 65px;
   margin: 0;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $yellow;
+    // background: $yellow-gradient;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
 }
 
 .programs__item input[type="radio"]:checked+label {
@@ -165,30 +179,43 @@
   margin-left: 20px;
 }
 
-.programs-block {
-  position: relative;
+.programs__item--general input[type="radio"]:checked~.programs-block--general,
+.programs__item--academic input[type="radio"]:checked~.programs-block--academic,
+.programs__item--internships input[type="radio"]:checked~.programs-block--internships,
+.programs__item--volunteering input[type="radio"]:checked~.programs-block--volunteering,
+.programs__item--religion input[type="radio"]:checked~.programs-block--religion {
+  display: block;
 }
 
 .programs-block {
   display: none;
+  position: relative;
+  left: 150px;
 }
 
-.programs__item--general input[type="radio"]:checked~.programs__description .programs-block--general {
-  display: block;
+.programs-block div {
+  position: absolute;
 }
 
-// .programs-block div {
-//   position: absolute;
-//   bottom: 0px;
-//   left: 367px;
-// }
+.programs-block--academic div {
+  top: -70px;
+}
+
+.programs-block--internships div {
+  top: -140px;
+}
+
+.programs-block--volunteering div {
+  top: -210px;
+}
+
+.programs-block--religion div {
+  top: -280px;
+}
+
 .programs-block__title {
   @include third-level-headings();
   text-align: left;
-}
-
-.programs__description {
-  padding-left: 150px;
 }
 
 .programs-block__info {
@@ -199,6 +226,7 @@
 @media (max-width: $mobile-width) {
   .programs {
     width: 100vw;
+    padding-top: 0;
     border: 1px solid red;
   }
   .programs__block-container {
@@ -209,17 +237,30 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    // transform: translateX(-50%);
     overflow: hidden;
+  }
+  .programs__item {
+    width: 181px;
+    flex-direction: column;
   }
   .programs__item--active {
     border-radius: 60px;
   }
-  .programs__item--active::after {
-    display: none;
+  .programs__item input[type="radio"]:checked+label {
+    border-radius: 30px;
+    &::after {
+      display: none;
+    }
   }
-  .programs__description {
-    padding-left: 16px;
+  .programs-block {
+    left: 0px;
+  }
+  .programs-block div {
+    width: 100vw;
+    position: relative;
+    top: 0px;
+    left: -88px;
+    border: 1px solid green;
   }
   .programs-block__title {
     @include third-level-headings-mobile();
