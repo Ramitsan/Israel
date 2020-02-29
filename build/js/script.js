@@ -3,7 +3,10 @@
 //Показ и закрытие модальных окон
 var pageHeaderCallLink = document.querySelector('.page-header__call'); //ссылка
 var modalRequestCall = document.querySelector('.request-call'); //модальное окно
-var modalCloseRequestCall = modalRequestCall.querySelector('.modal-close'); //кнопка закрытия
+var modalCloseRequestCallButton = modalRequestCall.querySelector('.modal-close'); //кнопка закрытия
+var modalAccepted = document.querySelector('.accepted');
+var modalCloseAcceptedButton = modalAccepted.querySelector('.modal-close');
+var modalOverlay = document.querySelector('.modal-overlay');
 var usernameInput = modalRequestCall.querySelector('#modal-user-name'); //поле ввода имени
 var usertelInput = modalRequestCall.querySelector('#modal-user-tel'); //поле ввода номера телефона
 var agreement = modalRequestCall.querySelector('#agreement'); // чекбокс в форме
@@ -37,13 +40,25 @@ var validateForm = function(elem1, elem2) {
 
   if (elem1.value !== '' && elem2.value !== '') {
     modalAccepted.classList.add('modal--show');
+    modalOverlay.classList.add('modal--show');
     modalRequestCall.classList.remove('modal--show'); //???
   }
 }
 
+var closeOverlayHandler = function(popup) {
+  modalOverlay.addEventListener('click', function() {
+    popup.classList.remove('modal--show');
+    modalOverlay.classList.remove('modal--show');
+  })
+}
+
+closeOverlayHandler(modalRequestCall);
+closeOverlayHandler(modalAccepted);
+
 pageHeaderCallLink.addEventListener('click', function(evt) {
   evt.preventDefault;
   modalRequestCall.classList.add('modal--show');
+  modalOverlay.classList.add('modal--show');
   usernameInput.focus();
   if (storageUserName) {
     usernameInput.value = storageUserName;
@@ -57,10 +72,11 @@ pageHeaderCallLink.addEventListener('click', function(evt) {
   }
 });
 
-modalCloseRequestCall.addEventListener('click', function(evt) {
+modalCloseRequestCallButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalRequestCall.classList.remove('modal--show');
   modalRequestCall.classList.remove('modal--error');
+  modalOverlay.classList.remove('modal--show');
 });
 
 modalRequestCallForm.addEventListener('submit', function(evt) {
@@ -70,7 +86,7 @@ modalRequestCallForm.addEventListener('submit', function(evt) {
   if (!usernameInput.value || !usertelInput.value) {
     evt.preventDefault();
     modalRequestCall.classList.remove('modal--error');
-    // modalRequestCall.offsetWidth = modalRequestCall.offsetWidth;
+    modalRequestCall.offsetWidth = modalRequestCall.offsetWidth;
     modalRequestCall.classList.add('modal--error');
   } else {
     if (isStorageSupport) {
@@ -86,27 +102,31 @@ window.addEventListener('keydown', function(evt) {
       evt.preventDefault();
       modalRequestCall.classList.remove('modal--show');
       modalRequestCall.classList.remove('modal--error');
+      modalOverlay.classList.remove('modal--show');
     }
     if (modalAccepted.classList.contains('modal--show')) {
       evt.preventDefault();
       modalAccepted.classList.remove('modal--show');
+      modalOverlay.classList.remove('modal--show');
     }
   }
 });
 
+
+
 //валидация и отправка формы  в блоке "Хочу поехать"
 var wantToGoForm = document.querySelector('.want-to-go__form');
 var wanttogoUserPhoneInput = wantToGoForm.querySelector('#user-phone')
-var modalAccepted = document.querySelector('.accepted');
-var modalCloseAcceptedButton = modalAccepted.querySelector('.modal-close');
 
 var validateWanttogoForm = function() {
   if (wanttogoUserPhoneInput.value === '') {
     wanttogoUserPhoneInput.style.borderColor = '#ff0000';
     modalAccepted.classList.remove('modal--show');
+    modalOverlay.classList.remove('modal--show');
   } else {
     wanttogoUserPhoneInput.style.borderColor = 'rgba(72, 72, 72, 0.5)';
     modalAccepted.classList.add('modal--show');
+    modalOverlay.classList.add('modal--show');
   }
 }
 
@@ -118,7 +138,10 @@ wantToGoForm.addEventListener('submit', function(evt) {
 modalCloseAcceptedButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalAccepted.classList.remove('modal--show');
+  modalOverlay.classList.remove('modal--show');
 });
+
+
 
 // Валидация и отправка формы в блоке Contacts
 var contactsForm = document.querySelector('.contacts-form');
