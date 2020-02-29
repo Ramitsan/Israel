@@ -25,7 +25,7 @@
   background-image: url("../img/how-to-go-img-desktop@1x.png");
   background-size: 581px auto;
   position: absolute;
-  left: -116%;
+  left: -125%;
   top: -32px;
   width: 581px;
   height: 707px;
@@ -39,8 +39,9 @@
 .how-to-go__info {
   width: 480px;
   font-size: 15px;
+  line-height: 26px;
   opacity: 0.87;
-  margin-bottom: 27px;
+  margin-bottom: 33px;
 }
 
 .how-to-go__text {
@@ -59,7 +60,6 @@
 }
 
 .how-to-go__list {
-  margin-top: 32px;
   position: relative;
   list-style: none;
   counter-reset: number;
@@ -67,8 +67,8 @@
 
 .how-to-go__item {
   width: 418px;
-  // margin-top: 28px;
-  margin-bottom: 47px;
+  margin-top: 35px;
+  margin-bottom: 46px;
   margin-left: 2px;
   font-size: 15px;
   line-height: 140%;

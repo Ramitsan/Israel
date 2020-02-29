@@ -2,20 +2,20 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 107px;
   padding-bottom: 130px;
-  background-image: url("../img/faq-bg-desktop@1x.png"), url("../img/faq-img-desktop@1x.png");
+  background-image: url("../img/faq-img-desktop@1x.png"), url("../img/faq-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 1366px auto, 645px auto;
-  background-position: center, 51vw center;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/faq-bg-desktop@2x.png"), url("../img/faq-img-desktop@2x.png");
-    ;
-  }
+  background-size: 645px auto, 1366px auto;
+  background-position: right 1px top 108px, center top 25px;
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/faq-bg-desktop@2x.png"), url("../img/faq-img-desktop@2x.png");
+  //   ;
+  // }
 }
 
 .faq__list {
-  width: 573px;
+  width: 560px;
   list-style: none;
   counter-reset: number;
   position: relative;
@@ -26,8 +26,8 @@
     background-image: url("../img/faq-bag-desktop@1x.png");
     background-size: 153px auto;
     position: absolute;
-    left: -107px;
-    bottom: -130px;
+    left: -111px;
+    bottom: -115px;
     width: 153px;
     height: 177px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -40,14 +40,14 @@
 
 .faq__item {
   position: relative;
-  margin-bottom: 40px;
-  padding-bottom: 30px;
+  padding-top: 9px;
+  padding-bottom: 14px;
   border-bottom: 1px solid rgba($main-text-font, .2);
 }
 
 .faq__question {
-  width: 400px;
-  line-height: 150%;
+  width: 383px;
+  line-height: 25px;
   margin-left: 30px;
   cursor: pointer;
   &::before {
@@ -64,8 +64,8 @@
     background-image: url("../img/faq-down.svg");
     background-size: 17px auto;
     position: absolute;
-    right: 50px;
-    top: 10px;
+    right: 35px;
+    top: 39px;
     width: 17px;
     height: 11px;
   }
@@ -74,6 +74,8 @@
 .faq__answer {
   display: none;
   width: 480px;
+  margin-top: 27px;
+  margin-bottom: 19px;
   font-size: 15px;
   line-height: 140%;
   opacity: 0.74;
@@ -89,8 +91,8 @@
     background-image: url("../img/faq-up.svg");
     background-size: 17px auto;
     position: absolute;
-    right: 50px;
-    top: 10px;
+    right: 35px;
+    top: 39px;
     width: 17px;
     height: 11px;
   }

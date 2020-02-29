@@ -223,14 +223,19 @@
 }
 
 .programs-block__info {
-  width: 560px;
+  width: 550px;
   text-align: left;
   font-size: 15px;
+  line-height: 26px;
   color: rgba($main-text-font, .87);
 }
 
 .programs-block__info--one {
   margin-top: 8px;
+}
+
+.programs-block__info--two {
+  width: 516px;
 }
 
 @media (max-width: $mobile-width) {

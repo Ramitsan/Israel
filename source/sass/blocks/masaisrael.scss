@@ -2,12 +2,12 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 150px;
+  padding-top: 68px;
   padding-bottom: 30px;
   background-image: url("../img/masaisrael-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 1361px auto;
-  background-position: center;
+  background-position: center top 65px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/masaisrael-bg-desktop@1x.png");
   }
@@ -52,9 +52,10 @@
 }
 
 .masaisrael__info {
-  width: 380px;
-  margin-bottom: 53px;
+  width: 387px;
+  margin-bottom: 47px;
   text-align: left;
+  line-height: 29px;
   color: rgba($white, .87);
   text-shadow: $shadow-text;
 }
