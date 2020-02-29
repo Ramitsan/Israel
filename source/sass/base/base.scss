@@ -45,6 +45,10 @@ img {
   vertical-align: middle;
 }
 
+.body-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: $mobile-width) {
   body {
     min-width: 320px;

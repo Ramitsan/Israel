@@ -2,10 +2,10 @@
 
 //Показ и закрытие модальных окон
 var pageHeaderCallLink = document.querySelector('.page-header__call'); //ссылка
-var modalRequestCall = document.querySelector('.request-call'); //модальное окно
+var modalRequestCall = document.querySelector('.request-call'); //модальное окно Заказать звонок
 var modalCloseRequestCallButton = modalRequestCall.querySelector('.modal-close'); //кнопка закрытия
-var modalAccepted = document.querySelector('.accepted');
-var modalCloseAcceptedButton = modalAccepted.querySelector('.modal-close');
+var modalAccepted = document.querySelector('.accepted'); //модальное окно Заявка принята
+var modalCloseAcceptedButton = modalAccepted.querySelector('.modal-close'); //кнопка закрытия в окне Заявка принята
 var modalOverlay = document.querySelector('.modal-overlay');
 var usernameInput = modalRequestCall.querySelector('#modal-user-name'); //поле ввода имени
 var usertelInput = modalRequestCall.querySelector('#modal-user-tel'); //поле ввода номера телефона
@@ -41,14 +41,25 @@ var validateForm = function(elem1, elem2) {
   if (elem1.value !== '' && elem2.value !== '') {
     modalAccepted.classList.add('modal--show');
     modalOverlay.classList.add('modal--show');
-    modalRequestCall.classList.remove('modal--show'); //???
+    disableScrollHandler();
+    modalRequestCall.classList.remove('modal--show');
   }
 }
+
+var disableScrollHandler = function() {
+  document.body.classList.add('body-scroll');
+}
+
+var activateScrollHandler = function() {
+  document.body.classList.remove('body-scroll');
+}
+
 
 var closeOverlayHandler = function(popup) {
   modalOverlay.addEventListener('click', function() {
     popup.classList.remove('modal--show');
     modalOverlay.classList.remove('modal--show');
+    activateScrollHandler();
   })
 }
 
@@ -59,6 +70,7 @@ pageHeaderCallLink.addEventListener('click', function(evt) {
   evt.preventDefault;
   modalRequestCall.classList.add('modal--show');
   modalOverlay.classList.add('modal--show');
+  disableScrollHandler();
   usernameInput.focus();
   if (storageUserName) {
     usernameInput.value = storageUserName;
@@ -77,6 +89,7 @@ modalCloseRequestCallButton.addEventListener('click', function(evt) {
   modalRequestCall.classList.remove('modal--show');
   modalRequestCall.classList.remove('modal--error');
   modalOverlay.classList.remove('modal--show');
+  activateScrollHandler();
 });
 
 modalRequestCallForm.addEventListener('submit', function(evt) {
@@ -103,16 +116,16 @@ window.addEventListener('keydown', function(evt) {
       modalRequestCall.classList.remove('modal--show');
       modalRequestCall.classList.remove('modal--error');
       modalOverlay.classList.remove('modal--show');
+      activateScrollHandler();
     }
     if (modalAccepted.classList.contains('modal--show')) {
       evt.preventDefault();
       modalAccepted.classList.remove('modal--show');
       modalOverlay.classList.remove('modal--show');
+      activateScrollHandler();
     }
   }
 });
-
-
 
 //валидация и отправка формы  в блоке "Хочу поехать"
 var wantToGoForm = document.querySelector('.want-to-go__form');
@@ -123,10 +136,12 @@ var validateWanttogoForm = function() {
     wanttogoUserPhoneInput.style.borderColor = '#ff0000';
     modalAccepted.classList.remove('modal--show');
     modalOverlay.classList.remove('modal--show');
+    activateScrollHandler();
   } else {
     wanttogoUserPhoneInput.style.borderColor = 'rgba(72, 72, 72, 0.5)';
     modalAccepted.classList.add('modal--show');
     modalOverlay.classList.add('modal--show');
+    disableScrollHandler();
   }
 }
 
@@ -139,9 +154,8 @@ modalCloseAcceptedButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalAccepted.classList.remove('modal--show');
   modalOverlay.classList.remove('modal--show');
+  activateScrollHandler();
 });
-
-
 
 // Валидация и отправка формы в блоке Contacts
 var contactsForm = document.querySelector('.contacts-form');
