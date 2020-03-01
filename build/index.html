@@ -332,43 +332,49 @@
     <section class="reviews">
       <div class="page-main__wrapper">
         <h2 class="section-title section-title--reviews">Отзывы</h2>
-        <div class="reviews__container">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/reviews-img-mobile@1x.png 1x, img/reviews-img-mobile@2x.png 2x">
-            <img src="img/reviews-img-desktop@1x.png" srcset="img/reviews-img-desktop@2x.png 2x" width="364" height="480" alt="Девушка смеется">
-          </picture>
-          <div class="reviews__list">
-            <blockquote class="reviews__item">
-              <cite class="reviews__author-name">Ольга Михайлова</cite>
-              <p class="reviews__author-info">
-                <span class="reviews__program">Программа:</span>
-                <span class="reviews__author-program">Арт-Тель, февраль-сетнябрь 2017</span>
-              </p>
-              <p class="reviews__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
-              <p class="reviews__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой
-                в разные уголки страны. </p>
-            </blockquote>
-            <a href="#" class="reviews__link">Читать подробнее</a>
-            <div class="reviews__bottom">
+        <div class="reviews-slider">
+
+          <div class="reviews-slider__item">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/reviews-img-mobile@1x.png 1x, img/reviews-img-mobile@2x.png 2x">
+              <img class="reviews__author-photo" src="img/reviews-img-desktop@1x.png" srcset="img/reviews-img-desktop@2x.png 2x" width="364" height="480" alt="Девушка смеется">
+            </picture>
+
+            <div class="reviews__content">
+              <blockquote class="reviews__item">
+                <cite class="reviews__author-name">Ольга Михайлова</cite>
+                <p class="reviews__author-info">
+                  <span class="reviews__program">Программа:</span>
+                  <span class="reviews__author-program">Арт-Тель, февраль-сетнябрь 2017</span>
+                </p>
+                <p class="reviews__text reviews__text--one">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+                <p class="reviews__text reviews__text--two">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой
+                  в разные уголки страны. </p>
+                <a href="#" class="reviews__link">Читать подробнее</a>
+              </blockquote>
+
+
               <div class="reviews__nav">
-                <span class="reviews__counter">3/6</span>
+                <span class="reviews__counter">3&nbsp;/&nbsp;6</span>
                 <div class="reviews__buttons">
                   <button class="btn reviews__button reviews__button--prev" type="button" aria-label="Предыдущий отзыв"></button>
                   <button class="btn reviews__button reviews__button--next" type="button" aria-label="Следующий отзыв"></button>
                 </div>
               </div>
+
               <div class="reviews__social">
                 <a class="reviews__social-link reviews__social-link--facebook" href="#"><span class="visually-hidden">Читать
-                    отзывы на Фейсбуке</span><img src="img/soc-facebook.svg" alt="Иконка Фейсбука"></a>
+                    отзывы на Фейсбуке</span><img src="img/soc-facebook.svg" width="11" height="22" alt="Иконка Фейсбука"></a>
                 <a class="reviews__social-link reviews__social-link--twitter" href="#"><span class="visually-hidden">Читать
-                    отзывы в Твиттере</span><img src="img/soc-twitter.svg" alt="Иконка Твиттера"></a>
-                <a class="reviews__social-link reviews__social-link--instagram" href="#"><span class="visually-hidden">Читать отзывы в Инстаграме</span><img src="img/soc-insta.svg" alt="Иконка Инстаграма"></a>
+                    отзывы в Твиттере</span><img src="img/soc-twitter.svg" width="24" height="18" alt="Иконка Твиттера"></a>
+                <a class="reviews__social-link reviews__social-link--instagram" href="#"><span class="visually-hidden">Читать отзывы в Инстаграме</span><img src="img/soc-insta.svg" width="24" height="24" alt="Иконка Инстаграма"></a>
               </div>
+
             </div>
           </div>
+
         </div>
       </div>
-      
     </section>
     <section class="details">
       <div class="page-main__wrapper">

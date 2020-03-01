@@ -3,7 +3,7 @@
   // padding-bottom: 10px;
   background-image: url("../img/header-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1366px auto;
   background-position: center top;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-bg-desktop@2x.png");
