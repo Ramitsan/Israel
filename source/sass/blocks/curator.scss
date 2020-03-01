@@ -1,7 +1,6 @@
 .curator {
   width: 484px;
-  margin-top: 55px;
-  ;
+  margin-top: 41px;
 }
 
 .curator__block {
@@ -37,6 +36,7 @@
 }
 
 .curator__address {
+  width: 225px;
   font-size: 13px;
   line-height: 150%;
   color: rgba($main-text-font, .74);
@@ -59,7 +59,7 @@
   opacity: .16;
   &:hover,
   &:focus {
-    transform: scale(1.5);    
+    transform: scale(1.5);
   }
 }
 
@@ -77,8 +77,8 @@
 
 .curator__text {
   width: 478px;
-  margin-top: 30px;
-  margin-bottom: 120px;
+  margin-top: 23px;
+  margin-bottom: 115px;
   ;
   text-align: left;
 }

@@ -18,7 +18,13 @@
   justify-content: space-between;
 }
 
+.page-footer__logo {
+  margin-left: 10px;
+}
+
 .page-footer__copyright {
+  margin-top: 6px;
+  margin-left: 37px;
   font-size: 12px;
   line-height: 150%;
   text-align: center;
@@ -26,10 +32,10 @@
 }
 
 .page-footer__social {
-  width: 112px;
+  width: 137px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 

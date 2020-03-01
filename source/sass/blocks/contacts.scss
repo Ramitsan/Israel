@@ -5,7 +5,8 @@
 }
 
 .contacts__info {
-  width: 335px;
+  width: 343px;
+  margin-right: 34px;
   text-align: left;
 }
 
@@ -22,6 +23,7 @@
 }
 
 .contacts-form__container {
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -66,12 +68,10 @@
 }
 
 .contacts-form__container button[type="submit"] {
-  width: 233px; //ВМЕСТО 216, Т.К. НЕ РАБОТАЕТ font-variant: small-caps;
-  padding: 19px 40px 20px;
+  padding: 19px 32px 20px;
   border-radius: 80px;
   font-weight: 500;
   line-height: 20px;
-  // font-variant: small-caps; НЕ РАБОТАЕТ!
   text-transform: uppercase;
   text-shadow: $shadow-text;
   outline: none;
