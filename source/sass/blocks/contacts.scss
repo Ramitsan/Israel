@@ -5,7 +5,8 @@
 }
 
 .contacts__info {
-  width: 335px;
+  width: 343px;
+  margin-right: 34px;
   text-align: left;
 }
 
@@ -18,10 +19,11 @@
 .contacts__text {
   font-size: 13px;
   line-height: 150%;
-  color:rgba($main-text-font, .5);
+  color: rgba($main-text-font, .5);
 }
 
 .contacts-form__container {
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -43,7 +45,7 @@
   font-weight: 500;
   line-height: 20px;
   font-variant: small-caps;
-  color:rgba($main-text-font, .5);
+  color: rgba($main-text-font, .5);
 }
 
 .contacts-form__container input[type="tel"] {
@@ -54,17 +56,36 @@
   font-weight: 500;
   line-height: 20px;
   font-variant: small-caps;
-  color:rgba($main-text-font, .87);
+  color: rgba($main-text-font, .87);
+}
+
+.contacts-form__container input[type="text"]:focus,
+.contacts-form__container input[type="text"]:hover,
+.contacts-form__container input[type="tel"]:focus,
+.contacts-form__container input[type="tel"]:hover {
+  outline: none;
+  border: 2px solid $yellow;
 }
 
 .contacts-form__container button[type="submit"] {
-  width: 233px;  //ВМЕСТО 216, Т.К. НЕ РАБОТАЕТ font-variant: small-caps;
-  padding: 19px 40px 20px;
+  padding: 19px 32px 20px;
   border-radius: 80px;
   font-weight: 500;
   line-height: 20px;
-  // font-variant: small-caps; НЕ РАБОТАЕТ!
   text-transform: uppercase;
   text-shadow: $shadow-text;
+  outline: none;
 }
 
+@media (max-width: $mobile-width) {
+  .contacts {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contacts__info {
+    width: 100%;
+  }
+  .contacts-form__container {
+    flex-direction: column;
+  }
+}

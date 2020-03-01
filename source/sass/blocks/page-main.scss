@@ -5,3 +5,11 @@
   padding-left: 12px;
   padding-right: 17px;
 }
+
+@media (max-width: $mobile-width) {
+  .page-main__wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0px;
+  }
+}

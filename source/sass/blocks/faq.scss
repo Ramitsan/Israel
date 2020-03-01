@@ -2,37 +2,34 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 100px;
-  padding-bottom: 130px;
-  background-image: url("../img/faq-bg-desktop@1x.png"),
-                    url("../img/faq-img-desktop@1x.png");
+  padding-top: 107px;
+  padding-bottom: 125px;
+  background-image: url("../img/faq-img-desktop@1x.png"), url("../img/faq-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 1366px auto, 645px auto;
-  background-position: center, 51vw center;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/faq-bg-desktop@2x.png"),
-                        url("../img/faq-img-desktop@2x.png");;
-  }
+  background-size: 645px auto, 1366px auto;
+  background-position: 53vw 107px, center top 25px;
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/faq-bg-desktop@2x.png"), url("../img/faq-img-desktop@2x.png");
+  //   ;
+  // }
 }
 
 .faq__list {
-  width: 573px;
+  width: 560px;
   list-style: none;
   counter-reset: number;
   position: relative;
   text-align: left;
   padding-left: 0;
-
   &::after {
     content: "";
     background-image: url("../img/faq-bag-desktop@1x.png");
     background-size: 153px auto;
     position: absolute;
-    left: -107px;
-    bottom: -130px;
+    left: -111px;
+    bottom: -115px;
     width: 153px;
     height: 177px;
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       content: "";
       background-image: url("../img/faq-bag-desktop@2x.png");
@@ -43,37 +40,109 @@
 
 .faq__item {
   position: relative;
-  margin-bottom: 40px;
-  padding-bottom: 30px;
+  padding-top: 9px;
+  padding-bottom: 14px;
   border-bottom: 1px solid rgba($main-text-font, .2);
 }
 
-.faq__question::before {
-  counter-increment: number;
-  content: counter(number)" ";
-  position: absolute;
-  left: 0px;
-  font-weight: bold;
-  font-size: 28px;
-  color: $yellow;
-}
-
 .faq__question {
-  width: 400px;
-  line-height: 150%;
+  width: 383px;
+  line-height: 25px;
   margin-left: 30px;
+  cursor: pointer;
+  &::before {
+    counter-increment: number;
+    content: counter(number)" ";
+    position: absolute;
+    left: 0px;
+    font-weight: bold;
+    font-size: 28px;
+    color: $yellow;
+  }
+  &::after {
+    content: "";
+    background-image: url("../img/faq-down.svg");
+    background-size: 17px auto;
+    position: absolute;
+    right: 35px;
+    top: 39px;
+    width: 17px;
+    height: 11px;
+  }
 }
-
 
 .faq__answer {
+  display: none;
   width: 480px;
+  margin-top: 27px;
+  margin-bottom: 19px;
   font-size: 15px;
   line-height: 140%;
-  display: flex;
-  align-items: center;
   opacity: 0.74;
 }
 
-.faq__answer--hidden {
-  display: none;
+.faq__item--active .faq__answer {
+  display: block;
+}
+
+.faq__item--active .faq__question {
+  &::after {
+    content: "";
+    background-image: url("../img/faq-up.svg");
+    background-size: 17px auto;
+    position: absolute;
+    right: 35px;
+    top: 39px;
+    width: 17px;
+    height: 11px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq {
+    width: 100vw;
+    border: 1px solid red;
+    background-image: none;
+  }
+  .faq__list {
+    width: 100%;
+    &::after {
+      content: "";
+      background-image: url("../img/faq-bag-mobile@1x.png");
+      background-size: 146px auto;
+      position: absolute;
+      left: -37px;
+      bottom: 104px;
+      width: 146px;
+      height: 177px;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        content: "";
+        background-image: url("../img/faq-bag-mobile@2x.png");
+        background-size: 153px auto;
+      }
+    }
+  }
+  .faq__item {
+    padding-right: 37px;
+  }
+  .faq__question {
+    width: 100%;
+    margin-left: 20px;
+    padding-right: 55px;
+    font-size: 16px;
+    line-height: 160%;
+    &::after {
+      right: 16px;
+    }
+  }
+  .faq__item--active .faq__question {
+    &::after {
+      right: 16px;
+    }
+  }
+  .faq__answer {
+    width: 100%;
+    font-size: 14px;
+    line-height: 160%;
+  }
 }

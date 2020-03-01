@@ -1,17 +1,17 @@
 .page-header {
   width: 100%;
+  // padding-bottom: 10px;
   background-image: url("../img/header-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 1366px auto;
-  background-position: center;
-
-
+  background-position: center top;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-bg-desktop@2x.png");
   }
 }
 
 .page-header__top {
+  width: 100%;
   padding-top: 32px;
 }
 
@@ -28,8 +28,26 @@
   justify-content: space-between;
 }
 
-.page-header__phone a,
-.page-header__link {
+.page-header__logo {
+  margin-left: -7px;
+}
+
+.page-header__phone,
+.page-header__call {
+  align-self: flex-start;
+}
+
+.page-header__phone {
+  margin-top: 16px;
+  margin-left: 0px;
+}
+
+.page-header__call {
+  margin-top: 14px;
+}
+
+.page-header__phone,
+.page-header__call span {
   font-family: Fira Sans;
   font-weight: 500;
   font-size: 15px;
@@ -38,42 +56,104 @@
   color: $main-text-font;
 }
 
-.page-header__link {
+.page-header__call span {
   font-variant: small-caps;
+}
+
+.page-header__call {
+  background-color: transparent;
   border-bottom: 1px dashed $main-text-font;
 }
 
 .page-header__middle {
-  border: 1px solid transparent;
   width: 100%;
   margin: 0;
   padding: 0;
   padding-bottom: 100px;
-
-  background-image: url("../img/girl-desktop@1x.png"), url("../img/israel-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center, top;
-  background-size: 1366px auto, 1018px auto;
-
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/girl-desktop@2x.png"), url("../img/israel-desktop@2x.png");
-  }
 }
 
 .page-header__title {
   width: 343px;
   margin: 0 auto;
-  margin-top: 500px;
-
+  margin-top: 450px;
   font-family: $font-fira;
   font-style: normal;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   font-weight: 500;
-
   text-shadow: $shadow-text;
   color: $white;
+}
+
+.page-header__scroll {
+  display: inline-block;
+  width: 76px;
+  height: 132px;
+  margin-top: 31px;
+  background-image: url("../img/scroll-down.svg");
+  background-size: 76px 132px;
+  background-position: center bottom;
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    width: 100vw;
+    background-image: url("../img/header-bg-mobile@1x.png");
+    background-size: 100vw auto;
+    background-position: center top 31px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/header-bg-mobile@2x.png");
+    }
+  }
+  .page-header__top {
+    padding-top: 0px;
+  }
+  .page-header__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 8px;
+  }
+  .page-header__nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .page-header__logo {
+    margin-top: -20px;
+    margin-left: 4px;
+    align-self: flex-start;
+  }
+  .page-header__phone,
+  .page-header__call {
+    align-self: flex-end;
+  }
+  .page-header__phone {
+    margin-top: 20px;
+  }
+  .page-header__call {
+    margin-top: -33px;
+  }
+  .page-header__phone,
+  .page-header__call span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .page-header__middle {
+    padding-bottom: 50px;
+  }
+  .page-header__title {
+    width: 288px;
+    margin-top: 271px;
+    font-family: $font-fira;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: $shadow-text;
+    color: $white;
+  }
 }

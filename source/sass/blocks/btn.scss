@@ -3,12 +3,11 @@
   color: $white;
   &:hover,
   &:focus {
-      background-image: $yellow-gradient-hover;
-      cursor: pointer;
+    background-image: $yellow-gradient-hover;
+    cursor: pointer;
   }
   &:active {
     outline: none;
-      background: $shadow-btn-click;
+    background: $shadow-btn-click;
   }
 }
-

@@ -5,12 +5,12 @@
 }
 
 body {
+  // min-width: 320px;
   min-width: 1170px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: $white;
-
   font-family: $font-fira;
   font-style: normal;
   font-weight: normal;
@@ -43,4 +43,14 @@ img {
 .btn {
   border: 1px solid transparent;
   vertical-align: middle;
+}
+
+.body-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    min-width: 320px;
+  }
 }

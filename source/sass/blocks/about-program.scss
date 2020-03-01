@@ -1,12 +1,11 @@
 .about-program {
   width: 100%;
+  padding-top: 27px;
   padding-bottom: 96px;
   background-image: url("../img/about-program-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 1366px auto;
-  background-position: center bottom;
-
-
+  background-size: 100vw auto;
+  background-position: right 0 bottom 8px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/about-program-bg-desktop@2x.png");
   }
@@ -25,7 +24,38 @@
 .about-program__button {
   background-color: transparent;
   position: absolute;
-  top: 155px;
-  left: 505px;
+  right: 50%;
+  margin-right: -55px;
+  top: 50%;
+  margin-top: -58px;
 }
 
+@media (max-width: $mobile-width) {
+  .about-program {
+    width: 100vw;
+    padding-bottom: 69px;
+    background-image: url("../img/about-program-bg-mobile@1x.png");
+    background-position: right 0 top 227px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-program-bg-mobile@2x.png");
+    }
+  }
+  .about-program__text {
+    width: 100%;
+    padding: 0 16px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .about-program__video-preview {
+    top: -2px;
+  }
+  .about-program__video-preview img {
+    width: 100%;
+  }
+  .about-program__button {
+    margin-right: -47px;
+    margin-top: -38px;
+  }
+}

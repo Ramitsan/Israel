@@ -2,17 +2,13 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
-  background-image: url("../img/details-watercolor-bg-desktop@1x.png"),
-                    url("../img/details-map-and-marker-desktop@1x.png");
+  padding-bottom: 58px;
+  background-image: url("../img/details-watercolor-bg-desktop@1x.png"), url("../img/details-map-and-marker-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 1366px auto, 702px auto;
-  background-position: center top, 49vw top;
-
-
+  background-position: center -89px, 48vw top;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/details-watercolor-bg-desktop@2x.png"),
-                      url("../img/details-map-and-marker-desktop@2x.png");
+    background-image: url("../img/details-watercolor-bg-desktop@2x.png"), url("../img/details-map-and-marker-desktop@2x.png");
   }
 }
 
@@ -28,7 +24,8 @@
   font-size: 15px;
   line-height: 150%;
   opacity: 0.74;
-  margin-left: 20px;;
+  margin-left: 20px;
+  ;
 }
 
 .details__your-city::before {
@@ -38,7 +35,6 @@
   background-repeat: no-repeat;
   width: 12px;
   height: 18px;
-
   top: 0px;
   left: 3px;
 }
@@ -60,7 +56,14 @@
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
-
   top: 5px;
   right: 33px;
+}
+
+@media (max-width: $mobile-width) {
+  .details {
+    width: 100vw;
+    border: 1px solid red;
+    background-image: none;
+  }
 }
