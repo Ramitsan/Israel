@@ -7,7 +7,7 @@
   background-image: url("../img/programs-sketch-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 680px auto;
-  background-position: right bottom 145px;
+  background-position: 50vw 49px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url(../img/programs-sketch-bg-desktop@2x.png);
   }
@@ -199,20 +199,24 @@
   position: absolute;
 }
 
+.programs__item--general div {
+  top: 3px;
+}
+
 .programs-block--academic div {
   top: -70px;
 }
 
 .programs-block--internships div {
-  top: -140px;
+  top: -142px;
 }
 
 .programs-block--volunteering div {
-  top: -210px;
+  top: -215px;
 }
 
 .programs-block--religion div {
-  top: -280px;
+  top: -288px;
 }
 
 .programs-block__title {

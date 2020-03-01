@@ -8,6 +8,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 452px;
+  &::after {
+    content: "";
+    background-image: url("../img/watch-desktop@1x.png");
+    background-size: 90px auto;
+    position: absolute;
+    right: -110px;
+    bottom: 112px;
+    width: 90px;
+    height: 148px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/watch-desktop@2x.png");
+      background-size: 90px auto;
+    }
+  }
 }
 
 .slider__item {

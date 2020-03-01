@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   padding-bottom: 97px;
-  background-image: url("../img/reviews-watercolor-bg-desktop@1x.png"), url("../img/reviews-sketch-bg-desktop@1x.png");
+  background-image: url("../img/reviews-sketch-bg-desktop@1x.png"), url("../img/reviews-watercolor-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-size: 1259px auto, 523px auto;
-  background-position: center, 62vw 54px;
+  background-size: 523px auto, cover;
+  background-position: 62vw 54px, center 54px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/reviews-watercolor-bg-desktop@2x.png"), url("../img/reviews-sketch-bg-desktop@2x.png");
+    background-image: url("../img/reviews-sketch-bg-desktop@2x.png"), url("../img/reviews-watercolor-bg-desktop@2x.png");
   }
 }
 
