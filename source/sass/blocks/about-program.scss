@@ -33,19 +33,29 @@
 @media (max-width: $mobile-width) {
   .about-program {
     width: 100vw;
-    border: 1px solid red;
+    padding-bottom: 69px;
     background-image: url("../img/about-program-bg-mobile@1x.png");
+    background-position: right 0 top 227px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/about-program-bg-mobile@2x.png");
     }
   }
   .about-program__text {
     width: 100%;
+    padding: 0 16px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .about-program__video-preview {
+    top: -2px;
   }
   .about-program__video-preview img {
     width: 100%;
   }
   .about-program__button {
-    left: 50%;
+    margin-right: -47px;
+    margin-top: -38px;
   }
 }

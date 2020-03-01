@@ -81,6 +81,9 @@
 }
 
 @media (max-width: $mobile-width) {
+  .slider {
+    overflow: hidden;
+  }
   .slider__big-image {
     width: 100vw;
   }

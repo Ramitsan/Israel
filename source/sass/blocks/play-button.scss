@@ -53,3 +53,10 @@
     opacity: 0;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .play-button {
+    width: 80px;
+    height: 80px;
+  }
+}
