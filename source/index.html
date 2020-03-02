@@ -104,91 +104,105 @@
       <div class="page-main__wrapper">
         <h2 class="section-title section-title--programs">Программы</h2>
         <div class="programs__block-container">
-          <ul class="programs__list">
-            <li class="programs__item programs__item--general" tabindex="0">
-              <input class="visually-hidden" type="radio" name="programs" id="programs-general">
-              <label for="programs-general">Общие</label>
-              <div class="programs-block programs-block--general">
-                <div>
-                  <h3 class="programs-block__title programs-block__title--general">Общие</h3>
-                  <p class="programs-block__info programs-block__info--one">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
-                    quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
-                  </p>
-                  <p class="programs-block__info programs-block__info--two">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
-                  </p>
+          <input class="visually-hidden" type="radio" name="programs" id="programs-general">
+          <input class="visually-hidden" type="radio" name="programs" id="programs-academic" checked>
+          <input class="visually-hidden" type="radio" name="programs" id="programs-internships">
+          <input class="visually-hidden" type="radio" name="programs" id="programs-volunteering">
+          <input class="visually-hidden" type="radio" name="programs" id="programs-religion">
+          <section class="programs__tabs">
+            <ul class="programs__label-list">
+              <li class="programs__label-item programs__label-item--general">
+                <label for="programs-general">Общие</label>
+              </li>
+              <li class="programs__label-item programs__label-item--academic">
+                <label for="programs-academic">Академические</label>
+              </li>
+              <li class="programs__label-item programs__label-item--internships">
+                <label for="programs-internships">Стажировки</label>
+              </li>
+              <li class="programs__label-item programs__label-item--volunteering">
+                <label for="programs-volunteering">Волонтёрство</label>
+              </li>
+              <li class="programs__label-item programs__label-item--religion">
+                <label for="programs-religion">Религиозные</label>
+              </li>
+            </ul>
+            <ul class="programs__content-list">
+              <li class="programs__item programs__item--general" tabindex="0">
+                <div class="programs-block programs-block--general">
+                  <div>
+                    <h3 class="programs-block__title programs-block__title--general">Общие</h3>
+                    <p class="programs-block__info programs-block__info--one">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
+                      quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
+                    </p>
+                    <p class="programs-block__info programs-block__info--two">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="programs__item programs__item--academic" tabindex="0">
-              <input class="visually-hidden" type="radio" name="programs" id="programs-academic" checked>
-              <label for="programs-academic">Академические</label>
-              <div class="programs-block programs-block--academic">
-                <div>
-                  <h3 class="programs-block__title programs-block__title--academic">Академические</h3>
-                  <p class="programs-block__info programs-block__info--one">
-                    Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого
-                    исследования. </p>
-                  <p class="programs-block__info programs-block__info--two">
-                    Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.
-                  </p>
+              <li class="programs__item programs__item--academic" tabindex="0">
+                <div class="programs-block programs-block--academic">
+                  <div>
+                    <h3 class="programs-block__title programs-block__title--academic">Академические</h3>
+                    <p class="programs-block__info programs-block__info--one">
+                      Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого
+                      исследования. </p>
+                    <p class="programs-block__info programs-block__info--two">
+                      Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="programs__item programs__item--internships" tabindex="0">
-              <input class="visually-hidden" type="radio" name="programs" id="programs-internships">
-              <label for="programs-internships">Стажировки</label>
-              <div class="programs-block programs-block--internships">
-                <div>
-                  <h3 class="programs-block__title programs-block__title--internships">Стажировки</h3>
-                  <p class="programs-block__info programs-block__info--one">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
-                    quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
-                  </p>
-                  <p class="programs-block__info programs-block__info--two">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
-                  </p>
+              <li class="programs__item programs__item--internships" tabindex="0">
+                <div class="programs-block programs-block--internships">
+                  <div>
+                    <h3 class="programs-block__title programs-block__title--internships">Стажировки</h3>
+                    <p class="programs-block__info programs-block__info--one">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
+                      quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
+                    </p>
+                    <p class="programs-block__info programs-block__info--two">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="programs__item programs__item--volunteering" tabindex="0">
-              <input class="visually-hidden" type="radio" name="programs" id="programs-volunteering">
-              <label for="programs-volunteering">Волонтёрство</label>
-              <div class="programs-block programs-block--volunteering">
-                <div>
-                  <h3 class="programs-block__title programs-block__title--volunteering">Волонтёрство</h3>
-                  <p class="programs-block__info programs-block__info--one">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
-                    quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
-                  </p>
-                  <p class="programs-block__info programs-block__info--two">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
-                  </p>
+              <li class="programs__item programs__item--volunteering" tabindex="0">
+                <div class="programs-block programs-block--volunteering">
+                  <div>
+                    <h3 class="programs-block__title programs-block__title--volunteering">Волонтёрство</h3>
+                    <p class="programs-block__info programs-block__info--one">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
+                      quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
+                    </p>
+                    <p class="programs-block__info programs-block__info--two">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="programs__item programs__item--religion" tabindex="0">
-              <input class="visually-hidden" type="radio" name="programs" id="programs-religion">
-              <label for="programs-religion">Религиозные</label>
-              <div class="programs-block programs-block--religion">
-                <div>
-                  <h3 class="programs-block__title programs-block__title--religion">Религиозные</h3>
-                  <p class="programs-block__info programs-block__info--one">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
-                    quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
-                  </p>
-                  <p class="programs-block__info programs-block__info--two">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
-                  </p>
+              <li class="programs__item programs__item--religion" tabindex="0">
+                <div class="programs-block programs-block--religion">
+                  <div>
+                    <h3 class="programs-block__title programs-block__title--religion">Религиозные</h3>
+                    <p class="programs-block__info programs-block__info--one">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate laudantium iure aut excepturi sunt, aliquam itaque illum soluta, amet numquam ex consequatur, velit rem odit. Cum illum, perferendis maiores enim exercitationem ad officia sit
+                      quisquam iste sed dolorem fugit. Fuga vitae veniam numquam recusandae debitis. Sed, facilis rem! Modi.
+                    </p>
+                    <p class="programs-block__info programs-block__info--two">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at exercitationem cum pariatur aperiam perferendis illum necessitatibus, nobis esse modi inventore, sit corporis. Nesciunt tenetur placeat ullam et aspernatur cum?
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </section>
         </div>
     </section>
     <section class="want-to-go">
