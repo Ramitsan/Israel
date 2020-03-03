@@ -23,7 +23,6 @@
 }
 
 .programs__label-item {
-  border: 1px solid red;
   width: 195px;
   text-align: left;
   margin: 0;
@@ -129,8 +128,11 @@
   background-image: url(../img/programs-religion-hover.svg);
 }
 
-.programs__label-item input[type="radio"]:checked+label {
-  //НЕ РАБОТАЕТ!!!
+#programs-general[type="radio"]:checked~.programs__tabs .programs__label-item--general label,
+#programs-academic[type="radio"]:checked~.programs__tabs .programs__label-item--academic label,
+#programs-internships[type="radio"]:checked~.programs__tabs .programs__label-item--internships label,
+#programs-volunteering[type="radio"]:checked~.programs__tabs .programs__label-item--volunteering label,
+#programs-religion[type="radio"]:checked~.programs__tabs .programs__label-item--religion label {
   background-image: $yellow-gradient;
   color: $white;
   font-size: 16px;
@@ -148,6 +150,26 @@
     border: 36px solid $white;
     border-left-color: #FFD701;
   }
+}
+
+#programs-general[type="radio"]:checked~.programs__tabs .programs__label-item--general label::before {
+  background-image: url(../img/programs-culture-active.svg);
+}
+
+#programs-academic[type="radio"]:checked~.programs__tabs .programs__label-item--academic label::before {
+  background-image: url(../img/programs-academic-active.svg);
+}
+
+#programs-internships[type="radio"]:checked~.programs__tabs .programs__label-item--internships label::before {
+  background-image: url(../img/programs-business-active.svg);
+}
+
+#programs-volunteering[type="radio"]:checked~.programs__tabs .programs__label-item--volunteering label::before {
+  background-image: url(../img/programs-volonteur-active.svg);
+}
+
+#programs-religion[type="radio"]:checked~.programs__tabs .programs__label-item--religion label::before {
+  background-image: url(../img/programs-religion-active.svg);
 }
 
 .programs__content-list {
@@ -199,19 +221,6 @@
 //     display: flex;
 //     flex-direction: row;
 //     justify-content: space-between;
-// }
-// .programs__item--academic input[type="radio"]:checked+label::before {
-//     background-image: url(../img/programs-academic-active.svg);
-// }
-//
-// .programs__item--internships input[type="radio"]:checked+label::before {
-//     background-image: url(../img/programs-business-active.svg);
-// }
-// .programs__item--volunteering input[type="radio"]:checked+label::before {
-//     background-image: url(../img/programs-volonteur-active.svg);
-// }
-// .programs__item--religion input[type="radio"]:checked+label::before {
-//     background-image: url(../img/programs-religion-active.svg);
 // }
 // .programs__item--general input[type="radio"]:checked~section .programs__list .programs-block--general,
 // .programs__item--academic input[type="radio"]:checked~.programs-block--academic,
