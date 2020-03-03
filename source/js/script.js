@@ -163,10 +163,18 @@ var contactsUserNameInput = contactsForm.querySelector('#user-name');
 var contactsUserTelInput = contactsForm.querySelector('#user-tel');
 var contactsButtonSubmit = contactsForm.querySelector('.contacts__button-submit');
 
+
+//отправка формы
 contactsForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
   validateForm(contactsUserNameInput, contactsUserTelInput);
 })
+
+//валидация неправильно заполненного поля воода телефона
+contactsUserTelInput.addEventListener('invalid', function() {
+  contactsUserTelInput.style.borderColor = '#ff0000';
+  console.log(contactsUserTelInput.value);
+});
 
 //Показ и скрытие ответов на вопросы в блоке FAQ
 var faqItems = document.querySelectorAll('.faq__item');
