@@ -1,333 +1,275 @@
-.programs {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: 94px;
-  padding-bottom: 30px;
-  background-image: url("../img/programs-sketch-bg-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: 680px auto;
-  background-position: 50vw 49px;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url(../img/programs-sketch-bg-desktop@2x.png);
-  }
-}
+          .programs {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            padding-top: 94px;
+            padding-bottom: 30px;
+            background-image: url("../img/programs-sketch-bg-desktop@1x.png");
+            background-repeat: no-repeat;
+            background-size: 680px auto;
+            background-position: 50vw 49px;
+            @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+              background-image: url(../img/programs-sketch-bg-desktop@2x.png);
+            }
+          }
 
-.programs__label-list {
-  list-style: none;
-  position: relative;
-  width: 228px;
-  padding: 0;
-  margin-top: 63px;
-  margin-left: 100px;
-}
+          .programs__label-list {
+            list-style: none;
+            position: relative;
+            width: 228px;
+            padding: 0;
+            margin-top: 63px;
+            margin-left: 100px;
+          }
 
-.programs__label-item {
-  width: 195px;
-  text-align: left;
-  margin: 0;
-  position: relative;
-}
+          .programs__label-item {
+            width: 195px;
+            text-align: left;
+            margin: 0;
+            position: relative;
+          }
 
-.programs__label-item label {
-  display: inline-block;
-  width: 100%;
-  padding: 28px 40px 27px 70px;
-  cursor: pointer;
-  font-size: 15px;
-  line-height: 18px;
-  opacity: 0.87;
-  &:hover,
-  &:focus {
-    color: $yellow;
-  }
-}
+          .programs__label-item label {
+            display: inline-block;
+            width: 100%;
+            padding: 28px 40px 27px 70px;
+            cursor: pointer;
+            font-size: 15px;
+            line-height: 18px;
+            opacity: 0.87;
+            &:hover,
+            &:focus {
+              color: $yellow;
+            }
+          }
 
-.programs__label-item--general label::before {
-  content: "";
-  position: absolute;
-  top: 21px;
-  left: 19px;
-  width: 36px;
-  height: 36px;
-  background-image: url(../img/programs-culture.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
+          .programs__label-item--general label::before {
+            content: "";
+            position: absolute;
+            top: 21px;
+            left: 19px;
+            width: 36px;
+            height: 36px;
+            background-image: url(../img/programs-culture.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
 
-.programs__label-item--general label:hover::before,
-.programs__label-item--general label:focus::before {
-  background-image: url(../img/programs-culture-hover.svg);
-}
+          .programs__label-item--general label:hover::before,
+          .programs__label-item--general label:focus::before {
+            background-image: url(../img/programs-culture-hover.svg);
+          }
 
-.programs__label-item--academic label::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 16px;
-  width: 36px;
-  height: 36px;
-  background-image: url(../img/programs-academic.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
+          .programs__label-item--academic label::before {
+            content: "";
+            position: absolute;
+            top: 17px;
+            left: 16px;
+            width: 36px;
+            height: 36px;
+            background-image: url(../img/programs-academic.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
 
-.programs__label-item--academic label:hover::before,
-.programs__label-item--academic label:focus::before {
-  background-image: url(../img/programs-academic-hover.svg);
-}
+          .programs__label-item--academic label:hover::before,
+          .programs__label-item--academic label:focus::before {
+            background-image: url(../img/programs-academic-hover.svg);
+          }
 
-.programs__label-item--internships label::before {
-  content: "";
-  position: absolute;
-  top: 18px;
-  left: 19px;
-  width: 36px;
-  height: 36px;
-  background-image: url(../img/programs-business.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
+          .programs__label-item--internships label::before {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: 19px;
+            width: 36px;
+            height: 36px;
+            background-image: url(../img/programs-business.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
 
-.programs__label-item--internships label:hover::before,
-.programs__label-item--internships label:focus::before {
-  background-image: url(../img/programs-business-hover.svg);
-}
+          .programs__label-item--internships label:hover::before,
+          .programs__label-item--internships label:focus::before {
+            background-image: url(../img/programs-business-hover.svg);
+          }
 
-.programs__label-item--volunteering label::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 18px;
-  width: 36px;
-  height: 36px;
-  background-image: url(../img/programs-volonteur.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
+          .programs__label-item--volunteering label::before {
+            content: "";
+            position: absolute;
+            top: 17px;
+            left: 18px;
+            width: 36px;
+            height: 36px;
+            background-image: url(../img/programs-volonteur.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
 
-.programs__label-item--volunteering label:hover::before,
-.programs__label-item--volunteering label:focus::before {
-  background-image: url(../img/programs-volonteur-hover.svg);
-}
+          .programs__label-item--volunteering label:hover::before,
+          .programs__label-item--volunteering label:focus::before {
+            background-image: url(../img/programs-volonteur-hover.svg);
+          }
 
-.programs__label-item--religion label::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 20px;
-  width: 36px;
-  height: 36px;
-  background-image: url(../img/programs-religion.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
+          .programs__label-item--religion label::before {
+            content: "";
+            position: absolute;
+            top: 16px;
+            left: 20px;
+            width: 36px;
+            height: 36px;
+            background-image: url(../img/programs-religion.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
 
-.programs__label-item--religion label:hover::before,
-.programs__label-item--religion label:focus::before {
-  background-image: url(../img/programs-religion-hover.svg);
-}
+          .programs__label-item--religion label:hover::before,
+          .programs__label-item--religion label:focus::before {
+            background-image: url(../img/programs-religion-hover.svg);
+          }
 
-#programs-general[type="radio"]:checked~.programs__tabs .programs__label-item--general label,
-#programs-academic[type="radio"]:checked~.programs__tabs .programs__label-item--academic label,
-#programs-internships[type="radio"]:checked~.programs__tabs .programs__label-item--internships label,
-#programs-volunteering[type="radio"]:checked~.programs__tabs .programs__label-item--volunteering label,
-#programs-religion[type="radio"]:checked~.programs__tabs .programs__label-item--religion label {
-  background-image: $yellow-gradient;
-  color: $white;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 500;
-  font-variant: small-caps;
-  text-shadow: $shadow-text;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: -72px;
-    width: 0;
-    height: 0;
-    border: 36px solid $white;
-    border-left-color: #FFD701;
-  }
-}
+          #programs-general[type="radio"]:checked~.programs__tabs .programs__label-item--general label,
+          #programs-academic[type="radio"]:checked~.programs__tabs .programs__label-item--academic label,
+          #programs-internships[type="radio"]:checked~.programs__tabs .programs__label-item--internships label,
+          #programs-volunteering[type="radio"]:checked~.programs__tabs .programs__label-item--volunteering label,
+          #programs-religion[type="radio"]:checked~.programs__tabs .programs__label-item--religion label {
+            background-image: $yellow-gradient;
+            color: $white;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+            font-variant: small-caps;
+            text-shadow: $shadow-text;
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0px;
+              right: -72px;
+              width: 0;
+              height: 0;
+              border: 36px solid $white;
+              border-left-color: #FFD701;
+            }
+          }
 
-#programs-general[type="radio"]:checked~.programs__tabs .programs__label-item--general label::before {
-  background-image: url(../img/programs-culture-active.svg);
-}
+          #programs-general[type="radio"]:checked~.programs__tabs .programs__label-item--general label::before {
+            background-image: url(../img/programs-culture-active.svg);
+          }
 
-#programs-academic[type="radio"]:checked~.programs__tabs .programs__label-item--academic label::before {
-  background-image: url(../img/programs-academic-active.svg);
-}
+          #programs-academic[type="radio"]:checked~.programs__tabs .programs__label-item--academic label::before {
+            background-image: url(../img/programs-academic-active.svg);
+          }
 
-#programs-internships[type="radio"]:checked~.programs__tabs .programs__label-item--internships label::before {
-  background-image: url(../img/programs-business-active.svg);
-}
+          #programs-internships[type="radio"]:checked~.programs__tabs .programs__label-item--internships label::before {
+            background-image: url(../img/programs-business-active.svg);
+          }
 
-#programs-volunteering[type="radio"]:checked~.programs__tabs .programs__label-item--volunteering label::before {
-  background-image: url(../img/programs-volonteur-active.svg);
-}
+          #programs-volunteering[type="radio"]:checked~.programs__tabs .programs__label-item--volunteering label::before {
+            background-image: url(../img/programs-volonteur-active.svg);
+          }
 
-#programs-religion[type="radio"]:checked~.programs__tabs .programs__label-item--religion label::before {
-  background-image: url(../img/programs-religion-active.svg);
-}
+          #programs-religion[type="radio"]:checked~.programs__tabs .programs__label-item--religion label::before {
+            background-image: url(../img/programs-religion-active.svg);
+          }
 
-.programs__content-list {
-  list-style: none;
-}
+          .programs__content-list {
+            list-style: none;
+          }
 
-.programs__item {
-  display: none;
-}
+          .programs__item {
+            display: none;
+          }
 
-#programs-general:checked~section .programs__content-list .programs__item--general,
-#programs-academic:checked~section .programs__content-list .programs__item--academic,
-#programs-internships:checked~section .programs__content-list .programs__item--internships,
-#programs-volunteering:checked~section .programs__content-list .programs__item--volunteering,
-#programs-religion:checked~section .programs__content-list .programs__item--religion {
-  display: block;
-}
+          #programs-general:checked~section .programs__content-list .programs__item--general,
+          #programs-academic:checked~section .programs__content-list .programs__item--academic,
+          #programs-internships:checked~section .programs__content-list .programs__item--internships,
+          #programs-volunteering:checked~section .programs__content-list .programs__item--volunteering,
+          #programs-religion:checked~section .programs__content-list .programs__item--religion {
+            display: block;
+          }
 
-.programs__tabs {
-  position: relative;
-}
+          .programs__tabs {
+            position: relative;
+          }
 
-.programs__content-list {
-  position: absolute;
-  width: 660px;
-  top: -37px;
-  left: 380px;
-}
+          .programs__content-list {
+            position: absolute;
+            width: 660px;
+            top: -14px;
+            left: 352px;
+          }
 
-.programs-block__title {
-  @include third-level-headings();
-  text-align: left;
-  margin-top: 18px;
-  margin-bottom: 24px;
-}
+          .programs-block__title {
+            @include third-level-headings();
+            text-align: left;
+            margin-top: 18px;
+            margin-bottom: 24px;
+          }
 
-.programs-block__info {
-  width: 550px;
-  text-align: left;
-  font-size: 15px;
-  line-height: 26px;
-  color: rgba($main-text-font, .87);
-}
+          .programs-block__info {
+            width: 550px;
+            text-align: left;
+            font-size: 15px;
+            line-height: 26px;
+            color: rgba($main-text-font, .87);
+          }
 
-// .programs__item {
-//     width: 195px;
-//     margin: 0;
-//     position: relative;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-// }
-// .programs__item--general input[type="radio"]:checked~section .programs__list .programs-block--general,
-// .programs__item--academic input[type="radio"]:checked~.programs-block--academic,
-// .programs__item--internships input[type="radio"]:checked~.programs-block--internships,
-// .programs__item--volunteering input[type="radio"]:checked~.programs-block--volunteering,
-// .programs__item--religion input[type="radio"]:checked~.programs-block--religion {
-//     display: block;
-// }
-// .programs-block {
-//     display: none;
-//     position: relative;
-//     left: 98px;
-// }
-// .programs-block div {
-//     position: absolute;
-// }
-// .programs__item--general div {
-//     top: 3px;
-// }
-// .programs-block--academic div {
-//     top: -70px;
-// }
-// .programs-block--internships div {
-//     top: -142px;
-// }
-// .programs-block--volunteering div {
-//     top: -215px;
-// }
-// .programs-block--religion div {
-//     top: -288px;
-// }
-// .programs-block__info--one {
-//     margin-top: 8px;
-// }
-// .programs-block__info--two {
-//     width: 516px;
-// }
-@media (max-width: $mobile-width) {
-  .programs {
-    width: 100vw;
-    padding-top: 0;
-    border: 1px solid red;
-  }
-  .programs__block-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .programs__list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    margin-top: 16px;
-    overflow-x: auto;
-  }
-  .programs__item {
-    width: 100%;
-    flex-direction: column;
-  }
-  .programs__item--active {
-    border-radius: 60px;
-  }
-  .programs__item input[type="radio"]:checked+label {
-    width: 181px;
-    border-radius: 60px;
-    padding: 18px 12px;
-    padding-left: 50px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    font-variant: small-caps;
-    &::after {
-      display: none;
-    }
-  }
-  .programs-block {
-    width: 287px;
-    height: 450px;
-    position: relative;
-    left: 16px;
-  }
-  .programs-block div {
-    width: 287px;
-    position: absolute;
-    top: 0px;
-  }
-  .programs__item--general div {
-    left: 3vw;
-  }
-  .programs-block--academic div {
-    left: -154px;
-  }
-  .programs-block--internships div {
-    left: -380px;
-  }
-  .programs-block--volunteering div {
-    left: -575px;
-  }
-  .programs-block--religion div {
-    left: -785px;
-  }
-  .programs-block__title {
-    @include third-level-headings-mobile();
-  }
-  .programs-block__info {
-    width: 100%;
-    font-size: 14px;
-    line-height: 160%;
-  }
-}
+          @media (max-width: $mobile-width) {
+            .programs {
+              width: 100vw;
+              padding-top: 0;
+            }
+            .programs__label-list {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              overflow: auto;
+              margin-top: 16px;
+              margin-left: 0;
+            }
+            .programs__label-item {
+              width: 181px;
+            }
+            .programs__label-item label {
+              padding: 15px 12px 14px 52px;
+            }
+            .programs__label-item--general label::before,
+            .programs__label-item--academic label::before,
+            .programs__label-item--internships label::before,
+            .programs__label-item--volunteering label::before,
+            .programs__label-item--religion label::before {
+              top: 5px;
+              left: 9px;
+              width: 32px;
+              height: 32px;
+            }
+            #programs-general[type="radio"]:checked~.programs__tabs .programs__label-item--general label,
+            #programs-academic[type="radio"]:checked~.programs__tabs .programs__label-item--academic label,
+            #programs-internships[type="radio"]:checked~.programs__tabs .programs__label-item--internships label,
+            #programs-volunteering[type="radio"]:checked~.programs__tabs .programs__label-item--volunteering label,
+            #programs-religion[type="radio"]:checked~.programs__tabs .programs__label-item--religion label {
+              border-radius: 60px;
+              &::after {
+                display: none;
+              }
+            }
+            .programs__content-list {
+              position: relative;
+              width: 100%;
+              right: 0;
+              left: 0;
+              padding-left: 16px;
+              margin-right: 0;
+              margin-left: 0;
+            }
+            .programs-block__title {
+              @include third-level-headings-mobile();
+              margin-top: 47px;
+              margin-bottom: 15px;
+            }
+            .programs-block__info {
+              width: 100%;
+              font-size: 14px;
+              line-height: 22px;
+            }
+          }
