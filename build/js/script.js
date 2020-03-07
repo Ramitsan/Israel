@@ -170,10 +170,14 @@ contactsForm.addEventListener('submit', function(evt) {
   validateForm(contactsUserNameInput, contactsUserTelInput);
 })
 
-//валидация неправильно заполненного поля воода телефона
-contactsUserTelInput.addEventListener('invalid', function() {
-  contactsUserTelInput.style.borderColor = '#ff0000';
-  console.log(contactsUserTelInput.value);
+// //валидация неправильно заполненного поля воода телефона
+// contactsUserTelInput.addEventListener('invalid', function() {
+//   contactsUserTelInput.style.borderColor = '#ff0000';
+//   console.log(contactsUserTelInput.value);
+// });
+
+jQuery(function($) {
+  $("#user-tel").mask("+7 (999) 99 99 99");
 });
 
 //Показ и скрытие ответов на вопросы в блоке FAQ
