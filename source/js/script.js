@@ -195,28 +195,28 @@ var reviewsSliderItems = document.querySelectorAll('.reviews-slider__item');
 var reviewsButtonPrev = document.querySelector('.reviews__button--prev');
 var reviewsButtonNext = document.querySelector('.reviews__button--next');
 var reviewsNumberSlides = document.querySelector('.reviews__number-slides');
-var slideIndex = 1; //индекс слайда, который показывается сейчас
+var reviewsSlideIndex = 1; //индекс слайда, который показывается сейчас
 
 var showReviewsSlides = function(n) {
   if (n > reviewsSliderItems.length) {
-    slideIndex = 1;
+    reviewsSlideIndex = 1;
   }
   if (n < 1) {
-    slideIndex = reviewsSliderItems.length;
+    reviewsSlideIndex = reviewsSliderItems.length;
   }
 
   for (var i = 0; i < reviewsSliderItems.length; i++) {
     reviewsSliderItems[i].style.display = 'none';
   }
-  reviewsSliderItems[slideIndex - 1].style.display = 'flex';
-  reviewsNumberSlides.textContent = slideIndex;
+  reviewsSliderItems[reviewsSlideIndex - 1].style.display = 'flex';
+  reviewsNumberSlides.textContent = reviewsSlideIndex;
 
 }
 
-showReviewsSlides(slideIndex);
+showReviewsSlides(reviewsSlideIndex);
 
 var plusSlides = function(n) {
-  showReviewsSlides(slideIndex += n)
+  showReviewsSlides(reviewsSlideIndex += n)
 };
 
 reviewsButtonPrev.addEventListener('click', function() {
@@ -225,4 +225,47 @@ reviewsButtonPrev.addEventListener('click', function() {
 
 reviewsButtonNext.addEventListener('click', function() {
   plusSlides(1);
+});
+
+//слайдер в мобильной версии блока ЖИЗНЬ В ИЗРАИЛЕ
+var lifeSliderItems = document.querySelectorAll('.slider__item');
+var lifeSliderTogglesWrap = document.querySelector('.slider__toggles');
+var lifeSliderToggles = document.querySelectorAll('.slider__toggle');
+var lifeSlideIndex = 1;
+
+var showLifeSlides = function(number) {
+  if (number > lifeSliderItems.length) {
+    lifeSlideIndex = 1;
+  }
+  if (number < 1) {
+    lifeSlideIndex = lifeSliderItems.length;
+  }
+  for (var i = 0; i < lifeSliderItems.length; i++) {
+    lifeSliderItems[i].style.display = 'none';
+  }
+
+  for (var j = 0; j < lifeSliderToggles.length; j++) {
+    lifeSliderToggles[j].classList.remove('slider__toggle--active');
+  }
+  lifeSliderItems[lifeSlideIndex - 1].style.display = 'block';
+  lifeSliderToggles[lifeSlideIndex - 1].classList.add('slider__toggle--active');
+}
+
+showLifeSlides(lifeSlideIndex);
+
+var lifePlusSlides = function(number) {
+  showLifeSlides(lifeSlideIndex += number)
+};
+
+//получаем текущий слайд
+var currentSlide = function(number) {
+  showLifeSlides(lifeSlideIndex = number)
+};
+
+lifeSliderTogglesWrap.addEventListener('click', function(evt) {
+  for (var i = 0; i < lifeSliderToggles.length + 1; i++) {
+    if (evt.target.classList.contains('slider__toggle') && evt.target === lifeSliderToggles[i - 1]) {
+      currentSlide(i);
+    }
+  }
 });

@@ -22,12 +22,15 @@
   .life-in-israel {
     width: 100vw;
     background-image: none;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .life-in-israel__info {
     width: 100%;
+    margin-top: 24px;
     text-align: left;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 26px;
     color: rgba($main-text-font, .87);
   }
 }
