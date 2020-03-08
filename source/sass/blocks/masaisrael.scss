@@ -60,23 +60,47 @@
   text-shadow: $shadow-text;
 }
 
+.masaisrael__info br {
+  display: none;
+}
+
 @media (max-width: $mobile-width) {
   .masaisrael {
     width: 100vw;
-    border: 1px solid red;
+    padding-top: 30px;
     background-image: url("../img/masaisrael-bg-mobile@1x.png");
     background-size: 100vw auto;
-    background-position: center;
+    background-position: center 75px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/masaisrael-bg-mobile@2x.png");
     }
   }
-  .masaisrael__info {
-    width: 100%;
-    font-size: 16px;
-    line-height: 160%;
-  }
   .masaisrael__wrapper {
     margin-left: 5px;
+    padding-bottom: 0;
+  }
+  .masaisrael__info {
+    width: 272px;
+    margin-top: 95px;
+    margin-bottom: 58px;
+    margin-left: 18px;
+    margin-right: 23px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .masaisrael__info br {
+    display: block;
+  }
+  .masaisrael__link {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .masaisrael__link a {
+    width: 264px;
+    padding: 19px 36px 19px;
+    padding-left: 65px;
+  }
+  .masaisrael__link a::before {
+    left: 80px;
   }
 }
