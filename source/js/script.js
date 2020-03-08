@@ -170,12 +170,6 @@ contactsForm.addEventListener('submit', function(evt) {
   validateForm(contactsUserNameInput, contactsUserTelInput);
 })
 
-// //валидация неправильно заполненного поля воода телефона
-// contactsUserTelInput.addEventListener('invalid', function() {
-//   contactsUserTelInput.style.borderColor = '#ff0000';
-//   console.log(contactsUserTelInput.value);
-// });
-
 jQuery(function($) {
   $("#user-tel").mask("+7 (999) 99 99 99");
 });
@@ -195,3 +189,40 @@ var clickHandler = function(arr) {
 }
 
 clickHandler(faqItems);
+
+// слайдер в блоке ОТЗЫВЫ
+var reviewsSliderItems = document.querySelectorAll('.reviews-slider__item');
+var reviewsButtonPrev = document.querySelector('.reviews__button--prev');
+var reviewsButtonNext = document.querySelector('.reviews__button--next');
+var reviewsNumberSlides = document.querySelector('.reviews__number-slides');
+var slideIndex = 1; //индекс слайда, который показывается сейчас
+
+var showReviewsSlides = function(n) {
+  if (n > reviewsSliderItems.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = reviewsSliderItems.length;
+  }
+
+  for (var i = 0; i < reviewsSliderItems.length; i++) {
+    reviewsSliderItems[i].style.display = 'none';
+  }
+  reviewsSliderItems[slideIndex - 1].style.display = 'flex';
+  reviewsNumberSlides.textContent = slideIndex;
+
+}
+
+showReviewsSlides(slideIndex);
+
+var plusSlides = function(n) {
+  showReviewsSlides(slideIndex += n)
+};
+
+reviewsButtonPrev.addEventListener('click', function() {
+  plusSlides(-1);
+});
+
+reviewsButtonNext.addEventListener('click', function() {
+  plusSlides(1);
+});

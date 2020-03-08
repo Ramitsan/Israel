@@ -41,7 +41,7 @@
     background-image: url("../img/stamp-desktop@1x.png");
     background-size: 216px auto;
     position: absolute;
-    right: -9vw;
+    right: 0vw;
     top: 175px;
     width: 216px;
     height: 254px;
@@ -138,7 +138,7 @@
       display: none;
     }
     &::after {
-      right: -16px;
+      right: -3px;
     }
   }
   .how-to-go__info {
