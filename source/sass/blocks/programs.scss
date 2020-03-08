@@ -51,6 +51,7 @@
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-culture.svg);
+  background-size: 36px 36px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -68,6 +69,7 @@
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-academic.svg);
+  background-size: 36px 36px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -85,6 +87,7 @@
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-business.svg);
+  background-size: 36px 36px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -102,6 +105,7 @@
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-volonteur.svg);
+  background-size: 36px 36px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -119,6 +123,7 @@
   width: 36px;
   height: 36px;
   background-image: url(../img/programs-religion.svg);
+  background-size: 36px 36px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -238,10 +243,11 @@
   .programs__label-item--internships label::before,
   .programs__label-item--volunteering label::before,
   .programs__label-item--religion label::before {
-    top: 5px;
+    top: 7px;
     left: 9px;
     width: 32px;
     height: 32px;
+    background-size: 32px 32px;
   }
   #programs-general[type="radio"]:checked~.programs__tabs .programs__label-item--general label,
   #programs-academic[type="radio"]:checked~.programs__tabs .programs__label-item--academic label,
@@ -259,6 +265,7 @@
     right: 0;
     left: 0;
     padding-left: 16px;
+    padding-right: 16px;
     margin-right: 0;
     margin-left: 0;
   }
