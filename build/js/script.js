@@ -234,6 +234,7 @@ var lifeSliderItems = document.querySelectorAll('.slider__item');
 var lifeSliderTogglesWrap = document.querySelector('.slider__toggles');
 var lifeSliderToggles = document.querySelectorAll('.slider__toggle');
 var lifeSlideIndex = 1;
+var maxWidthViewportMobile = 767;
 
 
 
@@ -255,12 +256,12 @@ var showLifeSlides = function(number) {
   lifeSliderToggles[lifeSlideIndex - 1].classList.add('slider__toggle--active');
 }
 
-if ($(window).width() < 767) {
+if ($(window).width() < maxWidthViewportMobile) {
   showLifeSlides(lifeSlideIndex);
 }
 
 $(window).on('resize', function() {
-  if ($(window).width() < 767) {
+  if ($(window).width() < maxWidthViewportMobile) {
     showLifeSlides(lifeSlideIndex);
   }
 });
