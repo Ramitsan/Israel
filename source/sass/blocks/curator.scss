@@ -79,22 +79,35 @@
   width: 478px;
   margin-top: 23px;
   margin-bottom: 115px;
-  ;
   text-align: left;
+}
+
+.curator__text br {
+  display: none;
 }
 
 @media (max-width: $mobile-width) {
   .curator {
     width: 100%;
+    margin-top: 38px;
   }
   .curator__block {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .curator__info {
+    margin-top: 8px;
   }
   .curator__address {
     width: 100%;
   }
   .curator__text {
     width: 100%;
+    margin-top: 31px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .curator__text br {
+    display: block;
   }
 }

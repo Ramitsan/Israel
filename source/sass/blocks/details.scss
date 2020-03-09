@@ -63,7 +63,17 @@
 @media (max-width: $mobile-width) {
   .details {
     width: 100vw;
-    border: 1px solid red;
-    background-image: none;
+    padding: 45px 16px;
+    padding-top: 0;
+    background-image: none, url("../img/details-map-and-marker-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 633px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none, url("../img/details-map-and-marker-mobile@2x.png");
+    }
+  }
+  .details__name-city::after {
+    right: 29px;
   }
 }
