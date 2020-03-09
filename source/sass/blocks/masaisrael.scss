@@ -19,12 +19,9 @@
   text-align: left;
 }
 
-.masaisrael__link {
-  position: relative;
-}
-
 .masaisrael__link a {
   width: 230px;
+  position: relative;
   display: inline-block;
   padding: 19px 36px 20px;
   padding-left: 72px;
@@ -101,6 +98,6 @@
     padding-left: 65px;
   }
   .masaisrael__link a::before {
-    left: 80px;
+    left: 53px;
   }
 }

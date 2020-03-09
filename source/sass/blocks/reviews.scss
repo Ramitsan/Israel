@@ -21,7 +21,6 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  border: 1px solid red;
 }
 
 .reviews__author-photo {
@@ -29,7 +28,6 @@
   margin-left: -12px;
   width: 364px;
   height: 480px;
-  border: 1px solid orange;
 }
 
 .reviews__content {
@@ -41,13 +39,11 @@
   justify-content: flex-end;
   text-align: left;
   margin-left: 40px;
-  border: 1px solid green;
 }
 
 .reviews__item {
   margin: 0;
   flex-grow: 1;
-  border: 1px solid blue;
 }
 
 .reviews__author-name {
@@ -179,32 +175,70 @@
 @media (max-width: $mobile-width) {
   .reviews {
     width: 100vw;
-    border: 1px solid red;
-    background-image: url("../img/reviews-sketch-bg-mobile@1x.png");
-    background-size: 288px auto;
-    background-position: 55vw top;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/reviews-sketch-bg-mobile@2x.png");
-    }
+    background-image: none;
   }
   .reviews__nav {
     position: relative;
     left: 0;
+    margin: 0 auto;
+    bottom: 0;
+    top: 352px;
+  }
+  .reviews__counter {
+    order: 1;
+  }
+  .reviews__buttons {
+    order: 2;
+  }
+  .reviews__button--prev {
+    top: 4px;
+    left: 62px;
+  }
+  .reviews__button--next {
+    top: 4px;
+    left: 82px;
   }
   .reviews-slider__item {
     flex-direction: column;
     justify-content: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .reviews__content {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 48px;
+    justify-content: flex-start;
+  }
+  .reviews__author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
   }
   .reviews__text {
     width: 100%;
     font-size: 16px;
     line-height: 160%;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 26px;
   }
-  // .reviews__bottom {
-  //   width: 100%;
-  // }
-  .reviews__content {
-    width: 100%;
-    margin-left: 0;
+  .reviews__text--two {
+    margin-top: 17px;
+    margin-bottom: 22px;
+  }
+  .reviews__link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .reviews__social {
+    width: 115px;
+    margin-left: -10px;
+    margin-top: 20px;
+    justify-content: space-between;
   }
 }

@@ -16,7 +16,7 @@ var modalRequestCallForm = modalRequestCall.querySelector('.request-call__form')
 var isStorageSupport = true;
 var storageUserName = '';
 var storageUserTel = '';
-var ESC_KEYCODE = 27
+var ESC_KEYCODE = 27;
 
 try {
   storageUserName = localStorage.getItem('usernameInput');
@@ -235,8 +235,6 @@ var lifeSliderTogglesWrap = document.querySelector('.slider__toggles');
 var lifeSliderToggles = document.querySelectorAll('.slider__toggle');
 var lifeSlideIndex = 1;
 var maxWidthViewportMobile = 767;
-
-
 
 var showLifeSlides = function(number) {
   if (number > lifeSliderItems.length) {

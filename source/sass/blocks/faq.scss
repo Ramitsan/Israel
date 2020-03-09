@@ -39,13 +39,13 @@
 }
 
 .faq__item {
-  position: relative;
   padding-top: 9px;
   padding-bottom: 14px;
   border-bottom: 1px solid rgba($main-text-font, .2);
 }
 
 .faq__question {
+  position: relative;
   width: 383px;
   line-height: 25px;
   margin-left: 30px;
@@ -101,18 +101,21 @@
 @media (max-width: $mobile-width) {
   .faq {
     width: 100vw;
-    border: 1px solid red;
+    padding-top: 48px;
+    padding-bottom: 65px;
     background-image: none;
   }
   .faq__list {
     width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
     &::after {
       content: "";
       background-image: url("../img/faq-bag-mobile@1x.png");
       background-size: 146px auto;
       position: absolute;
-      left: -37px;
-      bottom: 104px;
+      left: -1px;
+      bottom: 62px;
       width: 146px;
       height: 177px;
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -123,26 +126,53 @@
     }
   }
   .faq__item {
-    padding-right: 37px;
+    padding-right: 30px;
+    padding-top: 38px;
+    padding-bottom: 14px;
+  }
+  .faq__item:first-child {
+    padding-top: 22px;
+  }
+  .faq__item:nth-child(2) {
+    padding-bottom: 23px;
+  }
+  .faq__item:nth-child(4) {
+    padding-bottom: 23px;
+  }
+  .faq__item:last-child {
+    padding-bottom: 16px;
   }
   .faq__question {
-    width: 100%;
-    margin-left: 20px;
-    padding-right: 55px;
+    width: 93%;
+    margin: 0;
+    margin-left: 25px;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 26px;
     &::after {
-      right: 16px;
+      top: 8px;
+      right: -24px;
     }
+    &::before {
+      top: -2px;
+      left: -25px;
+    }
+  }
+  .faq__item:last-child .faq__question {
+    width: 87%;
   }
   .faq__item--active .faq__question {
     &::after {
-      right: 16px;
+      top: 8px;
+      right: -24px;
     }
   }
   .faq__answer {
     width: 100%;
     font-size: 14px;
     line-height: 160%;
+    margin-top: 17px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
