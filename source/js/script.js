@@ -255,13 +255,19 @@ var showLifeSlides = function(number) {
   lifeSliderToggles[lifeSlideIndex - 1].classList.add('slider__toggle--active');
 }
 
-showLifeSlides(lifeSlideIndex);
+if ($(window).width() < 767) {
+  showLifeSlides(lifeSlideIndex);
+}
 
+$(window).on('resize', function() {
+  if ($(window).width() < 767) {
+    showLifeSlides(lifeSlideIndex);
+  }
+});
 
-
-var lifePlusSlides = function(number) {
-  showLifeSlides(lifeSlideIndex += number)
-};
+// var lifePlusSlides = function(number) {
+//   showLifeSlides(lifeSlideIndex += number)
+// };
 
 //получаем текущий слайд
 var currentSlide = function(number) {
