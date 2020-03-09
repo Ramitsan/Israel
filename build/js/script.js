@@ -233,6 +233,8 @@ var lifeSliderTogglesWrap = document.querySelector('.slider__toggles');
 var lifeSliderToggles = document.querySelectorAll('.slider__toggle');
 var lifeSlideIndex = 1;
 
+
+
 var showLifeSlides = function(number) {
   if (number > lifeSliderItems.length) {
     lifeSlideIndex = 1;
@@ -252,6 +254,8 @@ var showLifeSlides = function(number) {
 }
 
 showLifeSlides(lifeSlideIndex);
+
+
 
 var lifePlusSlides = function(number) {
   showLifeSlides(lifeSlideIndex += number)
