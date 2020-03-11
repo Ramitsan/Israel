@@ -11,8 +11,6 @@ var usernameInput = modalRequestCall.querySelector('#modal-user-name'); //пол
 var usertelInput = modalRequestCall.querySelector('#modal-user-tel'); //поле ввода номера телефона
 var agreement = modalRequestCall.querySelector('#agreement'); // чекбокс в форме
 var modalRequestCallForm = modalRequestCall.querySelector('.request-call__form'); //форма внутри мод.окна
-// var storageUserName = localStorage.getItem('username'); // имя, которое хранится в localStorage
-// var storageUserTel = localStorage.getItem('usertel');  // телефон, который хранится в localStorage
 var isStorageSupport = true;
 var storageUserName = '';
 var storageUserTel = '';
@@ -186,7 +184,7 @@ var clickHandler = function(arr) {
 clickHandler(faqItems);
 
 // слайдер в блоке ОТЗЫВЫ
-var reviewsSliderItems = document.querySelectorAll('.reviews-slider__item');
+var reviewsSliderItems = document.querySelectorAll('.reviews__slider-item');
 var reviewsButtonPrev = document.querySelector('.reviews__button--prev');
 var reviewsButtonNext = document.querySelector('.reviews__button--next');
 var reviewsNumberSlides = document.querySelector('.reviews__number-slides');

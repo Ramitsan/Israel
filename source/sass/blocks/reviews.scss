@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.reviews-slider__item {
+.reviews__slider-item {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -41,7 +41,7 @@
   margin-left: 40px;
 }
 
-.reviews__item {
+.reviews__blockquote {
   margin: 0;
   flex-grow: 1;
 }
@@ -199,7 +199,7 @@
     top: 4px;
     left: 82px;
   }
-  .reviews-slider__item {
+  .reviews__slider-item {
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 16px;
