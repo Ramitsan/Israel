@@ -62,8 +62,7 @@
   border-radius: 80px;
   font-weight: 500;
   line-height: 20px;
-  // font-variant: small-caps; НЕ РАБОТАЕТ!
-  text-transform: uppercase;
+  font-variant: small-caps;
   text-shadow: $shadow-text;
   margin-bottom: 16px;
   margin-left: -19px;

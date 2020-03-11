@@ -10,51 +10,6 @@
 </head>
 
 <body>
-  <!-- SVG спрайт
-  <svg style="display:none">
-    <symbol viewBox="0 0 36 36" id="programs-culture">
-      <g>
-      <rect x="4" y="2" width="28" height="33" fill="url(#pattern0)"/>
-      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-        <use xlink:href="#image0" transform="scale(0.0357143 0.030303)"/>
-      </pattern>
-      <image id="image0" width="28" height="33" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAhCAYAAADK6cvnAAACgElEQVRIib2Wz0tUURTHP9lkxExZCCFiCA24UhCCVApLok0UFBHVImonrly1qo24FJEW7oVCc2VKmNHChhaCK/+CDESRFjX5g8rM2+J+X3N6zozvDb35wmHe+95zvt/zLve9M1AZRhRVQTfgFN3VMFwyhktJm92R0VeFE5cYVmVyTeHEJYJ+GawYbkVc//82qwE2gV2g3fDt4jaVcyBSQBa4B9SqOIxfQA+QAbaAK8B1rX1XZIBZ4D1wpITPDvASYJzCqUs6xlPAFHBfnbwGPgNpYA/YAO4CJ4GPeoJ0qPtt4DJwFsgDk8AJ/BZvA6fNjkwFRTl1MBASq5OpA1qKbFWAFuVsqMZiQGs5S7aax84afl7cWBmzAGPKnTdc1ui2hgsmtfBW9xd0vwvURzCsV65TLdJy0t6HRtNNDzCn68EIZgEGVTMnjUCvsVTBsBJ+6/cL/nWJilrVWI3hcgUZYNl09iiGWYCHpn5ZmmUxQuHEVYrgZB84M+uANdNhXwVmfaZ+jf2vyT8YVeIPCk8ZftHLIQ18C2mMlkpuNp2dB2Z0PRTDcEg1M9II9JqLJU+bZEIFDRHMGkINY5qeDief08Ie0GT4N+InIhhOKHfWcE3SdPL4iwWRT0Iix/EfZAe0lTFrU05eNRZPtbYAfk49ADq1eBE/ro6ps+AAoM5zFJ8Wl3TtgGf4k1mDn5WntNYpL55TvXn44hBwBrgJHKX4xP8JXAVu4Sf+Ywqfux38yczgZ9076YSRks6rImslkcdvc5fhusTl4whFRS9+W9YNty6uNwlDgE8yuK1w4hLDDZlsKZy4RLFI4dQtJm0G0GEMO+IWH67AcBX/Z/cD/h2OhT993f+vTKFcIwAAAABJRU5ErkJggg=="/>
-     </g>>
-    </symbol>
-
-    <symbol viewBox="0 0 36 36" id="programs-study">
-      <rect width="36" height="35" fill="url(#pattern0)"/>
-      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-        <use xlink:href="#image0" transform="scale(0.0277778 0.0285714)"/>
-      </pattern>
-      <image id="image0" width="36" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAjCAYAAAD8BaggAAADFklEQVRYhb3XTahVVRgG4MebheTPVTCigXRJrBxE9INJAymw8AbWKBCzq91sJERhA4smNRAy+7mFEUrQRPodNMmIQiyhopB+BAMxwooSSwiDqDBPg/2t9rq7e3dnnXOPLyzOXmt93/u+h7P2t75D/5iN7TFmzwBfX7gHx9GJcTzWzjlW4mBmZFeMND8YMQPHCHZnwp9hdba/OtbS/u7IGQi2ZUInsakldhN+zuK3zaSRO3E0I38C87rImxexKe9ocPWM67E/I3wFy3vgWR65iWd/cHeNSzCREXyFNT0YaWI0uBLvRGi1Yiv+jIRfsWUGjDSxJbg7obV1qqBRHFK7fwbDBSJDmFUQPxwaSe9QeAA7s403sLiAGNbjR3xUmCe03sz0dw7hlyxgEZZ0SbYGn2Kv6ix83oOhJViYzf/1ci32ZU5fx7JpSK6M/RT7MW4uNLKswbEvPPwH63FMfeB2YG7sXYznMpJvsLHQyHBwphfnWGi2Yhb2ZMI/4WlVde7gNzyo7BDDOE5nvHtKONZG0tcZQQcfFpqAW/FJxnE4PteWkIxH0m24rmFqFy7rgmOpyRX6/Vi7K+bjvRgaxQXx/IHJ3/QxzJ8idz4ez+J+wN3Z/v2xfm+Joc2RdIfqMHfwaOw9nImdNPlgb1SftXTLz2lwPxB7m0sMbcgMXRTPL2T7I6r6k4TfjpHme03fByVDG0oMrYikZ3FpPD8/RdwqHMiMHIi1NiTjK0oMDeEE/lK94tMZSrgvxv9haXCdCI0irFMXyA6eLCVo4Dx8GVzreiV5Tf1zPNWHmRHVFZOupb7wlro/eggLCnIXqPqdvJvoG9dkhB2cxUsYw+WqFmJOjMWxNhYxZ7O8R2bCDNwUhK+qCt6ZhsEOfo/RXD+DF3FFt2Ilf32PhKGJMHkLrlL1NIsi5vsYh/GeqgycKtDoCleLbq4l5sIYA8dCvKuuHTeeC9E2vKO+IDv4Wxd/XQaF4TDxnaqqpht8bJCibeU73dLfql7fLxrrA0HbW5bay1V4GTfE/PxBGmrDXFUj/4e6rpzG7YMU/QdfTwUSNPe/TwAAAABJRU5ErkJggg=="/>
-    </symbol>
-
-    <symbol viewBox="0 0 36 36" id="programs-business">
-      <rect x="2" y="5" width="32" height="25" fill="url(#pattern0)"/>
-        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <use xlink:href="#image0" transform="scale(0.03125 0.04)"/>
-        </pattern>
-        <image id="image0" width="32" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAYAAABQDyyRAAAB/klEQVRIidXWzYuNcRQH8M/cueNlBiXlpVh4WakJUUM2ouRtofgD2MuOslE2WEpWlrJTdmOhTIqFSWYWhKgpZSI0ygzm7boWv/M0j+ne5rnXnZFvnX7Pc37n+Z7T+Z1zfg/FsB4PMI6pOWQSA9hTkLsQHqHaoHzDilYFUAnSnQVsuzAW9nMGUI61G8fQVsNmae75cNj+qsNXQnuO5yre17F9gj44qPH0tkrOtOEpduEZnqOzTsStwrhU1PulgvUqotk3z47zWBk+qyVMhHKivn3LkfmqkI6givvYtADOl+Nm+ByDfn8WxhWsmwfHy3AWn3K+vjKTgY+5jUncwnHpvJrFEhzADXzO8Y9IrTzahkFsxxEswiVsy5F8x2MpU28whA8YlUZvFR1S96zBZmyURvHu0GUYxmU8xAtRA4NBcihneDQyMKJ2/1akdhrHTzN3RC3bKfTiVGQE1mZ72SQkjdAMvSFd2CuN4B5siOy0Y7HaeIl30lwZkO6RL7NsVuVfsgycqEM4GxfD/p5UrKtxLXR3C3JsVSMDRfEj1h24HkTdoas0StZMAH2Yls7x5Ky9OwsRwICUwp74vhr611KnzHsA8Dbkr1FqBcl/H0BHPA8voN+hWMtlaajAaek2bLYuimIaW/KK8/7dL9nt7OfxnHQXdGpimDSIkpSFflz4DWW406ArksvgAAAAAElFTkSuQmCC"/>
-    </symbol>
-
-    <symbol viewBox="0 0 36 36" id="programs-volonteur">
-      <rect x="2" y="3" width="32" height="29" fill="url(#pattern0)"/>
-      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-        <use xlink:href="#image0" transform="scale(0.03125 0.0344828)"/>
-      </pattern>
-      <image id="image0" width="32" height="29" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAC60lEQVRIicXXTYiVVRgH8N84Y2gp+dFAQ4KjkWKKUk3Ql5i4UEIKQmkR7hQlEERduXAnhNgqqE2LiL4nUBduFD8WKqgF1kQZCDFqDDqN32aY423xnON95+3eOzN4x/5wOJfnfDz/85zn/J/30hx04Tv04QdsSfYZ+By9+BHbm+RvCF7CPVRK7Qj+qGNvbZbzFpxJG3+JhXgLAwWHe7AIKwqE1jaLwOy04ZWSfSZ+whcl+6o0vzsb2h6QwGDqW0r2XhGNMqam/s4D+h2C0+JU3w4zb6Hq1bzdTAILxIkq+KrBnOtpzt5mOs94DXeTg29KYy/gVhrbNxbOM15WjcTuZJuDv4zhyct4EX8nhweEMBUJPRR04ZKqDnzdaHL5+TQLT+JNoQ/dw8z9f5Ej8KgoHFkgxov7u/kwSKwQylUuGhfwRoHQrNQeb6bzFpzF07gh3nK2T8FVHMQSPJHG7uB3nMAp/Iqfhcrl9aNCvzjxAnHS8ZgndL4YkSu47L+Ryq0fR/EJ3hkNgVwinyrY5iXbTWzEs6KGt4oMX4J1+Azf43YNQltHSuBCWjC3YFuebIdHuEebKMHzsb5AohZmoKO4sBZy2ewfxnE7rom86C3seU9cYYe40i5RL1bimTSvG2vqEZiS+j8bON+GHYnAQLJ1YGL6XRHJOa207ioewWr0jKuzeV40UGc8b1QRz3J2ahML461pn+s4hA/E9+NUbEpzltaLQH5yvzQg8JGo/+0iMSeLkw2KpLwsakK/KFAZy7A5/T5I7ST8NNn2Y3EDEiPFBGxAj2qCHkiEaxLYa+iTOor3RH0fDV7BLlWtqYhkzRHQhpwHfYWF7anfjefxamqE8h3Hb0JDLooQj8N0dApRWyryIuMkPhZ/VIYoZla3d/GcCPnFZMuvYY2IyjX1lbBWO4cPhXDVRIsQm9drjN0Sz+pGwTZJfPXMSafsFFn9GP4RL+O8UMceHFNfkO4T6MROEa5BcS19eF/c/ZjiXw4X3+LTbxDoAAAAAElFTkSuQmCC"/>
-    </symbol>
-
-    <symbol viewBox="0 0 36 36"  id="programs-religion">
-      <path d="M6 5H29V30H6V5Z" fill="url(#pattern0)"/>
-      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-        <use xlink:href="#image0" transform="scale(0.0434783 0.04)"/>
-      </pattern>
-      <image id="image0" width="23" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAACa0lEQVRIibWWX2iNcRjHP+fd8SdrZOVcHJSTUi5coDMU4kKKYRGliHbhgoaQP+ViF67U7pQ/t6Jc4JTlUtSItAuZWCRa2aTNysG2M3tdPN9f79PbHLbsqdPzfJ8/3/f353mf9wA0AQcwWQicAGYKHwHWy14EnHSxXcA+2QXVTRNuAYoAP4HYOWNglXAMPJZ9TniDi4W6M7KX6uExUMoC+4E5SroPTAe6hY8BXbLvAEPAS+G9bhclYAToAYaBo0BnBOzQ0QAsBxqBPJABtrqVFhUrCDepFmClcvNaXCOwBWDMba/VbT0j+7libcKB0B/LRdmrgVmhLgI+k0hZesT5+qW/SQ9LDwKVVKziHtgfMYUyFeRh5USpB9RIjzpfOIZMakFjJH096mKBPIqAX44onHXWJeUcGcB36VpHGhY1BMyQXYmAT478hfQ66QGsA+pJev8jsFYk9+TbKP0OWCC7F+CyVrnCbatPCZuFB4CHsh+QtGEO6+sY+Kqas8KHPUG7gjeFzws3O7LwGwTWKN4uX5hPvcIFsIv6IkdeCWXh0+7Irst3yvmuydcpvF34kctht5xhjiwBfsj3BLuDVuE9wDZsjsTAa9XMxi40BpaRkpICd4Vr3Jb/9Lvk6rvlu5AmBrvMp0p4BsyTf76O4q1iHcAhkpZrwEZIDNwYj9g/4JZb2RWSKXhcvnCRReC2y22rRuylGet/fwTh0vtS/ldovE5UdmKt+SFF+Ea72jQZ0vEkzOyD/1owkakY3tqe/0Veh73itVjXACwWzmFfnUlLB9X7/Gq14uxfyLuAudi4LWN/Q+qwr34EvK9W/Bt09sNjLKtzQQAAAABJRU5ErkJggg=="/>
-    </symbol>
-  </svg> -->
-
   <!-- Header -->
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -647,14 +602,6 @@
   <script src="js/jquery.js" type="text/javascript"></script>
   <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
   <script src="js/script.js"></script>
-  <!-- <script>
-    if (window.jquery) {
-      alert("jQuery подключен");
-    } else {
-      alert("jQuery не подключен");
-    }
-  </script> -->
-
 </body>
 
 </html>

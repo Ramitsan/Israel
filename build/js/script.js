@@ -97,14 +97,10 @@ modalRequestCallForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
   validateForm(usernameInput, usertelInput);
 
-  // if (!usernameInput.value || !usertelInput.value) {
-  //   evt.preventDefault();
-  // } else {
   if (isStorageSupport) {
     localStorage.setItem('usernameInput', usernameInput.value);
     localStorage.setItem('usertelInput', usertelInput.value);
   }
-  // }
 });
 
 window.addEventListener('keydown', function(evt) {
