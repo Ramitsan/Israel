@@ -254,19 +254,19 @@ var showLifeSlides = function(number) {
   lifeSliderToggles[lifeSlideIndex - 1].classList.add('slider__toggle--active');
 }
 
-if ($(window).width() < maxWidthViewportMobile) {
-  showLifeSlides(lifeSlideIndex);
-}
+var mql = window.matchMedia('(max-width: 767px)');
 
-$(window).on('resize', function() {
-  if ($(window).width() < maxWidthViewportMobile) {
+function mediaQueryResponse(mql) {
+  if (mql.matches) {
     showLifeSlides(lifeSlideIndex);
   }
-});
+}
 
-// var lifePlusSlides = function(number) {
-//   showLifeSlides(lifeSlideIndex += number)
-// };
+mediaQueryResponse(mql);
+
+window.addEventListener('resize', function() {
+  mediaQueryResponse(mql);
+});
 
 //получаем текущий слайд
 var currentSlide = function(number) {
