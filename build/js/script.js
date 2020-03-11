@@ -74,12 +74,14 @@ pageHeaderCallLink.addEventListener('click', function(evt) {
   usernameInput.focus();
   if (storageUserName) {
     usernameInput.value = storageUserName;
+    usernameInput.style.borderColor = 'rgba(72, 72, 72, 0.5)';
     usertelInput.focus();
   } else {
     usernameInput.focus();
   }
   if (storageUserTel) {
     usertelInput.value = storageUserTel;
+    usertelInput.style.borderColor = 'rgba(72, 72, 72, 0.5)';
     agreement.focus();
   }
 });
@@ -87,7 +89,6 @@ pageHeaderCallLink.addEventListener('click', function(evt) {
 modalCloseRequestCallButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalRequestCall.classList.remove('modal--show');
-  modalRequestCall.classList.remove('modal--error');
   modalOverlay.classList.remove('modal--show');
   activateScrollHandler();
 });
@@ -96,17 +97,14 @@ modalRequestCallForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
   validateForm(usernameInput, usertelInput);
 
-  if (!usernameInput.value || !usertelInput.value) {
-    evt.preventDefault();
-    modalRequestCall.classList.remove('modal--error');
-    modalRequestCall.offsetWidth = modalRequestCall.offsetWidth;
-    modalRequestCall.classList.add('modal--error');
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem('usernameInput', usernameInput.value);
-      localStorage.setItem('usertelInput', usertelInput.value);
-    }
+  // if (!usernameInput.value || !usertelInput.value) {
+  //   evt.preventDefault();
+  // } else {
+  if (isStorageSupport) {
+    localStorage.setItem('usernameInput', usernameInput.value);
+    localStorage.setItem('usertelInput', usertelInput.value);
   }
+  // }
 });
 
 window.addEventListener('keydown', function(evt) {
@@ -114,7 +112,6 @@ window.addEventListener('keydown', function(evt) {
     if (modalRequestCall.classList.contains('modal--show')) {
       evt.preventDefault();
       modalRequestCall.classList.remove('modal--show');
-      modalRequestCall.classList.remove('modal--error');
       modalOverlay.classList.remove('modal--show');
       activateScrollHandler();
     }
@@ -267,10 +264,6 @@ mediaQueryResponse(mql);
 window.addEventListener('resize', function() {
   mediaQueryResponse(mql);
 });
-
-// var lifePlusSlides = function(number) {
-//   showLifeSlides(lifeSlideIndex += number)
-// };
 
 //получаем текущий слайд
 var currentSlide = function(number) {
