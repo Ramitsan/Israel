@@ -157,9 +157,6 @@
       left: -25px;
     }
   }
-  .faq__item:last-child .faq__question {
-    width: 87%;
-  }
   .faq__item--active .faq__question {
     &::after {
       top: 8px;

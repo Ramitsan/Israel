@@ -5,18 +5,19 @@ $white: #FFFFFF;
 $yellow-gradient: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
 $yellow-gradient-hover: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
 $shadow-btn-click: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%),
-                   linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%); //background;
-
+linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%); //background;
 $shadow-icon: 0px 1px 4px rgba(0, 0, 0, 0.05); //box-shadow
 $shadow-text: 0px 1px 4px rgba(0, 0, 0, 0.12); //box-shadow
 $shadow-babl: 0px 3px 12px rgba(0, 0, 0, 0.1); //box-shadow
-
-
-$font-fira: 'Fira Sans', 'Arial', sans-serif;
-$font-montserrat: 'Montserrat', 'Arial', sans-serif;
-$font-raleway: 'Raleway', 'Arial', sans-serif;
-
+$font-fira: 'Fira Sans',
+'Arial',
+sans-serif;
+$font-montserrat: 'Montserrat',
+'Arial',
+sans-serif;
+$font-raleway: 'Raleway',
+'Arial',
+sans-serif;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
-
 $mobile-width: 767px;

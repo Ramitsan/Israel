@@ -1,5 +1,5 @@
 .request-call {
-  top: 117px;
+  top: 124px;
   left: 50%;
   margin-left: -240px;
   width: 480px;
@@ -86,7 +86,7 @@
   margin: 0 auto;
 }
 
-.request-call__item-wrapper--checkbox input+label::before {
+.request-call__item-wrapper--checkbox label::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -106,11 +106,25 @@
     height: 100%;
     border-radius: 0;
   }
+  .request-call__form {
+    padding-top: 30px;
+  }
+  .request-call__item-wrapper {
+    text-align: center;
+  }
   .request-call__item-wrapper input[type="text"],
   .request-call__item-wrapper input[type="tel"] {
     width: 288px;
   }
+  .request-call__item-wrapper button[type="submit"] {
+    margin-left: 1px;
+  }
   .request-call__item-wrapper--checkbox label {
     width: 260px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .request-call__item-wrapper--checkbox label::before {
+    left: -1px;
   }
 }
