@@ -203,7 +203,6 @@ var showReviewsSlides = function(n) {
   }
   reviewsSliderItems[reviewsSlideIndex - 1].style.display = 'flex';
   reviewsNumberSlides.textContent = reviewsSlideIndex;
-
 }
 
 showReviewsSlides(reviewsSlideIndex);
@@ -225,7 +224,7 @@ var lifeSliderItems = document.querySelectorAll('.slider__item');
 var lifeSliderTogglesWrap = document.querySelector('.slider__toggles');
 var lifeSliderToggles = document.querySelectorAll('.slider__toggle');
 var lifeSlideIndex = 1;
-var maxWidthViewportMobile = 767;
+var mql = window.matchMedia('(max-width: 767px)');
 
 var showLifeSlides = function(number) {
   if (number > lifeSliderItems.length) {
@@ -244,8 +243,6 @@ var showLifeSlides = function(number) {
   lifeSliderItems[lifeSlideIndex - 1].style.display = 'block';
   lifeSliderToggles[lifeSlideIndex - 1].classList.add('slider__toggle--active');
 }
-
-var mql = window.matchMedia('(max-width: 767px)');
 
 function mediaQueryResponse(mql) {
   if (mql.matches) {
