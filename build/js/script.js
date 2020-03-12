@@ -11,12 +11,10 @@ var usernameInput = modalRequestCall.querySelector('#modal-user-name'); //пол
 var usertelInput = modalRequestCall.querySelector('#modal-user-tel'); //поле ввода номера телефона
 var agreement = modalRequestCall.querySelector('#agreement'); // чекбокс в форме
 var modalRequestCallForm = modalRequestCall.querySelector('.request-call__form'); //форма внутри мод.окна
-// var storageUserName = localStorage.getItem('username'); // имя, которое хранится в localStorage
-// var storageUserTel = localStorage.getItem('usertel');  // телефон, который хранится в localStorage
 var isStorageSupport = true;
 var storageUserName = '';
 var storageUserTel = '';
-var ESC_KEYCODE = 27
+var ESC_KEYCODE = 27;
 
 try {
   storageUserName = localStorage.getItem('usernameInput');
@@ -74,12 +72,14 @@ pageHeaderCallLink.addEventListener('click', function(evt) {
   usernameInput.focus();
   if (storageUserName) {
     usernameInput.value = storageUserName;
+    usernameInput.style.borderColor = 'rgba(72, 72, 72, 0.5)';
     usertelInput.focus();
   } else {
     usernameInput.focus();
   }
   if (storageUserTel) {
     usertelInput.value = storageUserTel;
+    usertelInput.style.borderColor = 'rgba(72, 72, 72, 0.5)';
     agreement.focus();
   }
 });
@@ -87,7 +87,6 @@ pageHeaderCallLink.addEventListener('click', function(evt) {
 modalCloseRequestCallButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalRequestCall.classList.remove('modal--show');
-  modalRequestCall.classList.remove('modal--error');
   modalOverlay.classList.remove('modal--show');
   activateScrollHandler();
 });
@@ -96,16 +95,9 @@ modalRequestCallForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
   validateForm(usernameInput, usertelInput);
 
-  if (!usernameInput.value || !usertelInput.value) {
-    evt.preventDefault();
-    modalRequestCall.classList.remove('modal--error');
-    modalRequestCall.offsetWidth = modalRequestCall.offsetWidth;
-    modalRequestCall.classList.add('modal--error');
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem('usernameInput', usernameInput.value);
-      localStorage.setItem('usertelInput', usertelInput.value);
-    }
+  if (isStorageSupport) {
+    localStorage.setItem('usernameInput', usernameInput.value);
+    localStorage.setItem('usertelInput', usertelInput.value);
   }
 });
 
@@ -114,7 +106,6 @@ window.addEventListener('keydown', function(evt) {
     if (modalRequestCall.classList.contains('modal--show')) {
       evt.preventDefault();
       modalRequestCall.classList.remove('modal--show');
-      modalRequestCall.classList.remove('modal--error');
       modalOverlay.classList.remove('modal--show');
       activateScrollHandler();
     }
@@ -163,10 +154,18 @@ var contactsUserNameInput = contactsForm.querySelector('#user-name');
 var contactsUserTelInput = contactsForm.querySelector('#user-tel');
 var contactsButtonSubmit = contactsForm.querySelector('.contacts__button-submit');
 
+
+//отправка формы
 contactsForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
   validateForm(contactsUserNameInput, contactsUserTelInput);
 })
+
+jQuery(function($) {
+  $("#user-tel").mask("+7 (999) 99 99 99");
+  $("#modal-user-tel").mask("+7 (999) 99 99 99");
+  $("#user-phone").mask("+7 (999) 99 99 99");
+});
 
 //Показ и скрытие ответов на вопросы в блоке FAQ
 var faqItems = document.querySelectorAll('.faq__item');
@@ -183,3 +182,89 @@ var clickHandler = function(arr) {
 }
 
 clickHandler(faqItems);
+
+// слайдер в блоке ОТЗЫВЫ
+var reviewsSliderItems = document.querySelectorAll('.reviews__slider-item');
+var reviewsButtonPrev = document.querySelector('.reviews__button--prev');
+var reviewsButtonNext = document.querySelector('.reviews__button--next');
+var reviewsNumberSlides = document.querySelector('.reviews__number-slides');
+var reviewsSlideIndex = 1; //индекс слайда, который показывается сейчас
+
+var showReviewsSlides = function(n) {
+  if (n > reviewsSliderItems.length) {
+    reviewsSlideIndex = 1;
+  }
+  if (n < 1) {
+    reviewsSlideIndex = reviewsSliderItems.length;
+  }
+
+  for (var i = 0; i < reviewsSliderItems.length; i++) {
+    reviewsSliderItems[i].style.display = 'none';
+  }
+  reviewsSliderItems[reviewsSlideIndex - 1].style.display = 'flex';
+  reviewsNumberSlides.textContent = reviewsSlideIndex;
+}
+
+showReviewsSlides(reviewsSlideIndex);
+
+var plusSlides = function(n) {
+  showReviewsSlides(reviewsSlideIndex += n)
+};
+
+reviewsButtonPrev.addEventListener('click', function() {
+  plusSlides(-1);
+});
+
+reviewsButtonNext.addEventListener('click', function() {
+  plusSlides(1);
+});
+
+//слайдер в мобильной версии блока ЖИЗНЬ В ИЗРАИЛЕ
+var lifeSliderItems = document.querySelectorAll('.slider__item');
+var lifeSliderTogglesWrap = document.querySelector('.slider__toggles');
+var lifeSliderToggles = document.querySelectorAll('.slider__toggle');
+var lifeSlideIndex = 1;
+var mql = window.matchMedia('(max-width: 767px)');
+
+var showLifeSlides = function(number) {
+  if (number > lifeSliderItems.length) {
+    lifeSlideIndex = 1;
+  }
+  if (number < 1) {
+    lifeSlideIndex = lifeSliderItems.length;
+  }
+  for (var i = 0; i < lifeSliderItems.length; i++) {
+    lifeSliderItems[i].style.display = 'none';
+  }
+
+  for (var j = 0; j < lifeSliderToggles.length; j++) {
+    lifeSliderToggles[j].classList.remove('slider__toggle--active');
+  }
+  lifeSliderItems[lifeSlideIndex - 1].style.display = 'block';
+  lifeSliderToggles[lifeSlideIndex - 1].classList.add('slider__toggle--active');
+}
+
+function mediaQueryResponse(mql) {
+  if (mql.matches) {
+    showLifeSlides(lifeSlideIndex);
+  }
+}
+
+mediaQueryResponse(mql);
+
+window.addEventListener('resize', function() {
+  mediaQueryResponse(mql);
+});
+
+//получаем текущий слайд
+var currentSlide = function(number) {
+  showLifeSlides(lifeSlideIndex = number)
+};
+
+lifeSliderTogglesWrap.addEventListener('click', function(evt) {
+  for (var i = 0; i < lifeSliderToggles.length + 1; i++) {
+    if (evt.target.classList.contains('slider__toggle') && evt.target === lifeSliderToggles[i - 1]) {
+      currentSlide(i);
+    }
+  }
+});

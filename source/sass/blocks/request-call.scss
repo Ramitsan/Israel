@@ -1,13 +1,21 @@
 .request-call {
-  top: 120px;
+  top: 124px;
   left: 50%;
   margin-left: -240px;
   width: 480px;
   border-radius: 8px;
 }
 
+.request-call__form {
+  padding-top: 16px;
+}
+
 .request-call__form-container {
   margin: 0;
+}
+
+.request-call__item-wrapper {
+  text-align: left;
 }
 
 .request-call__item-wrapper input[type="text"],
@@ -15,16 +23,16 @@
   width: 360px;
   border: 2px solid #E3E3E3;
   border-radius: 80px;
+  padding: 19px 40px 19px;
 }
 
 .request-call__item-wrapper input[type="text"] {
-  padding: 19px 40px 20px;
   margin-bottom: 8px;
 }
 
 .request-call__item-wrapper input[type="tel"] {
-  padding: 20px 40px 19px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
 }
 
 .request-call__item-wrapper input[type="text"]::placeholder,
@@ -43,17 +51,21 @@
   border: 2px solid $yellow;
 }
 
+.request-call__item-wrapper--button {
+  text-align: center;
+}
+
 .request-call__item-wrapper button[type="submit"] {
   width: 264px;
-  padding: 19px 40px 20px;
+  padding: 19px 40px 19px;
   text-align: center;
   border-radius: 80px;
   font-weight: 500;
   line-height: 20px;
-  // font-variant: small-caps; НЕ РАБОТАЕТ!
-  text-transform: uppercase;
+  font-variant: small-caps;
   text-shadow: $shadow-text;
   margin-bottom: 16px;
+  margin-left: -19px;
 }
 
 .request-call__item-wrapper--checkbox {
@@ -65,21 +77,54 @@
 
 .request-call__item-wrapper--checkbox label {
   display: block;
+  position: relative;
   width: 260px;
   font-size: 13px;
   line-height: 150%;
   color: rgba($main-text-font, .74);
-  padding-left: 20px;
+  padding-left: 10px;
   margin: 0 auto;
 }
 
-.request-call__item-wrapper--checkbox input+label::before {
+.request-call__item-wrapper--checkbox label::before {
   content: "";
   position: absolute;
   width: 16px;
   height: 16px;
   border: 2px solid $yellow;
   border-radius: 2px;
-  left: 70px;
+  left: -14px;
   top: 0;
+}
+
+@media (max-width: $mobile-width) {
+  .request-call {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100vw;
+    height: 100%;
+    border-radius: 0;
+  }
+  .request-call__form {
+    padding-top: 30px;
+  }
+  .request-call__item-wrapper {
+    text-align: center;
+  }
+  .request-call__item-wrapper input[type="text"],
+  .request-call__item-wrapper input[type="tel"] {
+    width: 288px;
+  }
+  .request-call__item-wrapper button[type="submit"] {
+    margin-left: 1px;
+  }
+  .request-call__item-wrapper--checkbox label {
+    width: 260px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .request-call__item-wrapper--checkbox label::before {
+    left: -1px;
+  }
 }

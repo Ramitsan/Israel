@@ -26,6 +26,10 @@
   margin-bottom: 25px;
 }
 
+.section-title--life-in-israel br {
+  display: none;
+}
+
 .section-title--masaisrael {
   margin-top: 115px;
   margin-bottom: 24px;
@@ -52,5 +56,16 @@
   }
   .section-title--about-program {
     margin-bottom: 24px;
+  }
+  .section-title--life-in-israel br {
+    display: block;
+  }
+  .section-title--masaisrael {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+  }
+  .section-title--details {
+    margin-bottom: 25px;
   }
 }
