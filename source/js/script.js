@@ -5,6 +5,7 @@ var pageHeaderCallLink = document.querySelector('.page-header__call'); //ссы�
 var modalRequestCall = document.querySelector('.request-call'); //модальное окно Заказать звонок
 var modalCloseRequestCallButton = modalRequestCall.querySelector('.modal-close'); //кнопка закрытия
 var modalAccepted = document.querySelector('.accepted'); //модальное окно Заявка принята
+var acceptedUnderstandButton = modalAccepted.querySelector('.accepted-understand'); //кнопка "Понятно" в окне "Заявка принята"
 var modalCloseAcceptedButton = modalAccepted.querySelector('.modal-close'); //кнопка закрытия в окне Заявка принята
 var modalOverlay = document.querySelector('.modal-overlay');
 var usernameInput = modalRequestCall.querySelector('#modal-user-name'); //поле ввода имени
@@ -23,6 +24,49 @@ try {
   isStorageSupport = false;
 }
 
+var modalRequestCallShow = function() {
+  modalRequestCall.classList.add('modal--show');
+}
+
+var modalRequestCallClose = function() {
+  modalRequestCall.classList.remove('modal--show');
+}
+
+var modalAcceptedShow = function() {
+  modalAccepted.classList.add('modal--show');
+}
+
+var modalAcceptedClose = function() {
+  modalAccepted.classList.remove('modal--show');
+}
+
+var overlayShowHandler = function() {
+  modalOverlay.classList.add('modal--show');
+}
+
+var overlayRemoveHandler = function() {
+  modalOverlay.classList.remove('modal--show');
+}
+
+var disableScrollHandler = function() {
+  document.body.classList.add('body-scroll');
+}
+
+var activateScrollHandler = function() {
+  document.body.classList.remove('body-scroll');
+}
+
+var overlayClickHandler = function(popup) {
+  modalOverlay.addEventListener('click', function() {
+    popup.classList.remove('modal--show');
+    overlayRemoveHandler();
+    activateScrollHandler();
+  })
+}
+
+overlayClickHandler(modalRequestCall);
+overlayClickHandler(modalAccepted);
+
 var validateForm = function(elem1, elem2) {
   if (elem1.value === '') {
     elem1.style.borderColor = '#ff0000';
@@ -37,37 +81,17 @@ var validateForm = function(elem1, elem2) {
   }
 
   if (elem1.value !== '' && elem2.value !== '') {
-    modalAccepted.classList.add('modal--show');
-    modalOverlay.classList.add('modal--show');
+    modalAcceptedShow();
+    overlayShowHandler();
     disableScrollHandler();
-    modalRequestCall.classList.remove('modal--show');
+    modalRequestCallClose();
   }
 }
 
-var disableScrollHandler = function() {
-  document.body.classList.add('body-scroll');
-}
-
-var activateScrollHandler = function() {
-  document.body.classList.remove('body-scroll');
-}
-
-
-var closeOverlayHandler = function(popup) {
-  modalOverlay.addEventListener('click', function() {
-    popup.classList.remove('modal--show');
-    modalOverlay.classList.remove('modal--show');
-    activateScrollHandler();
-  })
-}
-
-closeOverlayHandler(modalRequestCall);
-closeOverlayHandler(modalAccepted);
-
 pageHeaderCallLink.addEventListener('click', function(evt) {
   evt.preventDefault;
-  modalRequestCall.classList.add('modal--show');
-  modalOverlay.classList.add('modal--show');
+  modalRequestCallShow();
+  overlayShowHandler();
   disableScrollHandler();
   usernameInput.focus();
   if (storageUserName) {
@@ -86,8 +110,8 @@ pageHeaderCallLink.addEventListener('click', function(evt) {
 
 modalCloseRequestCallButton.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalRequestCall.classList.remove('modal--show');
-  modalOverlay.classList.remove('modal--show');
+  modalRequestCallClose();
+  overlayRemoveHandler();
   activateScrollHandler();
 });
 
@@ -101,18 +125,25 @@ modalRequestCallForm.addEventListener('submit', function(evt) {
   }
 });
 
+acceptedUnderstandButton.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  modalAcceptedClose();
+  overlayRemoveHandler();
+  activateScrollHandler();
+});
+
 window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === ESC_KEYCODE) {
     if (modalRequestCall.classList.contains('modal--show')) {
       evt.preventDefault();
-      modalRequestCall.classList.remove('modal--show');
-      modalOverlay.classList.remove('modal--show');
+      modalRequestCallClose();
+      overlayRemoveHandler();
       activateScrollHandler();
     }
     if (modalAccepted.classList.contains('modal--show')) {
       evt.preventDefault();
-      modalAccepted.classList.remove('modal--show');
-      modalOverlay.classList.remove('modal--show');
+      modalAcceptedClose();
+      overlayRemoveHandler();
       activateScrollHandler();
     }
   }
@@ -125,13 +156,13 @@ var wanttogoUserPhoneInput = wantToGoForm.querySelector('#user-phone')
 var validateWanttogoForm = function() {
   if (wanttogoUserPhoneInput.value === '') {
     wanttogoUserPhoneInput.style.borderColor = '#ff0000';
-    modalAccepted.classList.remove('modal--show');
-    modalOverlay.classList.remove('modal--show');
+    modalAcceptedClose();
+    overlayRemoveHandler();
     activateScrollHandler();
   } else {
     wanttogoUserPhoneInput.style.borderColor = 'rgba(72, 72, 72, 0.5)';
-    modalAccepted.classList.add('modal--show');
-    modalOverlay.classList.add('modal--show');
+    modalAcceptedShow();
+    overlayShowHandler();
     disableScrollHandler();
   }
 }
@@ -143,8 +174,8 @@ wantToGoForm.addEventListener('submit', function(evt) {
 
 modalCloseAcceptedButton.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalAccepted.classList.remove('modal--show');
-  modalOverlay.classList.remove('modal--show');
+  modalAcceptedClose();
+  overlayRemoveHandler();
   activateScrollHandler();
 });
 
@@ -153,7 +184,6 @@ var contactsForm = document.querySelector('.contacts-form');
 var contactsUserNameInput = contactsForm.querySelector('#user-name');
 var contactsUserTelInput = contactsForm.querySelector('#user-tel');
 var contactsButtonSubmit = contactsForm.querySelector('.contacts__button-submit');
-
 
 //отправка формы
 contactsForm.addEventListener('submit', function(evt) {
@@ -172,8 +202,7 @@ var faqItems = document.querySelectorAll('.faq__item');
 var faqQuestions = document.querySelectorAll('.faq__question');
 var faqAnswers = document.querySelectorAll('.faq__answer');
 
-
-var clickHandler = function(arr) {
+var answersClickHandler = function(arr) {
   for (var i = 0; i < arr.length; i++) {
     arr[i].addEventListener('click', function() {
       this.classList.toggle('faq__item--active');
@@ -181,7 +210,7 @@ var clickHandler = function(arr) {
   }
 }
 
-clickHandler(faqItems);
+answersClickHandler(faqItems);
 
 // слайдер в блоке ОТЗЫВЫ
 var reviewsSliderItems = document.querySelectorAll('.reviews__slider-item');
