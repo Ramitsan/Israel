@@ -7,11 +7,11 @@
   background-image: url("../img/faq-img-desktop@1x.png"), url("../img/faq-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 645px auto, 1366px auto;
-  background-position: 53vw 107px, center top 25px;
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/faq-bg-desktop@2x.png"), url("../img/faq-img-desktop@2x.png");
-  //   ;
-  // }
+  background-position: 50vw 107px, center top 25px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/faq-img-desktop@2x.png"), url("../img/faq-bg-desktop@2x.png");
+    ;
+  }
 }
 
 .faq__list {
@@ -95,6 +95,12 @@
     top: 7px;
     width: 17px;
     height: 11px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .faq {
+    background-position: right 107px, center top 25px;
   }
 }
 

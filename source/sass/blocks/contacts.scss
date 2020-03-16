@@ -11,6 +11,8 @@
 }
 
 .contacts__title {
+  margin-top: 19px;
+  margin-bottom: 14px;
   font-weight: 500;
   line-height: 150%;
   color: rgba($main-text-font, .87);
@@ -68,7 +70,7 @@
 }
 
 .contacts-form__container button[type="submit"] {
-  padding: 19px 32px 20px;
+  padding: 19px 38px 20px;
   border-radius: 80px;
   font-weight: 500;
   line-height: 20px;

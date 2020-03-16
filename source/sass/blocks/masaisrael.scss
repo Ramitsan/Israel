@@ -67,7 +67,7 @@
     padding-top: 30px;
     background-image: url("../img/masaisrael-bg-mobile@1x.png");
     background-size: 100vw auto;
-    background-position: center 75px;
+    background-position: center bottom 107px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/masaisrael-bg-mobile@2x.png");
     }
@@ -78,7 +78,7 @@
   }
   .masaisrael__info {
     width: 272px;
-    margin-top: 95px;
+    margin-top: 96px;
     margin-bottom: 58px;
     margin-left: 18px;
     margin-right: 23px;
