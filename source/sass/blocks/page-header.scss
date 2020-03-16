@@ -43,11 +43,12 @@
 
 .page-header__call {
   margin-top: 14px;
+  cursor: pointer;
 }
 
 .page-header__phone,
 .page-header__call span {
-  font-family: Fira Sans;
+  font-family: $font-fira;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
