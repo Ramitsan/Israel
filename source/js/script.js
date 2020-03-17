@@ -67,7 +67,7 @@ var overlayClickHandler = function(popup) {
 overlayClickHandler(modalRequestCall);
 overlayClickHandler(modalAccepted);
 
-var validateForm = function(elem1, elem2, elem3) {
+var validateForm = function(elem1, elem2) {
   if (elem1.value === '') {
     elem1.style.borderColor = '#ff0000';
   } else {
