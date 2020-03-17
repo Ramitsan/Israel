@@ -78,6 +78,7 @@
 .request-call__item-wrapper--checkbox label {
   display: block;
   position: relative;
+  cursor: pointer;
   width: 260px;
   font-size: 13px;
   line-height: 150%;
@@ -95,6 +96,26 @@
   border-radius: 2px;
   left: -14px;
   top: 0;
+}
+
+.request-call__item-wrapper--checkbox input[type=checkbox] {
+  position: absolute;
+  left: 60px;
+}
+
+#agreement:checked + label::after {
+  content: "";
+
+  position: absolute;
+  bottom: 18px;
+  left: -19px;
+
+  width: 27px;
+  height: 23px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 @media (max-width: $mobile-width) {
