@@ -15,7 +15,8 @@
 }
 
 .page-header__wrapper {
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
   padding-left: 12px;
   padding-right: 17px;
@@ -98,7 +99,7 @@
 
 @media (max-width: $mobile-width) {
   .page-header {
-    width: 100vw;
+    max-width: 100vw;
     background-image: url("../img/header-bg-mobile@1x.png");
     background-size: 100vw auto;
     background-position: center top 31px;
@@ -145,7 +146,7 @@
     padding-bottom: 50px;
   }
   .page-header__title {
-    width: 288px;
+    max-width: 288px;
     margin-top: 271px;
     font-family: $font-fira;
     font-style: normal;

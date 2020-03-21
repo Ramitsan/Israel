@@ -63,7 +63,7 @@
 
 @media (max-width: $mobile-width) {
   .masaisrael {
-    width: 100vw;
+    max-width: 100vw;
     padding-top: 30px;
     background-image: url("../img/masaisrael-bg-mobile@1x.png");
     background-size: 100vw auto;

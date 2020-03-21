@@ -179,7 +179,7 @@
 
 @media (max-width: $mobile-width) {
   .reviews {
-    width: 100vw;
+    max-width: 100vw;
     background-image: none;
     padding-bottom: 65px;
   }

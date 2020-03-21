@@ -199,7 +199,7 @@
 
 .programs__content-list {
   position: absolute;
-  width: 660px;
+  max-width: 660px;
   top: -14px;
   left: 352px;
 }
@@ -212,7 +212,7 @@
 }
 
 .programs-block__info {
-  width: 550px;
+  max-width: 550px;
   text-align: left;
   font-size: 15px;
   line-height: 26px;
@@ -221,7 +221,7 @@
 
 @media (max-width: $mobile-width) {
   .programs {
-    width: 100vw;
+    max-width: 100vw;
     padding-top: 0;
   }
   .programs__label-list {

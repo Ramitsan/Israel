@@ -5,7 +5,8 @@
 }
 
 .page-footer__wrapper {
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
   padding-top: 25px;
   padding-left: 12px;
@@ -68,11 +69,10 @@
 
 @media (max-width: $mobile-width) {
   .page-footer__wrapper {
-    width: 100%;
     padding: 33px 0;
   }
   .page-footer__container {
-    width: 100vw;
+    max-width: 100vw;
     flex-direction: column;
     align-items: center;
   }

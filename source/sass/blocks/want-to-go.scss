@@ -86,7 +86,7 @@
 
     @media (max-width: $mobile-width) {
       .want-to-go {
-        width: 100vw;
+        max-width: 100vw;
         padding-top: 20px;
         padding-bottom: 325px;
         background-image: url("../img/girl-flag-bg-mobile@1x.png");

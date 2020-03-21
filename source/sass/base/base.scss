@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: inherit;
+  border: 1px solid red;
 }
 
 html {
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-  min-width: 1170px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -53,10 +54,4 @@ img {
 
 .body-scroll {
   overflow: hidden;
-}
-
-@media (max-width: $mobile-width) {
-  body {
-    min-width: 320px;
-  }
 }
