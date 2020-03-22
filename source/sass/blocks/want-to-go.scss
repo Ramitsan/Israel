@@ -86,7 +86,7 @@
 
     @media (max-width: $mobile-width) {
       .want-to-go {
-        // max-width: 100vw;
+        width: 100vw;
         padding-top: 20px;
         padding-bottom: 325px;
         background-image: url("../img/girl-flag-bg-mobile@1x.png");
@@ -97,7 +97,7 @@
         }
       }
       .want-to-go__form-container {
-        width: 100%;
+        width: 100vw;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
