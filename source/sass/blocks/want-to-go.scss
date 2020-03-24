@@ -84,9 +84,18 @@
       text-shadow: $shadow-text;
     }
 
+    @media (max-width: $tablet-width) {
+      .want-to-go {
+        background-position: 17vw 6px;
+      }
+      .want-to-go__info,
+      .want-to-go__form {
+        margin-left: 5%;
+      }
+    }
+
     @media (max-width: $mobile-width) {
       .want-to-go {
-        width: 100vw;
         padding-top: 20px;
         padding-bottom: 325px;
         background-image: url("../img/girl-flag-bg-mobile@1x.png");
@@ -97,7 +106,7 @@
         }
       }
       .want-to-go__form-container {
-        width: 100vw;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;

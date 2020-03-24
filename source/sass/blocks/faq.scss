@@ -98,15 +98,13 @@
   }
 }
 
-@media (max-width: $tablet-width) {
-  .faq {
-    background-position: right 107px, center top 25px;
-  }
-}
-
+// @media (max-width: $tablet-width) {
+//   .faq {
+//     background-position: right 107px, center top 25px;
+//   }
+// }
 @media (max-width: $mobile-width) {
   .faq {
-    width: 100vw;
     padding-top: 48px;
     padding-bottom: 65px;
     background-image: none;

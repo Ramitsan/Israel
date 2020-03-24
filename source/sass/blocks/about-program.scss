@@ -32,14 +32,13 @@
 
 @media (max-width: $mobile-width) {
   .about-program {
-    width: 100vw;
     padding-top: 85px;
     padding-bottom: 69px;
-    background-image: url("../img/about-program-bg-mobile@1x.png");
-    background-position: right 0 top 227px;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/about-program-bg-mobile@2x.png");
-    }
+    // background-image: url("../img/about-program-bg-mobile@1x.png");
+    // background-position: right 0 top 227px;
+    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/about-program-bg-mobile@2x.png");
+    // }
   }
   .about-program__text {
     width: 100%;

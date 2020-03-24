@@ -16,7 +16,7 @@
 .how-to-go__wrapper {
   position: relative;
   width: 550px;
-  margin-left: 590px;
+  margin-left: 50%;
   text-align: left;
 }
 
@@ -26,7 +26,7 @@
     background-image: url("../img/how-to-go-img-desktop@1x.png");
     background-size: 581px auto;
     position: absolute;
-    left: -125%;
+    left: -120%;
     top: -32px;
     width: 581px;
     height: 707px;
@@ -120,9 +120,22 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+// @media (max-width: $tablet-width) {
+//   .how-to-go__block {
+//     &::after {
+//       right: 106px;
+//     }
+//     &::before {
+//       display: none;
+//     }
+//   }
+//   .how-to-go__wrapper {
+//     margin-left: 15%;
+//     width: 100%;
+//   }
+// }
+@media (max-width: $tablet-width) {
   .how-to-go {
-    width: 100vw;
     padding-top: 63px;
     padding-bottom: 33px;
     background-image: none;
@@ -133,9 +146,6 @@
     text-align: left;
   }
   .how-to-go__block {
-    &::before {
-      display: none;
-    }
     &::after {
       content: "";
       background-image: url("../img/stamp-mobile@1x.png");

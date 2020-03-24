@@ -100,19 +100,17 @@
 
 .request-call__item-wrapper--checkbox input[type=checkbox] {
   position: absolute;
-  left: 60px;
+  left: 59px;
+  top: 2px;
 }
 
-#agreement:checked + label::after {
+#agreement:checked+label::after {
   content: "";
-
   position: absolute;
   bottom: 18px;
   left: -19px;
-
   width: 27px;
   height: 23px;
-  
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -123,7 +121,7 @@
     top: 0;
     left: 0;
     margin-left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     border-radius: 0;
   }
@@ -147,5 +145,12 @@
   }
   .request-call__item-wrapper--checkbox label::before {
     left: -1px;
+  }
+  .request-call__item-wrapper--checkbox input[type=checkbox] {
+    left: 1px;
+    top: 3px;
+  }
+  #agreement:checked+label::after {
+    left: -5px;
   }
 }
