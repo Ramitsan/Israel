@@ -97,6 +97,22 @@
   background-position: center bottom;
 }
 
+@media (max-width: $tablet-width) {
+  .page-header {
+    background-size: cover;
+  }
+  .page-header__top {
+    padding-top: 15px;
+  }
+  .page-header__title {
+    max-width: 288px;
+    margin-top: 30%;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .page-header {
     background-image: url("../img/header-bg-mobile@1x.png");
@@ -151,13 +167,5 @@
     max-width: 288px;
     // margin-top: 271px;
     margin-top: 85%;
-    font-family: $font-fira;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: $shadow-text;
-    color: $white;
   }
 }

@@ -134,6 +134,7 @@
     margin: 0 auto;
     padding: 0 16px;
     padding-top: 56px;
+    padding-bottom: 150px;
   }
   .modal-container h3 {
     @include third-level-headings-mobile ();
@@ -144,6 +145,9 @@
   }
   .modal-container--request-call h3 {
     margin-top: 113px;
+  }
+  .modal-container--accepted {
+    padding-bottom: 150px;
   }
   .modal-container--request-call p {
     width: 270px;

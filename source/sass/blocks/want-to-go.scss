@@ -25,7 +25,7 @@
         background-image: url("../img/want-to-go-bg-backpack-desktop@1x.png");
         background-size: 147px auto;
         position: absolute;
-        left: -208px;
+        left: -150px;
         top: -149px;
         width: 147px;
         height: 262px;
@@ -92,6 +92,23 @@
       .want-to-go__form {
         margin-left: 5%;
       }
+      .want-to-go__info {
+        &::before {
+          content: "";
+          background-image: url("../img/want-to-go-bg-backpack-mobile@1x.png");
+          background-size: 103px auto;
+          position: absolute;
+          left: -56px;
+          top: -112px;
+          width: 103px;
+          height: 188px;
+          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            content: "";
+            background-image: url("../img/want-to-go-bg-backpack-mobile@2x.png");
+            background-size: 103px auto;
+          }
+        }
+      }
     }
 
     @media (max-width: $mobile-width) {
@@ -123,18 +140,18 @@
         line-height: 26px;
         &::before {
           content: "";
-          background-image: url("../img/want-to-go-bg-backpack-mobile@1x.png");
-          background-size: 103px auto;
-          position: absolute;
+          // background-image: url("../img/want-to-go-bg-backpack-mobile@1x.png");
+          // background-size: 103px auto;
+          // position: absolute;
           left: 0px;
-          top: -112px;
-          width: 103px;
-          height: 188px;
-          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-            content: "";
-            background-image: url("../img/want-to-go-bg-backpack-mobile@2x.png");
-            background-size: 103px auto;
-          }
+          //   top: -112px;
+          //   width: 103px;
+          //   height: 188px;
+          //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          //     content: "";
+          //     background-image: url("../img/want-to-go-bg-backpack-mobile@2x.png");
+          //     background-size: 103px auto;
+          //   }
         }
       }
       .want-to-go__form {
