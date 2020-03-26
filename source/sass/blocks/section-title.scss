@@ -49,6 +49,12 @@
   margin-bottom: 49px;
 }
 
+@media (max-width: $tablet-width) {
+  .section-title--how-to-go {
+    text-align: center;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .section-title {
     @include second-level-headings-mobile();

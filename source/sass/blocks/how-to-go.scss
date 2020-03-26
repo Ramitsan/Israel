@@ -120,20 +120,6 @@
   }
 }
 
-// @media (max-width: $tablet-width) {
-//   .how-to-go__block {
-//     &::after {
-//       right: 106px;
-//     }
-//     &::before {
-//       display: none;
-//     }
-//   }
-//   .how-to-go__wrapper {
-//     margin-left: 15%;
-//     width: 100%;
-//   }
-// }
 @media (max-width: $tablet-width) {
   .how-to-go {
     padding-top: 63px;
@@ -146,6 +132,14 @@
     text-align: left;
   }
   .how-to-go__block {
+    &::before {
+      display: none;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        content: "";
+        background-image: url("../img/how-to-go-img-desktop@2x.png");
+        background-size: 581px auto;
+      }
+    }
     &::after {
       content: "";
       background-image: url("../img/stamp-mobile@1x.png");
@@ -199,7 +193,19 @@
     }
   }
   .how-to-go__item:first-child {
-    margin-bottom: 60px;
+    margin-bottom: 37px;
+  }
+  .how-to-go__pay {
+    margin-left: 10px;
+    padding-right: 16px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .how-to-go__item:first-child {
+    margin-bottom: 37px;
   }
   .how-to-go__item:nth-child(2) {
     margin-bottom: 38px;
@@ -210,11 +216,5 @@
   .how-to-go__item:last-child {
     margin-top: 27px;
     margin-bottom: 23px;
-  }
-  .how-to-go__pay {
-    margin-left: 10px;
-    padding-right: 16px;
-    font-size: 14px;
-    line-height: 22px;
   }
 }
