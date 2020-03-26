@@ -249,51 +249,16 @@ reviewsButtonNext.addEventListener('click', function() {
 });
 
 //слайдер в мобильной версии блока ЖИЗНЬ В ИЗРАИЛЕ
-var lifeSliderItems = document.querySelectorAll('.slider__item');
-var lifeSliderTogglesWrap = document.querySelector('.slider__toggles');
-var lifeSliderToggles = document.querySelectorAll('.slider__toggle');
-var lifeSlideIndex = 1;
 var mql = window.matchMedia('(max-width: 767px)');
-
-var showLifeSlides = function(number) {
-  if (number > lifeSliderItems.length) {
-    lifeSlideIndex = 1;
-  }
-  if (number < 1) {
-    lifeSlideIndex = lifeSliderItems.length;
-  }
-  for (var i = 0; i < lifeSliderItems.length; i++) {
-    lifeSliderItems[i].style.display = 'none';
-  }
-
-  for (var j = 0; j < lifeSliderToggles.length; j++) {
-    lifeSliderToggles[j].classList.remove('slider__toggle--active');
-  }
-  lifeSliderItems[lifeSlideIndex - 1].style.display = 'block';
-  lifeSliderToggles[lifeSlideIndex - 1].classList.add('slider__toggle--active');
-}
 
 function mediaQueryResponse(mql) {
   if (mql.matches) {
-    showLifeSlides(lifeSlideIndex);
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
   }
 }
 
 mediaQueryResponse(mql);
-
-window.addEventListener('resize', function() {
-  mediaQueryResponse(mql);
-});
-
-//получаем текущий слайд
-var currentSlide = function(number) {
-  showLifeSlides(lifeSlideIndex = number)
-};
-
-lifeSliderTogglesWrap.addEventListener('click', function(evt) {
-  for (var i = 0; i < lifeSliderToggles.length + 1; i++) {
-    if (evt.target.classList.contains('slider__toggle') && evt.target === lifeSliderToggles[i - 1]) {
-      currentSlide(i);
-    }
-  }
-});
