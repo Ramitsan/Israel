@@ -247,18 +247,3 @@ reviewsButtonPrev.addEventListener('click', function() {
 reviewsButtonNext.addEventListener('click', function() {
   plusSlides(1);
 });
-
-//слайдер в мобильной версии блока ЖИЗНЬ В ИЗРАИЛЕ
-var mql = window.matchMedia('(max-width: 767px)');
-
-function mediaQueryResponse(mql) {
-  if (mql.matches) {
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  }
-}
-
-mediaQueryResponse(mql);

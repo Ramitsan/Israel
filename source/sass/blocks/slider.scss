@@ -1,5 +1,5 @@
 .slider__list {
-  width: 692px;
+  width: 654px;
   margin-top: 47px;
   position: relative;
   list-style: none;
@@ -7,7 +7,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 452px;
+  margin-left: 491px;
   &::after {
     content: "";
     background-image: url("../img/watch-desktop@1x.png");
@@ -26,14 +26,14 @@
 }
 
 .slider__item {
-  margin-bottom: 21px;
   position: relative;
+  margin-bottom: 21px;
 }
 
 .slider__big-image {
   width: 482px;
   position: absolute;
-  right: 696px;
+  right: 668px;
   top: -36px;
   margin-top: -30px;
 }
@@ -74,6 +74,7 @@
 .slider__text--one {
   width: 320px;
   left: 38px;
+  bottom: -3px;
 }
 
 .slider__text--two {
@@ -109,12 +110,12 @@
     height: auto;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-left: 0;
     padding-left: 0;
     margin-top: 24px;
-    margin-bottom: -15px;
+    margin-bottom: 35px;
     &::after {
       display: none;
     }
