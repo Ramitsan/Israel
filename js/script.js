@@ -247,3 +247,47 @@ reviewsButtonPrev.addEventListener('click', function() {
 reviewsButtonNext.addEventListener('click', function() {
   plusSlides(1);
 });
+
+//слайдер в мобильной версии блока ЖИЗНЬ В ИЗРАИЛЕ
+// 1 вариант
+var mql = window.matchMedia('(max-width: 767px)');
+
+function mediaQueryResponse(mql) {
+  if (mql.matches) {
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  }
+}
+
+mediaQueryResponse(mql);
+
+// 2 вариант
+// const slider = document.querySelector('.slider');
+// let {
+//   clientWidth
+// } = document.body;
+// let yourSlider;
+
+// const sliderInit = () => {
+//   yourSlider = new Swiper(slider, {
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+//   })
+// }
+
+// const resizeHandlerSlider = () => {
+//   if (clientWidth !== document.body.clientWidth) {
+//     clientWidth = document.body.clientWidth;
+
+//     if (yourSlider) {
+//       yourSlider.destroy();
+//     }
+
+//     sliderInit();
+//   }
+// }
+// window.addEventListener('resize', resizeHandlerSlider);
