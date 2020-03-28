@@ -264,6 +264,8 @@ function mediaQueryResponse(mql) {
 
 mediaQueryResponse(mql);
 
+
+
 // 2 вариант
 // const slider = document.querySelector('.slider');
 // let {
