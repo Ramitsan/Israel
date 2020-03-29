@@ -53,6 +53,9 @@
   .section-title--how-to-go {
     text-align: center;
   }
+  .section-title--faq {
+    text-align: center;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -70,6 +73,10 @@
     font-size: 40px;
     line-height: 49px;
     letter-spacing: -0.02em;
+  }
+  .section-title--faq {
+    width: 288px;
+    margin: 0 auto;
   }
   .section-title--details {
     margin-bottom: 25px;
