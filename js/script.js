@@ -263,33 +263,3 @@ function mediaQueryResponse(mql) {
 }
 
 mediaQueryResponse(mql);
-
-
-
-// 2 вариант
-// const slider = document.querySelector('.slider');
-// let {
-//   clientWidth
-// } = document.body;
-// let yourSlider;
-
-// const sliderInit = () => {
-//   yourSlider = new Swiper(slider, {
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-//   })
-// }
-
-// const resizeHandlerSlider = () => {
-//   if (clientWidth !== document.body.clientWidth) {
-//     clientWidth = document.body.clientWidth;
-
-//     if (yourSlider) {
-//       yourSlider.destroy();
-//     }
-
-//     sliderInit();
-//   }
-// }
-// window.addEventListener('resize', resizeHandlerSlider);
