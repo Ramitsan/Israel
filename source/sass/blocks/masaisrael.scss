@@ -43,9 +43,6 @@
   height: 24px;
   left: 40px;
   top: 18px;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/instagram@2x.png");
-  }
 }
 
 .masaisrael__info {
