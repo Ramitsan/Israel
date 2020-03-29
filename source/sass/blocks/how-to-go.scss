@@ -15,7 +15,7 @@
 
 .how-to-go__wrapper {
   position: relative;
-  width: 550px;
+  max-width: 550px;
   margin-left: 50%;
   text-align: left;
 }
@@ -41,7 +41,7 @@
     background-image: url("../img/stamp-desktop@1x.png");
     background-size: 216px auto;
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 175px;
     width: 216px;
     height: 254px;
@@ -73,6 +73,7 @@
   color: rgba($main-text-font, .5);
   padding-left: 10px;
   border-left: 4px solid $yellow;
+  margin-right: 25px;
 }
 
 .how-to-go__list {
@@ -127,7 +128,7 @@
     background-image: none;
   }
   .how-to-go__wrapper {
-    width: 100%;
+    max-width: 100%;
     margin-left: 0px;
     text-align: left;
   }
