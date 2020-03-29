@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (entry.isIntersecting) {
           var image = entry.target;
           image.src = image.dataset.src;
+          image.srcset = image.dataset.srcset
           image.classList.remove("lazy");
           imageObserver.unobserve(image);
         }
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         lazyloadImages.forEach(function(img) {
           if (img.offsetTop < (window.innerHeight + scrollTop)) {
             img.src = img.dataset.src;
+            img.srcset = img.dataset.srcset
             img.classList.remove('lazy');
           }
         });
