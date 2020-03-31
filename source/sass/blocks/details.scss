@@ -60,9 +60,15 @@
   right: 33px;
 }
 
+@media (max-width: $maket-width) {
+  .details {
+    background-position: 43vw top, center -89px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .details {
-    background-position: right top, center -89px;
+    background-position: 30vw top, center -89px;
   }
 }
 
@@ -72,8 +78,8 @@
     padding-top: 0;
     background-image: none, url("../img/details-map-and-marker-mobile@1x.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center 633px;
+    background-size: 100%;
+    background-position: center 600px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: none, url("../img/details-map-and-marker-mobile@2x.png");
     }
