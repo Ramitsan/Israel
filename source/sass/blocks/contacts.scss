@@ -78,13 +78,27 @@
   text-shadow: $shadow-text;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $maket-width) {
+  .contacts-form__container {
+    justify-content: center;
+  }
+  .contacts-form__container input[type="text"],
+  .contacts-form__container input[type="tel"] {
+    margin-bottom: 15px;
+  }
+  .contacts-form__container button[type="submit"] {}
+}
+
+@media (max-width: $tablet-width) {
   .contacts {
     width: 100%;
     margin-top: 468px;
     flex-direction: column;
+    margin-top: 0px;
+    padding: 0 16px;
   }
   .contacts__info {
+    text-align: center;
     width: 100%;
   }
   .contacts-form__container {
@@ -108,5 +122,11 @@
     width: 264px;
     margin-top: 15px;
     margin-left: -27px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts__info {
+    text-align: left;
   }
 }

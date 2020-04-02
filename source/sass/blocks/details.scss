@@ -60,6 +60,10 @@
   right: 33px;
 }
 
+.details__map {
+  display: none;
+}
+
 @media (max-width: $maket-width) {
   .details {
     background-position: 43vw top, center -89px;
@@ -74,15 +78,20 @@
 
 @media (max-width: $mobile-width) {
   .details {
-    padding: 45px 16px;
     padding-top: 0;
-    background-image: none, url("../img/details-map-and-marker-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center 600px;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: none, url("../img/details-map-and-marker-mobile@2x.png");
-    }
+    padding-bottom: 45px;
+    background-image: none;
+  }
+  .details__city {
+    padding: 0 16px;
+  }
+  .details__map {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .details__map img {
+    width: 100%;
   }
   .details__name-city::after {
     right: 29px;
