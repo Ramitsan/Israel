@@ -222,6 +222,13 @@
 @media (max-width: $mobile-width) {
   .programs {
     padding-top: 0;
+    background-image: url("../img/programs-sketch-bg-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 296px auto;
+    background-position: 90% 117px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/programs-sketch-bg-mobile@2x.png);
+    }
   }
   .programs__label-list {
     width: 100%;
@@ -271,10 +278,10 @@
   .programs-block__title {
     @include third-level-headings-mobile();
     margin-top: 47px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
   }
   .programs-block__info {
-    width: 100%;
+    width: 99%;
     font-size: 14px;
     line-height: 22px;
   }

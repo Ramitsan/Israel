@@ -134,24 +134,14 @@
         width: 100%;
         margin-left: 3px;
         margin-bottom: 22px;
+        margin-top: 23px;
         padding-left: 16px;
         padding-right: 16px;
         font-size: 16px;
         line-height: 26px;
         &::before {
           content: "";
-          // background-image: url("../img/want-to-go-bg-backpack-mobile@1x.png");
-          // background-size: 103px auto;
-          // position: absolute;
           left: 0px;
-          //   top: -112px;
-          //   width: 103px;
-          //   height: 188px;
-          //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          //     content: "";
-          //     background-image: url("../img/want-to-go-bg-backpack-mobile@2x.png");
-          //     background-size: 103px auto;
-          //   }
         }
       }
       .want-to-go__form {

@@ -6,7 +6,7 @@
   background-image: url("../img/details-map-and-marker-desktop@1x.png"), url("../img/details-watercolor-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 702px auto, 1366px auto;
-  background-position: 50vw top, center -89px;
+  background-position: 49vw top, center -89px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/details-map-and-marker-desktop@2x.png"), url("../img/details-watercolor-bg-desktop@2x.png");
   }
@@ -85,6 +85,16 @@
   .details__city {
     padding: 0 16px;
   }
+  .details__your-city {
+    margin-left: 21px;
+  }
+  .details__your-city::before {
+    top: 2px;
+    left: 20px;
+  }
+  .details__name-city::after {
+    right: 13px;
+  }
   .details__map {
     display: block;
     width: 100%;
@@ -92,8 +102,5 @@
   }
   .details__map img {
     width: 100%;
-  }
-  .details__name-city::after {
-    right: 29px;
   }
 }

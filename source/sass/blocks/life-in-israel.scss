@@ -18,11 +18,16 @@
   margin: 0 auto;
 }
 
+.life-in-israel__info br {
+  display: none;
+}
+
 @media (max-width: $mobile-width) {
   .life-in-israel {
     background-image: none;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 30px;
   }
   .life-in-israel__info {
     width: 100%;
@@ -31,5 +36,8 @@
     font-size: 16px;
     line-height: 26px;
     color: rgba($main-text-font, .87);
+  }
+  .life-in-israel__info br {
+    display: block;
   }
 }

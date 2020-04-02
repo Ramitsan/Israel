@@ -86,7 +86,6 @@
   .contacts-form__container input[type="tel"] {
     margin-bottom: 15px;
   }
-  .contacts-form__container button[type="submit"] {}
 }
 
 @media (max-width: $tablet-width) {
@@ -110,13 +109,18 @@
   .contacts__title {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 16px;
     margin-bottom: 13px;
+  }
+  .contacts__text {
+    margin-top: 11px;
   }
   .contacts-form__container input[type="text"],
   .contacts-form__container input[type="tel"] {
     width: 283px;
     padding: 17px 40px;
-    margin-bottom: 10px;
+    padding-bottom: 19px;
+    margin-bottom: 8px;
   }
   .contacts-form__container button[type="submit"] {
     width: 264px;

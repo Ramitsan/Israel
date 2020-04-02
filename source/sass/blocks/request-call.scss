@@ -130,6 +130,8 @@
     padding-top: 30px;
   }
   .request-call__item-wrapper {
+    width: 288px;
+    margin: 0 auto;
     text-align: center;
   }
   .request-call__item-wrapper input[type="text"],
@@ -148,8 +150,8 @@
     left: -1px;
   }
   .request-call__item-wrapper--checkbox input[type=checkbox] {
-    left: 1px;
-    top: 3px;
+    left: 20px;
+    top: 10px;
   }
   #agreement:checked+label::after {
     left: -5px;

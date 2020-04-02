@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   padding-top: 107px;
-  padding-bottom: 125px;
+  padding-bottom: 130px;
   background-image: url("../img/faq-img-desktop@1x.png"), url("../img/faq-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 645px auto, 1366px auto;
-  background-position: 50vw 107px, center top 25px;
+  background-position: 53vw 107px, center top 25px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/faq-img-desktop@2x.png"), url("../img/faq-bg-desktop@2x.png");
     ;
@@ -39,8 +39,8 @@
 }
 
 .faq__item {
-  padding-top: 9px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba($main-text-font, .2);
 }
 
@@ -142,14 +142,14 @@
     padding-bottom: 16px;
   }
   .faq__question {
-    width: 93%;
+    width: 92%;
     margin: 0;
     margin-left: 25px;
     font-size: 16px;
     line-height: 26px;
     &::after {
       top: 8px;
-      right: -24px;
+      right: -26px;
     }
     &::before {
       top: -2px;
