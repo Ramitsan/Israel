@@ -240,6 +240,7 @@
   }
   .programs__label-item {
     width: 181px;
+    margin-bottom: 10px;
   }
   .programs__label-item label {
     padding: 15px 12px 14px 52px;
@@ -277,7 +278,7 @@
   }
   .programs-block__title {
     @include third-level-headings-mobile();
-    margin-top: 47px;
+    margin-top: 37px;
     margin-bottom: 17px;
   }
   .programs-block__info {

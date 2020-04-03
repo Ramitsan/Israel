@@ -94,7 +94,7 @@
 .reviews__nav {
   position: absolute;
   width: 96px;
-  bottom: 12px;
+  bottom: 8px;
   left: 394px;
   display: flex;
   flex-direction: row;
@@ -106,6 +106,7 @@
   line-height: 150%;
   opacity: 0.5;
   order: 2;
+  padding-top: 5px;
 }
 
 .reviews__buttons {
@@ -134,7 +135,7 @@
   background-position: 0 0;
   width: 11px;
   height: 18px;
-  top: -3px;
+  top: 0px;
   left: 0px;
 }
 
@@ -152,7 +153,7 @@
   background-position: 0 0;
   width: 11px;
   height: 18px;
-  top: -3px;
+  top: 0px;
   left: 1px;
 }
 
@@ -175,6 +176,10 @@
   &:focus {
     transform: scale(1.5);
   }
+}
+
+.reviews__social-link--twitter img {
+  margin-top: 3px;
 }
 
 @media (max-width: $maket-width) {

@@ -90,7 +90,7 @@
       }
       .want-to-go__info,
       .want-to-go__form {
-        margin-left: 5%;
+        // margin-left: 5%;
       }
       .want-to-go__info {
         &::before {
@@ -132,7 +132,7 @@
       }
       .want-to-go__info {
         width: 100%;
-        margin-left: 3px;
+        margin-left: 0px;
         margin-bottom: 22px;
         margin-top: 23px;
         padding-left: 16px;
@@ -145,7 +145,7 @@
         }
       }
       .want-to-go__form {
-        margin-left: 3px;
+        margin-left: 0px;
       }
       .want-to-go__form-container input[type="tel"] {
         position: relative;
