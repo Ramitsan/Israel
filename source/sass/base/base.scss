@@ -2,7 +2,6 @@
 *::before,
 *::after {
   box-sizing: inherit;
-  border: 1px solid transparent;
 }
 
 html {
@@ -11,7 +10,6 @@ html {
 
 body {
   min-width: 320px;
-  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
