@@ -28,6 +28,7 @@
 .slider__item {
   position: relative;
   margin-bottom: 21px;
+  height: auto;
 }
 
 .slider__big-image {
@@ -40,22 +41,18 @@
 
 .slider__item--two {
   width: 211px;
-  height: auto;
 }
 
 .slider__item--three {
   width: 411px;
-  height: auto;
 }
 
 .slider__item--four {
   width: 411px;
-  height: auto;
 }
 
 .slider__item--five {
   width: 211px;
-  height: auto;
 }
 
 .slider__text {
@@ -102,9 +99,45 @@
 }
 
 @media (max-width: $maket-width) {
-  .slider {
+  .slider__list {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+  .slider__item {
+    width: 50vw;
+    flex-grow: 2;
+  }
+  .slider__item img {
     width: 100%;
-    overflow-x: auto;
+  }
+  .slider__big-image {
+    position: relative;
+    right: 0;
+    width: 100%;
+    flex-grow: 3;
+  }
+  .slider__big-image img {
+    width: 75%;
+  }
+  .slider__item--two {
+    width: 26vw;
+    height: auto;
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+  .slider__item--three {
+    height: auto;
+  }
+  .slider__item--four {
+    height: auto;
+    margin-right: 15px;
+  }
+  .slider__item--five {
+    width: 26vw;
+    height: auto;
+    flex-grow: 1;
   }
 }
 
