@@ -43,7 +43,8 @@
   padding: 19px 40px 20px;
 }
 
-.contacts-form__container input[type="text"]::placeholder {
+.contacts-form__container input[type="text"]::placeholder,
+.contacts-form__container input[type="tel"]::placeholder {
   font-weight: 500;
   line-height: 20px;
   font-variant: small-caps;
@@ -52,13 +53,6 @@
 
 .contacts-form__container input[type="tel"] {
   padding: 20px 40px 19px;
-}
-
-.contacts-form__container input[type="tel"]::placeholder {
-  font-weight: 500;
-  line-height: 20px;
-  font-variant: small-caps;
-  color: rgba($main-text-font, .87);
 }
 
 .contacts-form__container input[type="text"]:focus,
