@@ -177,10 +177,6 @@
   background-image: url(../img/programs-religion-active.svg);
 }
 
-.programs__content-list {
-  list-style: none;
-}
-
 .programs__item {
   display: none;
 }
@@ -198,6 +194,7 @@
 }
 
 .programs__content-list {
+  list-style: none;
   position: absolute;
   max-width: 660px;
   top: -14px;
@@ -217,6 +214,15 @@
   font-size: 15px;
   line-height: 26px;
   color: rgba($main-text-font, .87);
+}
+
+@media (max-width: $tablet-width) {
+  .programs__label-list {
+    margin-left: 50px;
+  }
+  .programs__content-list {
+    left: 265px;
+  }
 }
 
 @media (max-width: $mobile-width) {

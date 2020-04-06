@@ -5,14 +5,14 @@
   background-image: url("../img/about-program-bg-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 100vw auto;
-  background-position: right 0 bottom 240px;
+  background-position: right 0 bottom 5px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/about-program-bg-desktop@2x.png");
   }
 }
 
 .about-program__text {
-  width: 720px;
+  width: 690px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
