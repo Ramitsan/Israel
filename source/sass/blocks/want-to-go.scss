@@ -90,15 +90,18 @@
       }
       .want-to-go__info,
       .want-to-go__form {
-        // margin-left: 5%;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 0;
       }
       .want-to-go__info {
+        width: 450px;
         &::before {
           content: "";
           background-image: url("../img/want-to-go-bg-backpack-mobile@1x.png");
           background-size: 103px auto;
           position: absolute;
-          left: -56px;
+          left: 0px;
           top: -112px;
           width: 103px;
           height: 188px;
