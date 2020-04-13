@@ -249,7 +249,6 @@ reviewsButtonNext.addEventListener('click', function() {
 });
 
 //слайдер в мобильной версии блока ЖИЗНЬ В ИЗРАИЛЕ
-// 1 вариант
 var mql = window.matchMedia('(max-width: 767px)');
 
 function mediaQueryResponse(mql) {

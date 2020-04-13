@@ -1,165 +1,169 @@
-    .want-to-go {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      padding-top: 173px;
-      padding-bottom: 260px;
-      background-image: url("../img/girl-flag-bg-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-size: 818px auto;
-      background-position: 40vw -37px;
+.want-to-go {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 173px;
+  padding-bottom: 260px;
+  background-image: url("../img/girl-flag-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 818px auto;
+  background-position: 40vw -37px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/girl-flag-bg-desktop@2x.png");
+  }
+}
+
+#bg-image-want-to-go.lazy {
+  background-image: none;
+}
+
+.want-to-go__info {
+  position: relative;
+  width: 375px;
+  text-align: left;
+  opacity: 0.87;
+  margin-top: 25px;
+  margin-left: 100px;
+  &::before {
+    content: "";
+    background-image: url("../img/want-to-go-bg-backpack-desktop@1x.png");
+    background-size: 147px auto;
+    position: absolute;
+    left: -150px;
+    top: -149px;
+    width: 147px;
+    height: 262px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/want-to-go-bg-backpack-desktop@2x.png");
+      background-size: 147px auto;
+    }
+  }
+}
+
+.want-to-go__form {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.want-to-go__form-container {
+  position: relative;
+  margin-top: 62px;
+}
+
+.want-to-go__form-container input[type="tel"] {
+  position: absolute;
+  padding: 19px 40px 20px;
+  width: 477px;
+  border: 1px solid transparent;
+  border: 2px solid #E3E3E3;
+  border-radius: 80px;
+}
+
+.want-to-go__form-container input[type="tel"]::placeholder {
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: $main-text-font;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.want-to-go__form-container input[type="tel"]:focus,
+.want-to-go__form-container input[type="tel"]:hover {
+  outline: none;
+  border: 2px solid $yellow;
+}
+
+.want-to-go__form-container button[type="submit"] {
+  width: 219px;
+  padding: 20px 40px 21px;
+  position: absolute;
+  border-radius: 80px;
+  left: 261px;
+  z-index: 1;
+  font-weight: 500;
+  line-height: 20px;
+  font-variant: small-caps;
+  text-shadow: $shadow-text;
+}
+
+@media (max-width: $tablet-width) {
+  .want-to-go {
+    background-position: 17vw 6px;
+  }
+  .want-to-go__info,
+  .want-to-go__form {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 0;
+  }
+  .want-to-go__info {
+    width: 450px;
+    &::before {
+      content: "";
+      background-image: url("../img/want-to-go-bg-backpack-mobile@1x.png");
+      background-size: 103px auto;
+      position: absolute;
+      left: 0px;
+      top: -112px;
+      width: 103px;
+      height: 188px;
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/girl-flag-bg-desktop@2x.png");
-      }
-    }
-
-    .want-to-go__info {
-      position: relative;
-      width: 375px;
-      text-align: left;
-      opacity: 0.87;
-      margin-top: 25px;
-      margin-left: 100px;
-      &::before {
         content: "";
-        background-image: url("../img/want-to-go-bg-backpack-desktop@1x.png");
-        background-size: 147px auto;
-        position: absolute;
-        left: -150px;
-        top: -149px;
-        width: 147px;
-        height: 262px;
-        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          content: "";
-          background-image: url("../img/want-to-go-bg-backpack-desktop@2x.png");
-          background-size: 147px auto;
-        }
+        background-image: url("../img/want-to-go-bg-backpack-mobile@2x.png");
+        background-size: 103px auto;
       }
     }
+  }
+}
 
-    .want-to-go__form {
-      text-align: left;
-      margin-left: 100px;
+@media (max-width: $mobile-width) {
+  .want-to-go {
+    padding-top: 20px;
+    padding-bottom: 325px;
+    background-image: url("../img/girl-flag-bg-mobile@1x.png");
+    background-size: 320px auto;
+    background-position: center 310px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/girl-flag-bg-mobile@2x.png");
     }
-
-    .want-to-go__form-container {
-      position: relative;
-      margin-top: 62px;
+  }
+  .want-to-go__form-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .want-to-go__info {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 22px;
+    margin-top: 23px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 26px;
+    &::before {
+      content: "";
+      left: 0px;
     }
-
-    .want-to-go__form-container input[type="tel"] {
-      position: absolute;
-      padding: 19px 40px 20px;
-      width: 477px;
-      border: 1px solid transparent;
-      border: 2px solid #E3E3E3;
-      border-radius: 80px;
-    }
-
-    .want-to-go__form-container input[type="tel"]::placeholder {
-      font-size: 17px;
-      line-height: 20px;
-      font-variant: small-caps;
-      color: $main-text-font;
-      opacity: 0.5;
-      font-weight: 500;
-    }
-
-    .want-to-go__form-container input[type="tel"]:focus,
-    .want-to-go__form-container input[type="tel"]:hover {
-      outline: none;
-      border: 2px solid $yellow;
-    }
-
-    .want-to-go__form-container button[type="submit"] {
-      width: 219px;
-      padding: 20px 40px 21px;
-      position: absolute;
-      border-radius: 80px;
-      left: 261px;
-      z-index: 1;
-      font-weight: 500;
-      line-height: 20px;
-      font-variant: small-caps;
-      text-shadow: $shadow-text;
-    }
-
-    @media (max-width: $tablet-width) {
-      .want-to-go {
-        background-position: 17vw 6px;
-      }
-      .want-to-go__info,
-      .want-to-go__form {
-        padding-left: 16px;
-        padding-right: 16px;
-        margin-left: 0;
-      }
-      .want-to-go__info {
-        width: 450px;
-        &::before {
-          content: "";
-          background-image: url("../img/want-to-go-bg-backpack-mobile@1x.png");
-          background-size: 103px auto;
-          position: absolute;
-          left: 0px;
-          top: -112px;
-          width: 103px;
-          height: 188px;
-          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-            content: "";
-            background-image: url("../img/want-to-go-bg-backpack-mobile@2x.png");
-            background-size: 103px auto;
-          }
-        }
-      }
-    }
-
-    @media (max-width: $mobile-width) {
-      .want-to-go {
-        padding-top: 20px;
-        padding-bottom: 325px;
-        background-image: url("../img/girl-flag-bg-mobile@1x.png");
-        background-size: 320px auto;
-        background-position: center 310px;
-        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          background-image: url("../img/girl-flag-bg-mobile@2x.png");
-        }
-      }
-      .want-to-go__form-container {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-      }
-      .want-to-go__info {
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 22px;
-        margin-top: 23px;
-        padding-left: 16px;
-        padding-right: 16px;
-        font-size: 16px;
-        line-height: 26px;
-        &::before {
-          content: "";
-          left: 0px;
-        }
-      }
-      .want-to-go__form {
-        margin-left: 0px;
-      }
-      .want-to-go__form-container input[type="tel"] {
-        position: relative;
-        width: 287px;
-        margin-bottom: 8px;
-        padding: 19px 40px;
-      }
-      .want-to-go__form-container button[type="submit"] {
-        width: 264px;
-        position: relative;
-        left: 0;
-        padding: 18px 40px;
-      }
-    }
+  }
+  .want-to-go__form {
+    margin-left: 0px;
+  }
+  .want-to-go__form-container input[type="tel"] {
+    position: relative;
+    width: 287px;
+    margin-bottom: 8px;
+    padding: 19px 40px;
+  }
+  .want-to-go__form-container button[type="submit"] {
+    width: 264px;
+    position: relative;
+    left: 0;
+    padding: 18px 40px;
+  }
+}
