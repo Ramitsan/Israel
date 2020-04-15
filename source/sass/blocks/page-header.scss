@@ -37,6 +37,13 @@
   align-self: flex-start;
 }
 
+.page-header__phone:focus,
+.page-header__phone:hover,
+.page-header__call:focus,
+.page-header__call:hover {
+  transform: scale(1.2);
+}
+
 .page-header__phone {
   margin-top: 16px;
   margin-left: 0px;
@@ -95,6 +102,11 @@
   background-image: url("../img/scroll-down.svg");
   background-size: 76px 132px;
   background-position: center bottom;
+}
+
+.page-header__scroll:focus,
+.page-header__scroll:hover {
+  transform: scale(1.5);
 }
 
 @media (max-width: $tablet-width) {
