@@ -98,6 +98,11 @@
   top: 0;
 }
 
+.request-call__item-wrapper--checkbox label:focus::before,
+.request-call__item-wrapper--checkbox label:hover::before {
+  opacity: 0.5;
+}
+
 .request-call__item-wrapper--checkbox input[type=checkbox] {
   position: absolute;
   left: 59px;

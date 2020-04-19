@@ -262,3 +262,18 @@ function mediaQueryResponse(mql) {
 }
 
 mediaQueryResponse(mql);
+
+//кнопка прокрутки
+var upButton = document.querySelector('.btn--up');
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 800) {
+    upButton.classList.add('shown');
+  } else {
+    upButton.classList.remove('shown');
+  }
+});
+
+upButton.addEventListener('click', function() {
+  window.scrollTo(0, 0);
+});

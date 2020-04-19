@@ -161,6 +161,13 @@
   left: 1px;
 }
 
+.reviews__button--prev:focus::before,
+.reviews__button--prev:hover::before,
+.reviews__button--next:focus::after,
+.reviews__button--next:hover::after {
+  transform: scale(1.5);
+}
+
 .reviews__social {
   width: 105px;
   align-self: flex-end;
